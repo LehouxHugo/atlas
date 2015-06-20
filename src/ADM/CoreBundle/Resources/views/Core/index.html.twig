@@ -1,0 +1,255 @@
+{# Accueil | Page d'accueil du site #}
+{% extends 'ADMCoreBundle::BasicLayout.html.twig' %}
+
+{% block title %}
+    Accueil
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+{% block extraheadcontent %}
+{% endblock %}
+
+{% block bodyclass %}
+    {{ parent() }}
+{% endblock %}
+{# Options du bodyclass : "skin-1"  "skin-2" "skin-3" "mini-navbar" "fixed-sidebar" : dans ce cas ne pas oublier d'ajouter le script slimScroll qui se trouve dans js/inspinia.js file et décommenter le Fixed Sidebar comment and uncomment function et ajouter <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+"fixed-nav" : dans ce cas mettre navbar-fixed-top si body class = fixed-nav dans <nav>   En mettant mini-navbar ET fixed-sidebar ET fixed-nav, on ne voit plus du tout la barre de navigation de gauche et la barre du haut devient fixe (pour Rapports de stage peut-être), "canvas-menu"pour le OffCanvasLayout #}
+
+{% block closeNavbar %}
+{% endblock %}
+{# Ajouter <a class="close-canvas-menu"><i class="fa fa-times"></i></a> si bodyclass=canvas-menu #}
+
+{% block menus %}
+   {{ parent() }}
+{% endblock %}
+
+{% block pagewrapperclass %}
+   {{ parent() }}
+{% endblock %}
+{# Options du pagewrapperclass : "gray-bg" "gray-bg dashboard-1" mais ça a pas l'air de servir grand chose "gray-bg sidebar-content" ajoute une jolie barre sur la droite  (peut-être pour mettre le sommaire des rapports). Par contre pas toujours terrible pour les téléphones car elle est prioritaireIl faut créer un <div class="sidebard-panel">. Voir exemple #}
+
+{% block navbarclass %}
+   {{ parent() }}
+{% endblock %}
+{# navbar-fixed-top si body class = fixed-nav #}
+
+{% block topnav %}
+   {{ parent() }}
+{% endblock %}
+
+{# On met soit le block dashboardheader ou pageheading mais pas les deux, on peut aussi les enlever tous les deux. Je mets du contenu pour l'exemple #}
+{% block dashboardheader %}
+    <div id="dashboard-header" class="row  border-bottom white-bg dashboard-header">
+        <div class="col-sm-12">
+            <h2>Bienvenue</h2>
+            <p>L'Atlas Numérique des Agricultures du Monde vous permet d'explorer la
+                diversité des systèmes agricoles du Monde simplement.
+            </p>
+        </div> {# end first column in row dashboard-header #}
+    </div> {# end dashboard-header #}
+{% endblock %}
+
+{% block pageheading %}
+{% endblock %}
+
+{% block wrappercontentclass %}
+    {{ parent() }}
+{% endblock %}
+{# Options du pagewrapperclass : "wrapper wrapper-content" "wrapper wrapper-content animated fadeInRight" voire "wrapper wrapper-content animated fadeInRight article"pour faire apparaître le contenu de façon un peu dynamique (voir animate.css pour toutes les options) #}
+
+{% block pagecontent %}
+<div class="row">
+          <div class="col-lg-4">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Votre activité récente</h5>
+                    <div class="ibox-tools"> {# start ibox-tools #}
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="#">Toutes les activités</a>
+                            </li>
+                            <li><a href="#">Seulement les messages reçus</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div> {# end ibox-tools #}
+                </div>
+                <div class="ibox-content no-padding">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <p>
+                                <a class="text-info" href="#">@Hugo</a> Woaw mais ce site est vraiment génial !
+                            </p>
+                            <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 minute ago</small>
+                        </li>
+                        <li class="list-group-item">
+                            <p><a class="text-info" href="#">@Corentin</a>  Merci, regarde la courbe des visites du site ! </p>
+                            <div class="text-center m">
+                                <span id="sparkline8"></span>
+                            </div>
+                            <small class="block text-muted"><i class="fa fa-clock-o"></i> 2 hours ago</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Les derniers ajouts</h5>
+                    <div class="ibox-tools">
+                        <span class="label label-warning-light">10+</span>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div>
+                        <div class="feed-activity-list">
+                            <div class="feed-element">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="http://webapplayers.com/inspinia_admin-v2.0/img/profile.jpg">
+                                </a>
+                                <div class="media-body ">
+                                    <small class="pull-right">5m ago</small>
+                                    <strong>Sébastien</strong> a ajouté des données sur la carte mondiale <br>
+                                    <small class="text-muted">Today 5:60 pm - 12.06.2014</small>
+                                </div>
+                            </div>
+                            <div class="feed-element">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="http://webapplayers.com/inspinia_admin-v2.0/img/profile.jpg">
+                                </a>
+                                <div class="media-body ">
+                                    <small class="pull-right">2h ago</small>
+                                    <strong>Janet Rosowski</strong> a ajouté 1 photo <strong>Eleveur Peul au Cameroun</strong>. <br>
+                                    <small class="text-muted">2 days ago at 8:30am</small>
+                                    <div class="actions">
+                                        <a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i> Like </a>
+                                        <a class="btn btn-xs btn-white"><i class="fa fa-heart"></i> Love</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-block m-t"><i class="fa fa-arrow-down"></i> En voir plus</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Roadmap du site</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="#">Config option 1</a>
+                            </li>
+                            <li><a href="#">Config option 2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content ibox-heading">
+                    <h3>Mise en ligne !</h3>
+                    <small><i class="fa fa-map-marker"></i> Le site vient tout juste d'être mis en ligne. Retrouvez les avancées sur Github.</small>
+                </div>
+                <div class="ibox-content inspinia-timeline">
+                        <div class="timeline-item">
+                            <div class="row">
+                                <div class="col-xs-3 date">
+                                    <i class="fa fa-file-text"></i>
+                                    7:00 am
+                                    <br/>
+                                    <small class="text-navy">3 hour ago</small>
+                                </div>
+                                <div class="col-xs-7 content">
+                                    <p class="m-b-xs"><strong>Send documents to Mike</strong></p>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="row">
+                                <div class="col-xs-3 date">
+                                    <i class="fa fa-comments"></i>
+                                    12:50 pm
+                                    <br/>
+                                    <small class="text-navy">48 hour ago</small>
+                                </div>
+                                <div class="col-xs-7 content">
+                                    <p class="m-b-xs"><strong>Chat with Monica and Sandra</strong></p>
+                                    <p>
+                                        Web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                    </p>
+                                </div>
+                            </div> {# end row #}
+                        </div> {# end timeline-item #}
+                    </div> {# end inspinia-timeline #}
+                </div> {# end ibox float-e-margins #}
+            </div> {# end col-lg-4 #}
+    </div> {# end row #}
+{% endblock %}
+
+{% block footerclass %}
+    {{ parent() }}
+{% endblock %}
+{# Options du footerclass : "footer" "footer fixed" #}
+
+{% block plugins %}
+    {{ parent() }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+{% endblock %}
+
+{% block extrascripts %}
+    <script>
+        $(document).ready(function() {
+            setTimeout(function() {
+                toastr.options = {
+                    closeButton: true,
+                    progressBar: true,
+                    showMethod: 'slideDown',
+                    timeOut: 4000
+                };
+                toastr.info('Le site est en cours de construction merci de votre tolérance', 'Bienvenue');
+            }, 1300);
+        });
+    </script>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

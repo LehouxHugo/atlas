@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultures du Monde | {% block titre %}{% endblock %}</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://webapplayers.com/inspinia_admin-v2.0/css/style.css" rel="stylesheet">
+    <link href="http://webapplayers.com/inspinia_admin-v2.0/css/animate.css" rel="stylesheet">
+</head>
+<body class="gray-bg">
+<div class="middle-box text-center animated fadeInDown">
+    <h1>{% block numeroError %} 404 {% endblock %}</h1>
+
+    <h3 class="font-bold">{% block titleError %} Page introuvable {% endblock %}</h3>
+
+    <div class="error-desc">
+        {% block descError %} Désolé, mais la page que vous cherchez est introuvable. Essayez de vérifier l'URL, puis cliquez sur le bouton d'actualisation de votre navigateur. Le site est encore en cours de construction, ceci est peut-être dû à une erreur. {% endblock %}
+        <br/><a class="btn btn-primary" href="{{ path('adm_core_home') }}" role="button">Accueil</a>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -2,41 +2,646 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="702d6801-b4b0-4ff2-b52b-ce53304bbb9e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/SonataUserBundle/views/Block/account.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/SonataUserBundle/views/Profile/action.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/SonataUserBundle/views/Security/base_login.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/SonataUserBundle/views/ChangePassword/changePassword.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/SonataUserBundle/views/ChangePassword/changePassword_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/checkEmail.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/SonataUserBundle/views/Profile/edit_authentication.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/SonataUserBundle/views/Profile/edit_profile.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/email.txt.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/TwigBundle/views/Exception/error404.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/TwigBundle/views/Exception/error500.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/SonataUserBundle/views/Form/form_admin_fields.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/SonataUserBundle/views/Admin/Field/impersonating.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/SonataUserBundle/views/layout.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/SonataUserBundle/views/Admin/Security/login.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/SonataUserBundle/views/Security/login.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/passwordAlreadyRequested.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/SonataUserBundle/views/Registration/register_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/request.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/request_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/reset.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/reset_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/SonataUserBundle/views/Profile/show.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/SonataUserBundle/views/Admin/Security/two_step_form.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/SonataUserBundle/views/Admin/Core/user_block.html.twig" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\app\Resources\views\default\index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\AppBundle\AppBundle.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\AppBundle\Controller\DefaultController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\AppBundle\Tests\Controller\DefaultControllerTest.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/gallery/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/gallery/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/gallery/10s.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/gallery/11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/gallery/11s.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/gallery/12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/gallery/12s.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/mapbox/13-6-15rennes-web(1).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/mapbox/18-6-15tyanna-web2(1) (1).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/mapbox/18-6-15tyanna-web2(1).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/gallery/1s.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/gallery/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/gallery/2s.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/gallery/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/jsTree/32px.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/jsTree/39px.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/gallery/3s.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/gallery/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/jsTree/40px.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/gallery/4s.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/gallery/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/gallery/5s.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/gallery/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/gallery/6s.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/gallery/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/gallery/7s.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/gallery/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/gallery/8s.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/gallery/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/gallery/9s.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/patterns/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/mapbox/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/a1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/a2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/a3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/a4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/a5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/a6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/a7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/a8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/images/bootstrap-colorpicker/alpha-horizontal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/images/bootstrap-colorpicker/alpha.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/angular_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/jQueryUI/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/chosen/chosen-sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/chosen/chosen-sprite@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/patterns/congruent_pentagon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/dataTables/swf/copy_csv_xls.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/dataTables/swf/copy_csv_xls_pdf.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/dashbard4_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/dashbard4_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/email_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/email_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/email_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/blueimp/img/error.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/full_height.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/iCheck/green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/iCheck/green@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/gritter/images/gritter-light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/gritter/images/gritter-long.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/gritter/images/gritter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/patterns/header-profile-skin-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/patterns/header-profile-skin-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/patterns/header-profile-skin-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/patterns/header-profile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/email_templates/img/header.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/html_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/images/bootstrap-colorpicker/hue-horizontal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/images/bootstrap-colorpicker/hue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/gritter/images/ie-spacer.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/blueimp/img/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/justified-gallery/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/mvc_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/off_canvas.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/patterns/otis_redding.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/p1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/p2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/p3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/p4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/p5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/p6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/p7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/p8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/p_big1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/p_big2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/p_big3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/blueimp/img/play-pause.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/profile.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/profile_big.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/profile_small.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/rails_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/images/bootstrap-colorpicker/saturation.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/patterns/shattered.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/images/sort.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/images/sort_asc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/images/sort_desc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/images/sprite-skin-flat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/images/sprite-skin-flat2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/images/sprite-skin-nice.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/images/sprite-skin-simple.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/images/spritemap.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/images/spritemap@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/jsTree/throbber.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/patterns/triangular.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/jQueryUI/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/jQueryUI/images/ui-bg_flat_75_ffffff_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/images/ui-bg_flat_75_ffffff_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/jQueryUI/images/ui-bg_glass_55_fbf9ee_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/images/ui-bg_glass_55_fbf9ee_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/jQueryUI/images/ui-bg_glass_65_ffffff_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/images/ui-bg_glass_65_ffffff_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/jQueryUI/images/ui-bg_glass_75_dadada_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/images/ui-bg_glass_75_dadada_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/jQueryUI/images/ui-bg_glass_75_e6e6e6_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/images/ui-bg_glass_75_e6e6e6_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/jQueryUI/images/ui-bg_glass_95_fef1ec_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/images/ui-bg_glass_95_fef1ec_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/jQueryUI/images/ui-bg_highlight-soft_75_cccccc_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/images/ui-bg_highlight-soft_75_cccccc_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/jQueryUI/images/ui-icons_222222_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/images/ui-icons_222222_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/jQueryUI/images/ui-icons_2e83ff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/images/ui-icons_2e83ff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/jQueryUI/images/ui-icons_454545_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/images/ui-icons_454545_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/jQueryUI/images/ui-icons_888888_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/images/ui-icons_888888_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/jQueryUI/images/ui-icons_cd0a0a_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/images/ui-icons_cd0a0a_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/blueimp/img/video-play.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/zender_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/ADMCoreBundle.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/DependencyInjection/ADMCoreExtension.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/BasicLayout.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/diff_match_patch/COPYING" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/chartJs/Chart.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/DependencyInjection/Configuration.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Controller/CoreController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Tests/Controller/DefaultControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/ExceptionsLayout.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/OffCanvasLayout.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/OutlookLayout.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/justified-gallery/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/diff_match_patch/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/scss/_animated.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/scss/_bordered-pulled.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/scss/_core.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/scss/_fixed-width.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/scss/_icons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/scss/_larger.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/scss/_list.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/scss/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/scss/_path.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/scss/_rotated-flipped.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/scss/_stacked.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/scss/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/email_templates/action.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/email_templates/alert.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/codemirror/ambiance.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/animate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/less/animated.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/apl/apl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/asterisk/asterisk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/dropzone/basic.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/email_templates/billing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/blueimp/css/blueimp-gallery-indicator.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/blueimp/css/blueimp-gallery-video.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/blueimp/css/blueimp-gallery.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/blueimp/css/blueimp-gallery.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/colorpicker/bootstrap-colorpicker.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/colorpicker/bootstrap-colorpicker.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/datapicker/bootstrap-datepicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/bootstrap-rtl/bootstrap-rtl.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/bootstrap-rtl/bootstrap-rtl.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/bootstrap-rtl/bootstrap-rtl.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/less/bordered-pulled.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/demo/chartjs-demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Plugins/chatbox.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/chosen/chosen.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/chosen/chosen.jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/clike/clike.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/clojure/clojure.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/cobol/cobol.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/codemirror/codemirror.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/codemirror.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/coffeescript/coffeescript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/commonlisp/commonlisp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/less/core.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/cropper/cropper.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/cropper/cropper.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/css/css.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/flot/curvedLines.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/iCheck/custom.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/cypher/cypher.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/d/d.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/rickshaw/vendor/d3.v3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/demo/dashboard-demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/dataTables/dataTables.bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/dataTables/dataTables.bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/dataTables/dataTables.responsive.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/dataTables/dataTables.responsive.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/dataTables/dataTables.tableTools.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/dataTables/dataTables.tableTools.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/datapicker/datepicker3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/blueimp/css/demo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/diff/diff.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/diff_match_patch/javascript/diff_match_patch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/django/django.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/dropzone/dropzone.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/dropzone/dropzone.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/dtd/dtd.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/dylan/dylan.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/easypiechart/easypiechart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/ecl/ecl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/eiffel/eiffel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/erlang/erlang.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/blueimp/img/error.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/flot/excanvas.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/less/fixed-width.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/demo/flot-demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/demo/flot-demo2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/less/font-awesome.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/scss/font-awesome.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/fortran/fortran.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/fullcalendar/fullcalendar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/fullcalendar/fullcalendar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/fullcalendar/fullcalendar.print.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/gas/gas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/gfm/gfm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/gherkin/gherkin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/go/go.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-bg1251.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-cat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-dk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-hr1250.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-kr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-mne.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-pt-br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-sr-latin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-sr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-tw.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-ua.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/i18n/grid.locale-vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/groovy/groovy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/haml/haml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/haskell/haskell.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/haxe/haxe.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/htmlembedded/htmlembedded.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/htmlmixed/htmlmixed.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/http/http.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/iCheck/icheck.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/less/icons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/idle-timer/idle-timer.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Core/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/apl/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/asterisk/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/clike/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/clojure/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/cobol/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/coffeescript/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/commonlisp/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/css/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/cypher/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/d/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/diff/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/django/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/dtd/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/dylan/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/ecl/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/eiffel/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/erlang/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/fortran/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/gas/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/gfm/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/gherkin/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/go/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/groovy/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/haml/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/haskell/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/haxe/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/htmlembedded/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/htmlmixed/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/http/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/jade/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/javascript/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/jinja2/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/julia/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/kotlin/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/livescript/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/lua/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/markdown/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/mirc/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/mllike/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/modelica/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/nginx/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/ntriples/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/octave/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/pascal/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/pegjs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/perl/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/php/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/pig/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/properties/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/puppet/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/python/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/q/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/r/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/rpm/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/rpm/changes/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/rst/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/ruby/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/rust/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/sass/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/scheme/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/shell/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/sieve/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/slim/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/smalltalk/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/smarty/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/smartymixed/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/solr/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/sparql/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/sql/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/stex/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/tcl/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/textile/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/tiddlywiki/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/tiki/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/toml/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/tornado/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/turtle/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/vb/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/vbscript/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/velocity/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/verilog/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/xml/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/xquery/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/yaml/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/z80/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/doc/index.rst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/inspinia.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/ionRangeSlider/ion.rangeSlider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/ionRangeSlider/ion.rangeSlider.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/ionRangeSlider/ion.rangeSlider.skinNice.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/ionRangeSlider/ion.rangeSlider.skinSimple.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/jade/jade.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/jasny/jasny-bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jasny/jasny-bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/javascript/javascript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/jinja2/jinja2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/jquery-2.1.1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/jQueryUI/jquery-ui-1.10.4.custom.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/jquery-ui-1.10.4.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery-ui-i18n.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/jquery-ui.custom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/jquery-ui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/jquery-ui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/blueimp/jquery.blueimp-gallery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/dataTables/jquery.dataTables.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/easypiechart/jquery.easypiechart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/flot/jquery.flot.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/flot/jquery.flot.pie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/flot/jquery.flot.resize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/flot/jquery.flot.spline.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/flot/jquery.flot.symbol.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/flot/jquery.flot.time.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/flot/jquery.flot.tooltip.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/gritter/jquery.gritter.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/gritter/jquery.gritter.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jeditable/jquery.jeditable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jqGrid/jquery.jqGrid.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/justified-gallery/jquery.justifiedgallery.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/justified-gallery/jquery.justifiedgallery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/justified-gallery/jquery.justifiedgallery.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/justified-gallery/jquery.justifiedgallery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jsKnob/jquery.knob.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/metisMenu/jquery.metisMenu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/nestable/jquery.nestable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/nouslider/jquery.nouislider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/nouslider/jquery.nouislider.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/peity/jquery.peity.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/preetyTextDiff/jquery.pretty-text-diff.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/slimscroll/jquery.slimscroll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/slimscroll/jquery.slimscroll.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/sparkline/jquery.sparkline.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/steps/jquery.steps.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/staps/jquery.steps.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-af.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-ar-DZ.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-ar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-az.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-be.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-bg.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-bs.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-ca.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-cs.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-cy-GB.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-da.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-de.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-el.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-en-AU.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-en-GB.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-en-NZ.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-eo.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-es.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-et.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-eu.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-fa.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-fi.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-fo.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-fr-CA.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-fr-CH.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-fr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-gl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-he.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-hi.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-hr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-hu.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-hy.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-id.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-is.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-it.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-ja.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-ka.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-kk.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-km.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-ko.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-ky.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-lb.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-lt.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-lv.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-mk.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-ml.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-ms.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-nb.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-nl-BE.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-nl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-nn.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-no.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-pl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-pt-BR.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-pt.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-rm.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-ro.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-ru.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-sk.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-sl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-sq.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-sr-SR.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-sr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-sv.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-ta.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-th.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-tj.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-tr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-uk.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-vi.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-zh-CN.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-zh-HK.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jquery-ui/i18n/jquery.ui.datepicker-zh-TW.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/validate/jquery.validate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/javascript/json-ld.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/jsTree/jstree.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/julia/julia.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/kotlin/kotlin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/less/larger.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/css/less.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/css/less_test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/less/list.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/livescript/livescript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/lua/lua.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/mapbox/mapbox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/mapbox/mapbox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/markdown/markdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/translations/messages.fr.xlf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/meta.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/mirc/mirc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/less/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/mllike/mllike.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/modelica/modelica.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/fullcalendar/moment.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/morris/morris-0.4.3.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/demo/morris-demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/morris/morris.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Common/navbar-menus.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Common/navbar-profile.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/nginx/nginx.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/normalize.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/npm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/ntriples/ntriples.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/octave/octave.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/pace/pace.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/pascal/pascal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/less/path.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/pegjs/pegjs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/demo/peity-demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/perl/perl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/php/php.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/pig/pig.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/blueimp/img/play-pause.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/properties/properties.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/puppet/puppet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/python/python.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/q/q.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/r/r.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/morris/raphael-2.1.0.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/video/responsible-video.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/demo/rickshaw-demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/rickshaw/rickshaw.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Plugins/right-sidebar.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/less/rotated-flipped.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/config/routing.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/rpm/rpm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/rst/rst.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/ruby/ruby.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/rust/rust.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/sass/sass.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/clike/scala.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/scheme/scheme.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/css/scss.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/css/scss_test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/config/services.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/shell/shell.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/sieve/sieve.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/slim/slim.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/smalltalk/smalltalk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/smarty/smarty.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/smartymixed/smartymixed.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/social-buttons/social-buttons.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/solr/solr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/demo/sparkline-demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/sparql/sparql.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/sql/sql.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/less/stacked.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/stex/stex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/jsTree/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/jsTree/style.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/email_templates/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/summernote/summernote-bs3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/summernote/summernote.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/summernote/summernote.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/switchery/switchery.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/switchery/switchery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/tcl/tcl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/css/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/gfm/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/haml/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/javascript/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/markdown/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/php/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/ruby/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/shell/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/slim/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/stex/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/textile/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/verilog/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/xml/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/xquery/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/textile/textile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/tiddlywiki/tiddlywiki.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/tiddlywiki/tiddlywiki.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/tiki/tiki.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/tiki/tiki.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/tinycon/tinycon.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/toastr/toastr.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/toastr/toastr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/toml/toml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Common/topnav.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/tornado/tornado.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/turtle/turtle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/javascript/typescript.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/jqGrid/ui.jqgrid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/font-awesome/less/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/vb/vb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/vbscript/vbscript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/velocity/velocity.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/verilog/verilog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/plugins/blueimp/img/video-play.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/xml/xml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/xquery/xquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/yaml/yaml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/codemirror/mode/z80/z80.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing_dev.yml" afterPath="$PROJECT_DIR$/app/config/routing_dev.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="atlas.iws" />
@@ -62,11 +667,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AppKernel.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AppKernel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.55498284" vertical-offset="114" max-vertical-offset="1216">
-              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+            <state vertical-scroll-proportion="-15.2" vertical-offset="228" max-vertical-offset="1216">
+              <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultControllerTest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Tests/Controller/DefaultControllerTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.8" vertical-offset="0" max-vertical-offset="437">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CoreController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Controller/CoreController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="665">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -87,6 +722,7 @@
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/app/config/routing_dev.yml" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
       </list>
     </option>
@@ -153,61 +789,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -221,9 +817,11 @@
     <property name="options.lastSelected" value="Symfony2.SettingsForm" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\atlas\src\ADM" />
       <recent name="C:\xampp\htdocs\atlas\app\Resources" />
     </key>
   </component>
@@ -242,15 +840,23 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="702d6801-b4b0-4ff2-b52b-ce53304bbb9e" name="Default" comment="" />
@@ -262,29 +868,29 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -308,11 +914,26 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="1216">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -320,7 +941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15650742" vertical-offset="0" max-vertical-offset="607">
           <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -328,7 +948,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.93739706" vertical-offset="343" max-vertical-offset="1026">
           <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -336,7 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.95791245" vertical-offset="1882" max-vertical-offset="2565">
           <caret line="129" column="0" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -344,7 +962,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5223368" vertical-offset="0" max-vertical-offset="1539">
           <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -352,7 +969,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -360,9 +976,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="684">
           <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
-          <folding>
-            <marker date="1434808208857" expanded="true" signature="-1:-1" placeholder="role_hierarchy:" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -370,7 +983,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -378,7 +990,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -386,7 +997,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -394,7 +1004,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -402,14 +1011,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.4" vertical-offset="0" max-vertical-offset="3420">
           <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3756178" vertical-offset="0" max-vertical-offset="607">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Tests/Controller/DefaultControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.8" vertical-offset="0" max-vertical-offset="437">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Controller/CoreController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="665">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55498284" vertical-offset="114" max-vertical-offset="1216">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        <state vertical-scroll-proportion="-15.2" vertical-offset="228" max-vertical-offset="1216">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

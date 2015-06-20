@@ -31,7 +31,7 @@ class AppKernel extends Kernel
             new Sonata\AdminBundle\SonataAdminBundle(),
             new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
             // Core Bundle
-            //new ADM\CoreBundle\ADMCoreBundle(),
+            new ADM\CoreBundle\ADMCoreBundle(),
             // Cartographie
             //new ADM\MapBundle\ADMLeafletBundle(),
             // Rapports d'études et de stages

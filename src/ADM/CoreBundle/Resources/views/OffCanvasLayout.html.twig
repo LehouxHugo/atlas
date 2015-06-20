@@ -1,0 +1,104 @@
+{# OffCanvas Layout | http://webapplayers.com/inspinia_admin-v2.1/off_canvas_menu.html #}
+{% extends "::base.html.twig" %}
+
+{% block title %}
+    Off Canvas Layout
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+{% block extraheadcontent %}
+{% endblock %}
+
+{% block bodyclass %}
+    "skin-3 canvas-menu fixed-sidebar"
+{% endblock %}
+{# Options du bodyclass : "skin-1"  "skin-2" "skin-3" "mini-navbar" "fixed-sidebar" : dans ce cas ne pas oublier d'ajouter le script slimScroll qui se trouve dans js/inspinia.js file et décommenter le Fixed Sidebar comment and uncomment function et ajouter <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+"fixed-nav" : dans ce cas mettre navbar-fixed-top si body class = fixed-nav dans <nav>   En mettant mini-navbar ET fixed-sidebar ET fixed-nav, on ne voit plus du tout la barre de navigation de gauche et la barre du haut devient fixe (pour Rapports de stage peut-être), "canvas-menu"pour le OffCanvasLayout #}
+
+{% block closeNavbar %}
+    <a class="close-canvas-menu"><i class="fa fa-times"></i></a>
+{% endblock %}
+{# Ajouter <a class="close-canvas-menu"><i class="fa fa-times"></i></a> si bodyclass=canvas-menu #}
+
+{% block menus %}
+ {{ parent() }}
+{% endblock %}
+
+{% block pagewrapperclass %}
+ {{ parent() }}
+{% endblock %}
+{# Options du pagewrapperclass : "gray-bg" "gray-bg dashboard-1" mais ça a pas l'air de servir grand chose "gray-bg sidebar-content" ajoute une jolie barre sur la droite  (peut-être pour mettre le sommaire des rapports). Par contre pas toujours terrible pour les téléphones car elle est prioritaireIl faut créer un <div class="sidebard-panel">. Voir exemple #}
+
+{% block navbarclass %}
+ {{ parent() }}
+{% endblock %}
+{# "navbar navbar-static-top" ou "navbar-fixed-top" si body class = fixed-nav #}
+
+{% block topnav %}
+ {{ parent() }}
+{% endblock %}
+
+{# On met soit le block dashboardheader ou pageheading mais pas les deux, on peut aussi les enlever tous les deux. Je mets du contenu pour l'exemple #}
+{% block dashboardheader %}
+    <div id="dashboard-header" class="row  border-bottom white-bg dashboard-header">
+        <div class="col-sm-12">
+            Bienvenue !
+        </div>
+    </div>
+{% endblock %}
+
+{% block pageheading %}
+    <div id="page-heading" class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-10">
+            {% block breadcrumb %}
+                <h2>Diagnostic Agraire</h2>
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="#">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="#">Rapports</a>
+                    </li>
+                    <li class="active">
+                        <strong>Diagnostic Agraire</strong>
+                    </li>
+                </ol>
+            {% endblock %}
+        </div>
+        <div class="col-lg-2">
+        </div>
+    </div>
+{% endblock %}
+
+{% block wrappercontentclass %}
+    "wrapper wrapper-content animated fadeInRight article"
+{% endblock %}
+{# Options du pagewrapperclass : "wrapper wrapper-content" "wrapper wrapper-content animated fadeInRight" voire "wrapper wrapper-content animated fadeInRight article" pour faire apparaître le contenu de façon un peu dynamique (voir animate.css pour toutes les options) #}
+
+{% block pagecontent %}
+{% endblock %}
+
+{% block footerclass %}
+    {{ parent() }}
+{% endblock %}
+{# Options du footerclass : "footer" "footer fixed" #}
+
+{% block plugins %}
+    {{ parent() }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+{% endblock %}
+
+{% block extrascripts %}
+    <script type="text/javascript">
+        $('body.canvas-menu .sidebar-collapse').slimScroll({
+            height: '100%',
+            railOpacity: 0.9
+        });
+    </script>
+{% endblock %}

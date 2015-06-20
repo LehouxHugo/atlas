@@ -1,0 +1,15 @@
+adm_core_home:
+    path:     /
+    defaults: { _controller: ADMCoreBundle:Core:index }
+
+test_basic_layout:
+    path:     /test/basiclayout
+    defaults: { _controller: ADMCoreBundle:Core:testBasicLayout }
+
+test_off_canvas_layout:
+    path:     /test/offcanvaslayout
+    defaults: { _controller: ADMCoreBundle:Core:testOffCanvasLayout }
+
+test_outlook_layout:
+    path:     /test/outlooklayout
+    defaults: { _controller: ADMCoreBundle:Core:testOutlookLayout }
