@@ -3,6 +3,7 @@
 namespace ADM\ReportsBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * Report
@@ -12,6 +13,13 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Report
 {
+    public function __construct()
+    {
+        $this->dateCreated = new \Datetime();
+        $this->datePublished = new \Datetime();
+        $this->dateModified = new \Datetime();
+    }
+
     /**
      * @var integer
      *
@@ -27,6 +35,13 @@ class Report
      * @ORM\Column(name="name", type="string", length=255)
      */
     private $name;
+
+    /**
+     * @Gedmo\Slug(fields={"name"})
+     * @ORM\Column(length=128, unique=true)
+     */
+    private $slug;
+
 
     /**
      * @var \DateTime
@@ -270,5 +285,28 @@ class Report
     public function getPublished()
     {
         return $this->published;
+    }
+
+    /**
+     * Set slug
+     *
+     * @param string $slug
+     * @return Report
+     */
+    public function setSlug($slug)
+    {
+        $this->slug = $slug;
+
+        return $this;
+    }
+
+    /**
+     * Get slug
+     *
+     * @return string 
+     */
+    public function getSlug()
+    {
+        return $this->slug;
     }
 }
