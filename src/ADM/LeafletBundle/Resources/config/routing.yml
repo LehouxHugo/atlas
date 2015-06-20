@@ -1,0 +1,7 @@
+adm_leaflet_worldmap:
+    path:     /map
+    defaults: { _controller: ADMLeafletBundle:Map:viewWorldMap }
+
+adm_leaflet_worldmaptest:
+    path:     /maptest
+    defaults: { _controller: ADMLeafletBundle:Map:viewWorldMapTest }

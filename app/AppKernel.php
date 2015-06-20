@@ -33,7 +33,7 @@ class AppKernel extends Kernel
             // Core Bundle
             new ADM\CoreBundle\ADMCoreBundle(),
             // Cartographie
-            //new ADM\MapBundle\ADMLeafletBundle(),
+            new ADM\LeafletBundle\ADMLeafletBundle(),
             // Rapports d'études et de stages
             new ADM\ReportsBundle\ADMReportsBundle(),
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),

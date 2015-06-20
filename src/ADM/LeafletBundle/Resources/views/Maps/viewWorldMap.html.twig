@@ -1,0 +1,71 @@
+{% extends "ADMLeafletBundle::layout.html.twig" %}
+
+{% block extraheadcontent %}
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css' rel='stylesheet' />
+
+  <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css' rel='stylesheet' />
+  <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css' rel='stylesheet' />
+
+  <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-zoomslider/v0.7.0/L.Control.Zoomslider.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-zoomslider/v0.7.0/L.Control.Zoomslider.css' rel='stylesheet' />
+
+  <style type="text/css">
+    #map{
+      width: 100%;
+      height: calc(100vh - 60px);
+    }
+  </style>
+
+  <style>
+    /* Adjustments to account for mapbox.css box-sizing rules */
+    .leaflet-control-zoomslider-knob { width:14px; height:6px; }
+    .leaflet-container .leaflet-control-zoomslider-body {
+      -webkit-box-sizing:content-box;
+      -moz-box-sizing:content-box;
+      box-sizing:content-box;
+    }
+  </style>
+{% endblock %}
+
+{% block pagecontent %}
+  <div id='map'></div>
+{% endblock %}
+
+{% block extrascripts %}
+  <script>
+    L.mapbox.accessToken = 'pk.eyJ1IjoiaHVnb2xlaG91eCIsImEiOiItOHl6Sm5jIn0.12l_k0K_Z28UE-Jc0kDgpw';
+
+
+    var geojson = [
+    {% for report in listReports %}
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [{{ report.longitude }},{{ report.latitude}}]
+      },
+      "properties": {
+        "title": "{{ report.title }}",
+        "marker-color": "#fc4353",
+        "marker-size": "large",
+        "marker-symbol": "monument",
+        url: '{{ path('adm_report_read', { 'slug': report.slug }) }}'
+      }
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+    ];
+
+    var map = L.mapbox.map('map', 'examples.map-igb471ik', { zoomControl: false }).setView([18, 22.5], 2)
+    L.control.zoomslider().addTo(map);
+    var markers = L.markerClusterGroup();
+    var geoJsonLayer = L.geoJson(geojson);
+    markers.addLayer(geoJsonLayer);
+    map.addLayer(markers);
+    markers.on('click', function(e) {
+      window.open(e.layer.feature.properties.url);
+    });
+
+  </script>
+{% endblock %}
