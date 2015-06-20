@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Atlas | Forgot password</title>
+
+    {% block stylesheets %}
+        {% stylesheets output="css/compiled/register.css" filter="cssrewrite"
+        'bundles/admcore/css/normalize.css'
+        'bundles/admcore/css/bootstrap.min.css'
+        'bundles/admcore/css/style.css'
+        'bundles/admcore/css/animate.css'
+        'bundles/admcore/font-awesome/css/font-awesome.css'
+        %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+    {% endblock %}
+
+</head>
+
+<body class="gray-bg">
+
+    <div class="passwordBox animated fadeInDown">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ibox-content">
+                    <h2 class="font-bold">Mot de passe</h2>
+                    <p>{{ 'resetting.check_email'|trans({'%email%': email}, 'FOSUserBundle') }}</p>
+                    <div class="form-group">
+                        <a href="{{ path('adm_core_home') }}"><small>Retour à l'accueil</small></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<hr/>
+<div class="row">
+    <div class="col-md-6">
+        Hugo Lehoux
+    </div>
+    <div class="col-md-6 text-right">
+     <small>© 2014-2015</small>
+ </div>
+</div>
+</div>
+{% block javascripts %}
+    {% javascripts
+    '@ADMCoreBundle/Resources/public/js/jquery-2.1.1.js'
+    '@ADMCoreBundle/Resources/public/js/bootstrap.min.js'
+    '@ADMCoreBundle/Resources/public/js/inspinia.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/jquery-ui/jquery-ui.min.js'
+    output='js/compiled/register.js'
+    %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}
+</body>
+
+</html>
+
+
+
+
+
+
+
