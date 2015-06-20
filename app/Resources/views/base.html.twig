@@ -1,13 +1,174 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agricultures du Monde | {% block title %}{% endblock %}</title>
+
+    {% block stylesheets %}
+        {% stylesheets output="css/compiled/base.css" filter="cssrewrite"
+        'bundles/admcore/css/bootstrap.min.css'
+        'bundles/admcore/font-awesome/css/font-awesome.css'
+        'bundles/admcore/css/style.css'
+        'bundles/admcore/css/animate.css'
+        'bundles/admcore/css/plugins/toastr/toastr.min.css'
+        %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+    {% endblock %}
+
+    {% block extraheadcontent %}
+    {% endblock %}
+</head>
+
+<body class={% block bodyclass %}"skin-3"{% endblock %}>
+{# Options du bodyclass :
+        "no-skin-config"
+        "skin-1"
+        "skin-2"
+        "skin-3"
+        "mini-navbar"
+        "fixed-sidebar" : dans ce cas ne pas oublier d'ajouter le script slimScroll qui se trouve dans js/inspinia.js file et décommenter le Fixed Sidebar comment and uncomment function et ajouter <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+        "fixed-nav" : dans ce cas mettre navbar-fixed-top si body class = fixed-nav dans <nav>
+        En mettant mini-navbar ET fixed-sidebar ET fixed-nav, on ne voit plus du tout la barre de navigation de gauche et la barre du haut devient fixe (pour Rapports de stage peut-être)
+        "canvas-menu"pour le OffCanvasLayout
+        "full-height-layout" pour le Outlook
+        #}
+        <div id="wrapper">
+            <nav class="navbar-default  navbar-static-side" role="navigation">
+                <div class="sidebar-collapse">
+                    {% block closeNavbar %}
+                    {% endblock %}
+                    {# Ajouter <a class="close-canvas-menu"><i class="fa fa-times"></i></a> si bodyclass=canvas-menu #}
+                    <ul class="nav" id="side-menu">
+                        {# Cet include correspond au carré avec le profil de l'utilisateur #}
+                        {% include 'ADMCoreBundle:Common:navbar-profile.html.twig' %}
+                        {% block menus %}
+                            {# Cet include correspond aux menus de gauche #}
+                            {% include 'ADMCoreBundle:Common:navbar-menus.html.twig' %}
+                        {% endblock %}
+                    </ul>
+                </div>
+            </nav>
+            <div id="page-wrapper" class={% block pagewrapperclass %}"gray-bg"{% endblock %}>
+                {# Options du pagewrapperclass :
+                "gray-bg"
+                "gray-bg dashboard-1" mais ça a pas l'air de servir grand chose
+                "gray-bg sidebar-content" ajoute une jolie barre sur la droite  (peut-être pour mettre le sommaire des rapports). Par contre pas toujours terrible pour les téléphones car elle est prioritaireIl faut créer un <div class="sidebard-panel">. Voir exemple
+                #}
+                <div class="row border-bottom">
+                    <nav class={% block navbarclass %}"navbar navbar-static-top"{% endblock %} {# navbar navbar-static-top ou navbar navbar-fixed-top si body class = fixed-nav  #} role="navigation" style="margin-bottom: 0">
+                        <div class="navbar-header">
+                            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                        </div>
+                        {% block topnav %}
+                            {# Cet include correspond aux menus du haut #}
+                            {% include 'ADMCoreBundle:Common:topnav.html.twig' %}
+                        {% endblock %}
+                    </nav>
+                </div>
+                {# On met soit le block dashboardheader ou pageheading mais pas les deux, on peut aussi les enlever tous les deux. Je mets du contenu pour l'exemple #}
+                {% block dashboardheader %}
+                    <div id="dashboard-header" class="row  border-bottom white-bg dashboard-header">
+                        <div class="col-sm-12">
+                            Bienvenue !
+                        </div>
+                    </div>
+                {% endblock %}
+                {% block pageheading %}
+                    <div id="page-heading" class="row wrapper border-bottom white-bg page-heading" {% block pageheadingstyle %}{% endblock %}>
+                        <div class="col-lg-10">
+                            {% block breadcrumb %}
+                                <h2>Diagnostic Agraire</h2>
+                                <ol class="breadcrumb">
+                                    <li>
+                                        <a href="#">Accueil</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Rapports</a>
+                                    </li>
+                                    <li class="active">
+                                        <strong>Diagnostic Agraire</strong>
+                                    </li>
+                                </ol>
+                            {% endblock %}
+                        </div>
+                        <div class="col-lg-2">
+                        </div>
+                    </div>
+                {% endblock %}
+                {# Début Page Content #}
+                <div class="row">
+                    <div class={% block wrappercontentclass %}"wrapper wrapper-content"{% endblock %}>
+                     {# Options du pagewrapperclass :
+                        "wrapper wrapper-content"
+                        "wrapper wrapper-content animated fadeInRight" pour faire apparaître le contenu de façon un peu dynamique (voir animate.css pour toutes les options)
+                        "wrapper wrapper-content animated fadeInRight article"
+                        "fh-breadcrumb"
+                        #}
+                        {% block pagecontent %}
+                        {% endblock %}
+                    </div>
+                </div>
+                {# Fin Page Content #}
+                <div class="row">
+                    <div class={% block footerclass %}"footer"{% endblock %} style="z-index: 9998;">
+                     {# Options du footerclass :
+                        "footer"
+                        "footer fixed"
+                        #}
+                        <div class="pull-right">
+                            Atlas Numérique des Agricultures du Monde <strong>{{ licence }}</strong>.
+                        </div>
+                        <div>
+                            <strong>Copyright</strong> {{ owner }} &copy; 2014-{{ "now" | date("Y")}}
+                        </div>
+                    </div>
+                </div>
+
+            </div> {# end page wrapper #}
+
+            {% block plugins %}
+                {# Fenêtre de Chat #}
+                {% include 'ADMCoreBundle:Plugins:chatbox.html.twig' %}
+                {# Fenêtre d'options à droite #}
+                {% include 'ADMCoreBundle:Plugins:right-sidebar.html.twig' %}
+            {% endblock %}
+        </div> {# end full wrapper #}
+
+        {% block javascripts %}
+            {% javascripts
+            '@ADMCoreBundle/Resources/public/js/jquery-2.1.1.js'
+            '@ADMCoreBundle/Resources/public/js/bootstrap.min.js'
+            '@ADMCoreBundle/Resources/public/js/plugins/metisMenu/jquery.metisMenu.js'
+            '@ADMCoreBundle/Resources/public/js/plugins/pace/pace.min.js'
+            '@ADMCoreBundle/Resources/public/js/inspinia.js'
+            '@ADMCoreBundle/Resources/public/js/plugins/toastr/toastr.min.js'
+            '@ADMCoreBundle/Resources/public/js/plugins/slimscroll/jquery.slimscroll.min.js'
+            '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.js'
+            '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.tooltip.min.js'
+            '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.spline.js'
+            '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.resize.js'
+            '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.pie.js'
+            '@ADMCoreBundle/Resources/public/js/plugins/peity/jquery.peity.min.js'
+            '@ADMCoreBundle/Resources/public/js/demo/peity-demo.js'
+            '@ADMCoreBundle/Resources/public/js/plugins/jquery-ui/jquery-ui.min.js'
+            '@ADMCoreBundle/Resources/public/js/plugins/sparkline/jquery.sparkline.min.js'
+            '@ADMCoreBundle/Resources/public/js/demo/sparkline-demo.js'
+            '@ADMCoreBundle/Resources/public/js/plugins/chartJs/Chart.min.js'
+            output='js/compiled/base.js'
+            %}
+            <script type="text/javascript" src="{{ asset_url }}"></script>
+            {% endjavascripts %}
+        {% endblock %}
+        {% block extrascripts %}
+            <script type="text/javascript">
+                $('body.canvas-menu .sidebar-collapse').slimScroll({
+                    height: '100%',
+                    railOpacity: 0.9
+                });
+            </script>
+        {% endblock %}
     </body>
-</html>
+    </html>
