@@ -35,10 +35,11 @@ class AppKernel extends Kernel
             // Cartographie
             //new ADM\MapBundle\ADMLeafletBundle(),
             // Rapports d'études et de stages
-            //new ADM\ReportBundle\ADMReportsBundle(),
+            new ADM\ReportsBundle\ADMReportsBundle(),
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
             // Mini-Calendrier
             new SC\DatetimepickerBundle\SCDatetimepickerBundle(),
+
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

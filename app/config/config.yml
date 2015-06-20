@@ -38,7 +38,7 @@ twig:
 assetic:
     debug:          "%kernel.debug%"
     use_controller: false
-    bundles:        ['ADMCoreBundle', 'FOSUserBundle', 'ADMUserBundle', 'ADMLeafletBundle','ADMReportsBundle','SonataAdminBundle','SonataUserBundle']
+    bundles:        ['ADMCoreBundle', 'FOSUserBundle', 'ADMUserBundle','SonataAdminBundle','SonataUserBundle']
     #java: /usr/bin/java
     filters:
         cssrewrite: ~
