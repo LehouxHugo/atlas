@@ -89,17 +89,18 @@
                     {{ form_errors(form) }}
                     <div class="form-group" >
                         <label>Titre</label>
-                        {{ form_widget(form.title, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_widget(form.name, {'attr': {'class': 'form-control'}}) }}
                     </div>
-                    <div class="form-group" >
+                    {# <div class="form-group" >
                         <label>Auteurs</label>
                         {{ form_widget(form.authors, {'attr': {'class': 'form-control'}}) }}
 
                     </div>
+                    #}
                     <div class="form-group" >
                         <label>Année de l'étude</label>
                         <div class="input-group date">
-                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>{{ form_widget(form.yearStudy, {'attr': {'class': 'form-control'}}) }}
+                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>{{ form_widget(form.dateCreated, {'attr': {'class': 'form-control'}}) }}
                         </div>
                     </div>
                     <h2>
@@ -109,7 +110,7 @@
                     {{ form_row(form.longitude) }}
                     {{ form_row(form.published) }}
 
-                {{ form_widget(form.content, {'attr': {'class': 'form-control'}}) }}
+                {{ form_widget(form.articleBody, {'attr': {'class': 'form-control'}}) }}
                 <hr>
                 {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}
                 {{ form_rest(form) }}

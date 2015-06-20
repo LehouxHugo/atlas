@@ -1,7 +1,7 @@
+# ADMReportsbundle
 adm_reports:
-    resource: "@ADMReportsBundle/Controller/"
-    type:     annotation
-    prefix:   /
+    resource: "@ADMReportsBundle/Resources/config/routing.yml"
+    prefix:   /reports
 
 # ADMCorebundle
 adm_core:

@@ -16,24 +16,21 @@ class ReportController extends Controller
 
         $form = $this->get('form.factory')->createBuilder('form', $report)
             ->add('name', 'text')
-            ->add('dateCreated', 'collot_datetime',
-                array( 'pickerOptions' =>
+            ->add('dateCreated', 'collot_datetime', array( 'pickerOptions' =>
                     array('format' => 'yyyy',
+                        'weekStart' => 0,
                         'endDate' => date('Y'),
-                        'autoclose' => false,
+                        'autoclose' => true,
                         'startView' => 'decade',
                         'minView' => 'decade',
                         'maxView' => 'decade',
-                        'todayBtn' => false,
-                        'todayHighlight' => false,
                         'keyboardNavigation' => true,
                         'language' => 'fr',
                         'forceParse' => true,
-                        'minuteStep' => 5,
-                        'pickerReferer ' => 'default', //deprecated
                         'pickerPosition' => 'bottom-right',
                         'viewSelect' => 'decade',
                         'showMeridian' => false,
+                        'initialDate' => date('Y'),
                     )))
             ->add('articleBody', 'textarea', array('required'=>false))
             ->add('latitude', 'number')
@@ -57,9 +54,6 @@ class ReportController extends Controller
                 'form' => $form->createView(),
             ));
     }
-
-
-
 
     public function readAction(Report $report)
     {

@@ -1,11 +1,8 @@
-adm_reports_homepage:
-    path:     /
-    defaults: { _controller: ADMReportsBundle:Default:index }
+adm_report_create:
+    path:     /ajouter
+    defaults: { _controller: ADMReportsBundle:Report:create }
 
 adm_report_read:
     path:     /{slug}
     defaults: { _controller: ADMReportsBundle:Report:read }
 
-adm_report_add:
-    path:     /ajouter
-    defaults: { _controller: ADMReportsBundle:Report:create }
