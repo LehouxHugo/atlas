@@ -4,6 +4,7 @@ namespace ADM\ReportsBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Report
@@ -13,6 +14,14 @@ use Gedmo\Mapping\Annotation as Gedmo;
  */
 class Report
 {
+    public function __construct()
+    {
+        $this->dateCreated = new \Datetime();
+        $this->datePublished = new \Datetime();
+        $this->dateModified = new \Datetime();
+        $this->authors = new  ArrayCollection();
+    }
+
     /**
      * @var integer
      *
@@ -56,6 +65,12 @@ class Report
      * @ORM\Column(name="dateModified", type="datetime")
      */
     private $dateModified;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="ADM\UserBundle\Entity\Report", inversedBy="reports")
+     * @ORM\JoinTable(name="report_author")
+     **/
+    private $authors;
 
     /**
      * @var string
@@ -279,4 +294,28 @@ class Report
     {
         return $this->published;
     }
+
+    /**
+     * Set slug
+     *
+     * @param string $slug
+     * @return Report
+     */
+    public function setSlug($slug)
+    {
+        $this->slug = $slug;
+
+        return $this;
+    }
+
+    /**
+     * Get slug
+     *
+     * @return string 
+     */
+    public function getSlug()
+    {
+        return $this->slug;
+    }
+
 }

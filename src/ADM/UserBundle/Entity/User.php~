@@ -16,7 +16,6 @@ class User extends BaseUser
 {
   public function __construct()
   {
-    parent::__construct();
     $this->groups = new  ArrayCollection();
 }
 
@@ -38,7 +37,7 @@ class User extends BaseUser
     protected $groups;
 
     /**
-     * @ORM\ManyToMany(targetEntity="ADM\ReportsBundle\Entity\Report", mappedBy="authors", cascade={"persist"})
+     * @ORM\ManyToMany(targetEntity="ADM\ReportsBundle\Entity\Report", mappedBy="authors")
      **/
     private $reports;
 
@@ -86,37 +85,4 @@ class User extends BaseUser
     }
 
 
-
-    /**
-     * Add reports
-     *
-     * @param \ADM\ReportsBundle\Entity\Report $reports
-     * @return User
-     */
-    public function addReport(\ADM\ReportsBundle\Entity\Report $reports)
-    {
-        $this->reports[] = $reports;
-
-        return $this;
-    }
-
-    /**
-     * Remove reports
-     *
-     * @param \ADM\ReportsBundle\Entity\Report $reports
-     */
-    public function removeReport(\ADM\ReportsBundle\Entity\Report $reports)
-    {
-        $this->reports->removeElement($reports);
-    }
-
-    /**
-     * Get reports
-     *
-     * @return \Doctrine\Common\Collections\Collection 
-     */
-    public function getReports()
-    {
-        return $this->reports;
-    }
 }

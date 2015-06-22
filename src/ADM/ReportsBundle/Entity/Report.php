@@ -4,6 +4,7 @@ namespace ADM\ReportsBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Report
@@ -18,6 +19,7 @@ class Report
         $this->dateCreated = new \Datetime();
         $this->datePublished = new \Datetime();
         $this->dateModified = new \Datetime();
+        $this->authors = new  ArrayCollection();
     }
 
     /**
@@ -65,6 +67,12 @@ class Report
     private $dateModified;
 
     /**
+     * @ORM\ManyToMany(targetEntity="ADM\UserBundle\Entity\User", inversedBy="reports", cascade={"persist"})
+     * @ORM\JoinTable(name="report_author")
+     **/
+    private $authors;
+
+    /**
      * @var string
      *
      * @ORM\Column(name="articleBody", type="text")
@@ -90,7 +98,7 @@ class Report
      *
      * @ORM\Column(name="published", type="boolean")
      */
-    private $published;
+    private $published = true;
 
 
     /**
@@ -308,5 +316,40 @@ class Report
     public function getSlug()
     {
         return $this->slug;
+    }
+
+
+    /**
+     * Add author
+     *
+     * @param \ADM\UserBundle\Entity\User $author
+     * @return Report
+     */
+    public function addAuthor(\ADM\UserBundle\Entity\User $author)
+    {
+        $author->addReport($this);
+        $this->authors[] = $author;
+
+        return $this;
+    }
+
+    /**
+     * Remove author
+     *
+     * @param \ADM\UserBundle\Entity\User $author
+     */
+    public function removeAuthor(\ADM\UserBundle\Entity\User $author)
+    {
+        $this->authors->removeElement($author);
+    }
+
+    /**
+     * Get authors
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getAuthors()
+    {
+        return $this->authors;
     }
 }

@@ -103,35 +103,35 @@
                             <span class="input-group-addon"><i class="fa fa-calendar"></i></span>{{ form_widget(form.dateCreated, {'attr': {'class': 'form-control'}}) }}
                         </div>
                     </div>
-                    <h2>
+                    <div class="form-group" >
+                        <label>Auteurs</label>
+                        {{ form_widget(form.authors, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                    <div class="form-group" >
+                        <label>Latitude</label>
+                        {{ form_widget(form.latitude, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                    <div class="form-group" >
+                        <label>Longitude</label>
+                        {{ form_widget(form.longitude, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                    <div class="form-group" >
+                        <label for="checkbox8">
+                            Publier
+                        </label>
+                        {{ form_widget(form.published, {'attr': {'class': 'form-control'}}) }}
+                    </div>
 
-                    </h2>
-                    {{ form_row(form.latitude) }}
-                    {{ form_row(form.longitude) }}
-                    {{ form_row(form.published) }}
-
-                {{ form_widget(form.articleBody, {'attr': {'class': 'form-control'}}) }}
+                    <div class="form-group" >
+                        <label>Contenu du rapport</label>
+                        {{ form_widget(form.articleBody, {'attr': {'class': 'form-control'}}) }}
+                    </div>
                 <hr>
                 {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}
                 {{ form_rest(form) }}
 
                 {# Fermeture de la balise <form> du formulaire HTML #}
                 {{ form_end(form) }}
-                <div class="row">
-                    <div class="col-md-6">
-                        <h5>Tags:</h5>
-                        <button class="btn btn-primary btn-xs" type="button">Model</button>
-                        <button class="btn btn-white btn-xs" type="button">Publishing</button>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="small text-right">
-                            <h5>Stats:</h5>
-                            <div> <i class="fa fa-comments-o"> </i> 56 comments
-                            </div>
-                            <i class="fa fa-eye"> </i> 144 views
-                        </div>
-                    </div> {# end-small text-right #}
-                </div> {# end-col-md-6 #}
             </div> {# end-ibox-content #}
         </div> {# end-ibox #}
     </div> {# end-col-lg-10 col-lg-offset-1 #}
@@ -182,6 +182,6 @@
 {% block extrascripts %}
     {{ parent() }}
     <script type="text/javascript">
-        $("#form_authors").chosen()
+        $("#adm_reportsbundle_report_authors").chosen()
     </script>
 {% endblock %}
