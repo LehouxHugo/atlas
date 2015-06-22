@@ -15,7 +15,23 @@ class ReportController extends Controller
         $report = new Report();
         $form = $this->get('form.factory')->createBuilder('form', $report)
             ->add('name', 'text')
-            ->add('dateCreated', 'collot_datetime')
+            ->add('dateCreated', 'collot_datetime',
+                array( 'pickerOptions' =>
+                    array('format' => 'yyyy',
+                        'endDate' => date('Y'),
+                        'autoclose' => false,
+                        'startView' => 'decade',
+                        'minView' => 'decade',
+                        'maxView' => 'decade',
+                        'todayBtn' => false,
+                        'todayHighlight' => false,
+                        'keyboardNavigation' => true,
+                        'language' => 'fr',
+                        'forceParse' => true,
+                        'pickerPosition' => 'bottom-right',
+                        'viewSelect' => 'decade',
+                        'showMeridian' => false,
+                    )))
             ->add('articleBody', 'textarea', array('required'=>false))
             ->add('latitude', 'number')
             ->add('longitude', 'number')
