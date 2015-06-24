@@ -18,6 +18,7 @@ class User extends BaseUser
   {
     parent::__construct();
     $this->groups = new  ArrayCollection();
+    $this->reports = new  ArrayCollection();
 }
 
     /**

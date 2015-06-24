@@ -94,6 +94,13 @@ class Report
     private $longitude;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="country", type="string", length=255)
+     */
+    private $country;
+
+    /**
      * @var boolean
      *
      * @ORM\Column(name="published", type="boolean")
@@ -351,5 +358,21 @@ class Report
     public function getAuthors()
     {
         return $this->authors;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCountry()
+    {
+        return $this->country;
+    }
+
+    /**
+     * @param string $country
+     */
+    public function setCountry($country)
+    {
+        $this->country = $country;
     }
 }

@@ -114,7 +114,7 @@
                     </div>
                     <div class="form-group" >
                         <label>Auteurs</label>
-                        {{ form_widget(form.authors, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_widget(form.authors, {'attr': {'class': 'form-control','data-placeholder': 'Michel, Geneviève...'}}) }}
                     </div>
                     <label>Zone d'étude</label>
                     <div id='map'></div>
@@ -138,12 +138,7 @@
                         <label>Contenu du rapport</label>
                         {{ form_widget(form.articleBody, {'attr': {'class': 'form-control'}}) }}
                     </div>
-                    <div class="form-group" >
-                        <label>
-                            Publier
-                        </label>
-                        {{ form_widget(form.published, {'attr': {'class': 'form-control'}}) }}
-                    </div>
+                        {{ form_row(form.published) }}
                 <hr>
                 {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}
                 {{ form_rest(form) }}
