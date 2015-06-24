@@ -43,5 +43,21 @@ class ReportController extends Controller
         );
     }
 
+    public function testAction()
+    {
+        $lat = 40.714224;
+        $lng = -73.961452;
+        $geocoder = $this->container->get('geocoder');
+        $reverseResult = $geocoder->reverse($lat, $lng);
+        $coutryCode = $reverseResult->getCountryCode();
+
+        return $this->render(
+            'ADMReportsBundle:Report:test.html.twig',
+            array(
+                'countryCode' => $coutryCode
+            )
+        );
+    }
+
 
 }

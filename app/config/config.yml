@@ -126,4 +126,11 @@ stof_doctrine_extensions:
 sc_datetimepicker:
     picker: ~
 
+# Geocoder
+bazinga_geocoder:
+    providers:
+        google_maps:
+            locale: en
+            region: US
+
 

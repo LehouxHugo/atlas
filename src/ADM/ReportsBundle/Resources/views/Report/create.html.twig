@@ -119,16 +119,22 @@
                     <label>Zone d'étude</label>
                     <div id='map'></div>
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-4">
                             <div class="form-group" >
                                 <label>Latitude</label>
                                 {{ form_widget(form.latitude, {'attr': {'class': 'form-control','disabled':''}}) }}
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-4">
                             <div class="form-group" >
                                 <label>Longitude</label>
                                 {{ form_widget(form.longitude, {'attr': {'class': 'form-control','disabled':''}}) }}
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group" >
+                                <label>Pays</label>
+                                {{ form_widget(form.country, {'attr': {'class': 'form-control','disabled':''}}) }}
                             </div>
                         </div>
                     </div>

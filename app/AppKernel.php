@@ -39,6 +39,8 @@ class AppKernel extends Kernel
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
             // Mini-Calendrier
             new SC\DatetimepickerBundle\SCDatetimepickerBundle(),
+            //Geocoder
+            new Bazinga\Bundle\GeocoderBundle\BazingaGeocoderBundle(),
 
         );
 

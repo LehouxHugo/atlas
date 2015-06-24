@@ -2,7 +2,12 @@ adm_report_create:
     path:     /ajouter
     defaults: { _controller: ADMReportsBundle:Report:create }
 
+adm_report_test:
+    path:     /test
+    defaults: { _controller: ADMReportsBundle:Report:test }
+
 adm_report_read:
     path:     /{slug}
     defaults: { _controller: ADMReportsBundle:Report:read }
+
 
