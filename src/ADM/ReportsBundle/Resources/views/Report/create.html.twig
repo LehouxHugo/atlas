@@ -18,6 +18,7 @@
 {% endblock %}
 
 {% block extraheadcontent %}
+    {# Fichiers pour utiliser tinyMCE Wysiwyg editor #}
    <script src="{{ asset('bundles/admcore/js/plugins/tinyMCE/tinymce.min.js') }}" type="text/javascript"></script>
     <script>tinymce.init({selector:'textarea',
             skin: "light",
@@ -25,6 +26,14 @@
             menubar: false,
             toolbar: " undo redo | formatselect | italic bold | alignleft aligncenter alignjustify | bullist numlist"
             });</script>
+
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
+    <style>
+        #map { height:70vh; width:100%; margin-bottom: 15px; }
+    </style>
+
+
 {% endblock %}
 
 {% block bodyclass %}
@@ -69,7 +78,7 @@
             <a href="#">Rapports</a>
         </li>
         <li class="active">
-            <strong>Diagnostic Agraire</strong>
+            <strong>Ajouter</strong>
         </li>
     </ol>
 {% endblock %}
@@ -107,24 +116,33 @@
                         <label>Auteurs</label>
                         {{ form_widget(form.authors, {'attr': {'class': 'form-control'}}) }}
                     </div>
-                    <div class="form-group" >
-                        <label>Latitude</label>
-                        {{ form_widget(form.latitude, {'attr': {'class': 'form-control'}}) }}
+                    <label>Zone d'étude</label>
+                    <div id='map'></div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group" >
+                                <label>Latitude</label>
+                                {{ form_widget(form.latitude, {'attr': {'class': 'form-control','disabled':''}}) }}
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group" >
+                                <label>Longitude</label>
+                                {{ form_widget(form.longitude, {'attr': {'class': 'form-control','disabled':''}}) }}
+                            </div>
+                        </div>
                     </div>
+
+
                     <div class="form-group" >
-                        <label>Longitude</label>
-                        {{ form_widget(form.longitude, {'attr': {'class': 'form-control'}}) }}
+                        <label>Contenu du rapport</label>
+                        {{ form_widget(form.articleBody, {'attr': {'class': 'form-control'}}) }}
                     </div>
                     <div class="form-group" >
                         <label>
                             Publier
                         </label>
                         {{ form_widget(form.published, {'attr': {'class': 'form-control'}}) }}
-                    </div>
-
-                    <div class="form-group" >
-                        <label>Contenu du rapport</label>
-                        {{ form_widget(form.articleBody, {'attr': {'class': 'form-control'}}) }}
                     </div>
                 <hr>
                 {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}
@@ -184,4 +202,33 @@
         $("#adm_reportsbundle_report_authors").chosen()
     </script>
 
+
+
+    <script>
+        L.mapbox.accessToken = 'pk.eyJ1IjoiaHVnb2xlaG91eCIsImEiOiItOHl6Sm5jIn0.12l_k0K_Z28UE-Jc0kDgpw';
+        var map = L.mapbox.map('map', 'examples.map-igb471ik')
+                .setView([0, 0], 2);
+
+        var latitude = document.getElementById('adm_reportsbundle_report_latitude');
+        var longitude = document.getElementById('adm_reportsbundle_report_longitude');
+
+        var marker = L.marker([0, 0], {
+            icon: L.mapbox.marker.icon({
+                'marker-color': '#f86767'
+            }),
+            draggable: true
+        }).addTo(map);
+
+        // every time the marker is dragged, update the coordinates container
+        marker.on('dragend', ondragend);
+
+        // Set the initial marker coordinate on load.
+        ondragend();
+
+        function ondragend() {
+            var m = marker.getLatLng();
+            latitude.value = m.lat;
+            longitude.value = m.lng;
+        }
+    </script>
 {% endblock %}
