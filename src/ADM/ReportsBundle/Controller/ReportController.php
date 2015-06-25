@@ -8,6 +8,8 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use ADM\ReportsBundle\Entity\Report;
 use ADM\ReportsBundle\Form\ReportType;
+use ADM\ReportsBundle\Entity\Keyword;
+use ADM\ReportsBundle\Form\KeywordType;
 
 
 class ReportController extends Controller
@@ -24,8 +26,12 @@ class ReportController extends Controller
             return $this->redirect($this->generateUrl('adm_report_read', array('slug' => $report->getSlug())));
         }
 
+        $keyword = new Keyword();
+        $formKeyword = $this->get('form.factory')->create(new KeywordType, $keyword);
+
         return $this->render('ADMReportsBundle:Report:create.html.twig', array(
                 'form' => $form->createView(),
+                'formKeyword' => $formKeyword->createView(),
             ));
     }
 
@@ -44,6 +50,27 @@ class ReportController extends Controller
     }
 
 
+    /**
+     * Add new keyword (that isn't yet in the database)
+     */
+    public function addNewKeywordAction()
+    {
+        $request = $this->container->get('request');
 
+        if($request->isXmlHttpRequest()) {
+            $kw = $request->request->get('kw');
+            if($kw != ''){
+                $em = $this->getDoctrine()->getManager();
+                $keyword = new Keyword();
+                $keyword->setName($kw);
+                $em->persist($keyword);
+                $em->flush();
+            }
+
+            $title = $request->request->get('title');
+            
+        }
+        return $this->redirect($this->generateUrl('adm_report_create'));
+    }
 
 }

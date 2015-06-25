@@ -5,6 +5,7 @@ namespace ADM\ReportsBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
 
+
 /**
  * Keyword
  *
@@ -18,7 +19,7 @@ class Keyword
      */
     public function __construct()
     {
-        $this->reports = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->reports = new ArrayCollection();
     }
 
     /**
@@ -110,4 +111,6 @@ class Keyword
     {
         return $this->reports;
     }
+
+
 }

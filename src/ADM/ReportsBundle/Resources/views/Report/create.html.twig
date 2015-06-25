@@ -177,11 +177,20 @@
                 </div>
                 <div class="modal-body">
                     <p><strong>Vous allez ajouter un nouveau mot-clé</strong> Choisissez un mot-clé qui soit le plus court et le plus explicite possible. Les études pourront être triées sur ce critère.</p>
-                    <div class="form-group"><input type="text" placeholder="Nouveau mot-clé" class="form-control"></div>
+                    <form id="form_adm_reportsbundle_keyword" action="{{ path('adm_add_new_keyword') }}" method="post">
+                    {{ form_errors(formKeyword) }}
+                    <div class="form-group">
+                        {{ form_widget(formKeyword.name, {'attr': {'class': 'form-control'}}) }}
+                    </div>
                 </div>
                 <div class="modal-footer">
+                    <div id="result_request">
+                        {% include 'ADMReportsBundle:Report:success.html.twig' %}
+                    </div>
                     <button type="button" class="btn btn-white" data-dismiss="modal">Fermer</button>
-                    <button type="button" class="btn btn-primary">Ajouter</button>
+                    {{ form_widget(formKeyword.save, {'attr': {'class': 'btn btn-primary'}}) }}
+                    {{ form_rest(formKeyword) }}
+                    {{ form_end(formKeyword) }}
                 </div>
             </div>
         </div>
@@ -281,7 +290,29 @@
                     }
                 });
         }
+
     </script>
+
+    <script type="application/javascript">
+        $("#form_adm_reportsbundle_keyword").submit(function(){
+            kw = document.getElementById('adm_reportsbundle_keyword_name').value;
+            title = document.getElementById('adm_reportsbundle_report_name').value;
+            var DATA = 'kw=' + kw +'&title=' + title;
+            $.ajax({
+                type: "POST",
+                url: "{{ path('adm_add_new_keyword')}}",
+                data: DATA,
+                cache: false,
+                success: function(){
+                     $("#form_adm_reportsbundle_keyword").modal('hide');
+                }
+            });
+            $('#form_adm_reportsbundle_keyword').modal('hide');
+        });
+    </script>
+
+
+
 
 
 
