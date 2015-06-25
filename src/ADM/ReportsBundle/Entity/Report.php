@@ -20,6 +20,7 @@ class Report
         $this->datePublished = new \Datetime();
         $this->dateModified = new \Datetime();
         $this->authors = new  ArrayCollection();
+        $this->keywords = new  ArrayCollection();
     }
 
     /**
@@ -78,6 +79,12 @@ class Report
      * @ORM\Column(name="articleBody", type="text")
      */
     private $articleBody;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="ADM\ReportsBundle\Entity\Keyword", inversedBy="reports", cascade={"persist"})
+     * @ORM\JoinTable(name="report_keyword")
+     **/
+    private $keywords;
 
     /**
      * @var float
@@ -374,6 +381,42 @@ class Report
     public function setCountry($country)
     {
         $this->country = $country;
+    }
+
+
+
+    /**
+     * Add keyword
+     *
+     * @param \ADM\ReportsBundle\Entity\Keyword $keyword
+     * @return Report
+     */
+    public function addKeyword(\ADM\ReportsBundle\Entity\Keyword $keyword)
+    {
+        $keyword->addReport($this);
+        $this->keywords[] = $keyword;
+
+        return $this;
+    }
+
+    /**
+     * Remove keywords
+     *
+     * @param \ADM\ReportsBundle\Entity\Keyword $keyword
+     */
+    public function removeKeyword(\ADM\ReportsBundle\Entity\Keyword $keyword)
+    {
+        $this->keywords->removeElement($keyword);
+    }
+
+    /**
+     * Get keywords
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getKeywords()
+    {
+        return $this->keywords;
     }
 
 

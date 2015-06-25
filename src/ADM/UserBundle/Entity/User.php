@@ -120,4 +120,12 @@ class User extends BaseUser
     {
         return $this->reports;
     }
+
+    public function getLabel()
+    {
+        if($this->getFirstname()== null && $this->getLastname() == null ){
+            return $this->getUsername();
+        }
+        return $this->getFirstname() .' '. $this->getLastname() .'';
+    }
 }

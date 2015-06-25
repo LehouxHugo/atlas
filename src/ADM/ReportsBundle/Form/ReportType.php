@@ -20,7 +20,7 @@ class ReportType extends AbstractType
                 array( 'pickerOptions' =>
                     array('format' => 'yyyy',
                         'endDate' => date('Y'),
-                        'autoclose' => false,
+                        'autoclose' => true,
                         'startView' => 'decade',
                         'minView' => 'decade',
                         'maxView' => 'decade',
@@ -35,7 +35,12 @@ class ReportType extends AbstractType
                     )))
             ->add('authors', 'entity', array(
                     'class'    => 'ADMUserBundle:User',
-                    'property' => 'username',
+                    'property' => 'label',
+                    'multiple' => true
+                ))
+            ->add('keywords', 'entity', array(
+                    'class'         => 'ADMReportsBundle:Keyword',
+                    'property' => 'name',
                     'multiple' => true
                 ))
             ->add('articleBody', 'textarea', array('required'=>false))

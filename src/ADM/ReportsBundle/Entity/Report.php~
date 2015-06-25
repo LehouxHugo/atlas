@@ -67,7 +67,7 @@ class Report
     private $dateModified;
 
     /**
-     * @ORM\ManyToMany(targetEntity="ADM\UserBundle\Entity\Report", inversedBy="reports")
+     * @ORM\ManyToMany(targetEntity="ADM\UserBundle\Entity\User", inversedBy="reports", cascade={"persist"})
      * @ORM\JoinTable(name="report_author")
      **/
     private $authors;
@@ -78,6 +78,12 @@ class Report
      * @ORM\Column(name="articleBody", type="text")
      */
     private $articleBody;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="ADM\ReportsBundle\Entity\Keyword", inversedBy="reports", cascade={"persist"})
+     * @ORM\JoinTable(name="report_author")
+     **/
+    private $keywords;
 
     /**
      * @var float
@@ -94,11 +100,18 @@ class Report
     private $longitude;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="country", type="string", length=255)
+     */
+    private $country;
+
+    /**
      * @var boolean
      *
      * @ORM\Column(name="published", type="boolean")
      */
-    private $published;
+    private $published = true;
 
 
     /**
@@ -317,5 +330,57 @@ class Report
     {
         return $this->slug;
     }
+
+
+    /**
+     * Add author
+     *
+     * @param \ADM\UserBundle\Entity\User $author
+     * @return Report
+     */
+    public function addAuthor(\ADM\UserBundle\Entity\User $author)
+    {
+        $author->addReport($this);
+        $this->authors[] = $author;
+
+        return $this;
+    }
+
+    /**
+     * Remove author
+     *
+     * @param \ADM\UserBundle\Entity\User $author
+     */
+    public function removeAuthor(\ADM\UserBundle\Entity\User $author)
+    {
+        $this->authors->removeElement($author);
+    }
+
+    /**
+     * Get authors
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getAuthors()
+    {
+        return $this->authors;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCountry()
+    {
+        return $this->country;
+    }
+
+    /**
+     * @param string $country
+     */
+    public function setCountry($country)
+    {
+        $this->country = $country;
+    }
+
 
 }
