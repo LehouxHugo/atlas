@@ -130,7 +130,7 @@ sc_datetimepicker:
 bazinga_geocoder:
     providers:
         google_maps:
-            locale: en
-            region: US
+            locale: fr
+            region: FR
 
 

@@ -203,6 +203,7 @@
         $("#adm_reportsbundle_report_authors").chosen()
     </script>
 
+    {# http://ws.geonames.org/countryCode?lat=49.03&lng=10.2&username=hugolehoux&type=xml #}
 
 
     <script>
@@ -230,6 +231,38 @@
             var m = marker.getLatLng();
             latitude.value = m.lat;
             longitude.value = m.lng;
+
+                latI = document.getElementById('adm_reportsbundle_report_latitude').value;
+                lngI = document.getElementById('adm_reportsbundle_report_longitude').value;
+
+                $.ajax({
+                    url: "http://ws.geonames.org/countryCode",
+                    type: 'get',
+                    dataType: "html",
+                    data: {
+                        username: "hugolehoux",
+                        lat: latI,
+                        lng: lngI
+                    },
+                    success: function (result) {
+                        document.getElementById('adm_reportsbundle_report_country').value = result;
+                    }
+                });
+
+
+
+
         }
     </script>
+
+
+
+    <?php
+    function findCountry()
+    {
+    $geocoder = $this->container->get('geocoder');
+    $reverseResult = $geocoder->reverse($lat, $lng);
+    $countryCode = $reverseResult->getCountryCode();
+    return $countryCode;
+    }
 {% endblock %}
