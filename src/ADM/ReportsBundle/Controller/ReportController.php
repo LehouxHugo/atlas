@@ -43,13 +43,6 @@ class ReportController extends Controller
         );
     }
 
- //public function updateCountry() En attendant de trouver la bonne solution
- //   {
- //       $geocoder = $this->container->get('geocoder');
-  //      $reverseResult = $geocoder->reverse($lat, $lng);
-  //      $countryCode = $reverseResult->getCountryCode();
-  //      return $countryCode;
-  //  }
 
 
 

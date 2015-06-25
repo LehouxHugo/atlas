@@ -100,51 +100,39 @@
                         <label>Titre</label>
                         {{ form_widget(form.name, {'attr': {'class': 'form-control'}}) }}
                     </div>
-                    {# <div class="form-group" >
-                        <label>Auteurs</label>
-                        {{ form_widget(form.authors, {'attr': {'class': 'form-control'}}) }}
-
-                    </div>
-                    #}
-                    <div class="form-group" >
-                        <label>Année de l'étude</label>
-                        <div class="input-group date">
-                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>{{ form_widget(form.dateCreated, {'attr': {'class': 'form-control'}}) }}
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <div class="form-group" >
+                                <label>Auteurs</label>
+                                <div class="input-group date">
+                                    <span class="input-group-addon"><i class="fa fa-users"></i></span>
+                                    {{ form_widget(form.authors, {'attr': {'class': 'form-control','data-placeholder': 'Michel, Geneviève...'}}) }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="form-group" >
+                                <label>Année de l'étude</label>
+                                <div class="input-group date">
+                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                    {{ form_widget(form.dateCreated, {'attr': {'class': 'form-control'}}) }}
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="form-group" >
-                        <label>Auteurs</label>
-                        {{ form_widget(form.authors, {'attr': {'class': 'form-control','data-placeholder': 'Michel, Geneviève...'}}) }}
-                    </div>
+                    <div class="hr-line-dashed"></div>
                     <label>Zone d'étude</label>
                     <div id='map'></div>
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="form-group" >
-                                <label>Latitude</label>
-                                {{ form_widget(form.latitude, {'attr': {'class': 'form-control','disabled':''}}) }}
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="form-group" >
-                                <label>Longitude</label>
-                                {{ form_widget(form.longitude, {'attr': {'class': 'form-control','disabled':''}}) }}
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="form-group" >
-                                <label>Pays</label>
-                                {{ form_widget(form.country, {'attr': {'class': 'form-control','disabled':''}}) }}
-                            </div>
-                        </div>
-                    </div>
 
-
+                    {{ form_widget(form.latitude, {'attr': {'class': 'form-control hidden'}}) }}
+                    {{ form_widget(form.longitude, {'attr': {'class': 'form-control hidden'}}) }}
+                    {{ form_widget(form.country, {'attr': {'class': 'form-control hidden'}}) }}
+                    <div class="hr-line-dashed"></div>
                     <div class="form-group" >
                         <label>Contenu du rapport</label>
                         {{ form_widget(form.articleBody, {'attr': {'class': 'form-control'}}) }}
                     </div>
-                        {{ form_row(form.published) }}
+                        {{ form_widget(form.published, {'attr': {'class': 'form-control hidden'}}) }}
                 <hr>
                 {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}
                 {{ form_rest(form) }}
@@ -203,9 +191,6 @@
         $("#adm_reportsbundle_report_authors").chosen()
     </script>
 
-    {# http://ws.geonames.org/countryCode?lat=49.03&lng=10.2&username=hugolehoux&type=xml #}
-
-
     <script>
         L.mapbox.accessToken = 'pk.eyJ1IjoiaHVnb2xlaG91eCIsImEiOiItOHl6Sm5jIn0.12l_k0K_Z28UE-Jc0kDgpw';
         var map = L.mapbox.map('map', 'examples.map-igb471ik')
@@ -246,23 +231,14 @@
                     },
                     success: function (result) {
                         document.getElementById('adm_reportsbundle_report_country').value = result;
+                    },
+                    error : function(result, statut, erreur){
+                        document.getElementById('adm_reportsbundle_report_country').value = "";
                     }
                 });
-
-
-
-
         }
     </script>
 
 
 
-    <?php
-    function findCountry()
-    {
-    $geocoder = $this->container->get('geocoder');
-    $reverseResult = $geocoder->reverse($lat, $lng);
-    $countryCode = $reverseResult->getCountryCode();
-    return $countryCode;
-    }
 {% endblock %}
