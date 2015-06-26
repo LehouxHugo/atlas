@@ -149,6 +149,10 @@
                         </div>
                     </div>
                     <div class="form-group" >
+                        <label>Résumé</label>
+                        {{ form_widget(form.abstract, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                    <div class="form-group" >
                         <label>Contenu du rapport</label>
                         {{ form_widget(form.articleBody, {'attr': {'class': 'form-control'}}) }}
                     </div>

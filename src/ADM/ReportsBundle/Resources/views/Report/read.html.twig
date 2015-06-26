@@ -9,6 +9,22 @@
 {% endblock %}
 
 {% block extraheadcontent %}
+    <style>
+        .article h1 {
+            font-size: 30px;
+        }
+        #reportName{
+            font-size: 40px;
+            font-weight: 700;
+            color: #2F4050;
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+
+        }
+    </style>
+
 {% endblock %}
 
 {% block bodyclass %}
@@ -73,9 +89,9 @@
                     </div>
 
                     <div class="text-center article-title">
-                        <h1>
+                        <div id="reportName">
                             {{ report.name | upper }}
-                        </h1>
+                        </div>
                         {% for author in report.authors %}
                             {{ author.label }}
                             {% if not loop.last %}
@@ -90,6 +106,10 @@
                             <button class="btn btn-white btn-xs" type="button"><i class="fa fa-tag"></i> {{ report.name }}</button>
                         {% endfor %}
                     </div>
+                    
+                    <div class="hr-line-dashed"></div>
+                    <h1>Résumé</h1>
+                    {{ report.abstract | raw }}
                     <div class="hr-line-dashed"></div>
                             {{ report.articleBody | raw }}
                     <hr>

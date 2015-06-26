@@ -76,6 +76,13 @@ class Report
     /**
      * @var string
      *
+     * @ORM\Column(name="abstract", type="text")
+     */
+    private $abstract;
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="articleBody", type="text")
      */
     private $articleBody;
@@ -113,7 +120,6 @@ class Report
      * @ORM\Column(name="published", type="boolean")
      */
     private $published = true;
-
 
     /**
      * Get id
@@ -420,4 +426,27 @@ class Report
     }
 
 
+
+    /**
+     * Set abstract
+     *
+     * @param string $abstract
+     * @return Report
+     */
+    public function setAbstract($abstract)
+    {
+        $this->abstract = $abstract;
+
+        return $this;
+    }
+
+    /**
+     * Get abstract
+     *
+     * @return string 
+     */
+    public function getAbstract()
+    {
+        return $this->abstract;
+    }
 }

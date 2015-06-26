@@ -43,6 +43,7 @@ class ReportType extends AbstractType
                     'property' => 'name',
                     'multiple' => true
                 ))
+            ->add('abstract', 'textarea', array('required'=>false))
             ->add('articleBody', 'textarea', array('required'=>false))
             ->add('latitude', 'number')
             ->add('longitude', 'number')
