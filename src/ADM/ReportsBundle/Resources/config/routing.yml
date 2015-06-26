@@ -2,10 +2,6 @@ adm_report_create:
     path:     /ajouter
     defaults: { _controller: ADMReportsBundle:Report:create }
 
-adm_report_test:
-    path:     /test
-    defaults: { _controller: ADMReportsBundle:Report:test }
-
 adm_add_new_keyword:
     path:     /add/keyword
     defaults: { _controller: ADMReportsBundle:Report:addNewKeyword }
@@ -14,5 +10,9 @@ adm_add_new_keyword:
 adm_report_read:
     path:     /{slug}
     defaults: { _controller: ADMReportsBundle:Report:read }
+
+adm_report_update:
+    path:     /edit/{slug}
+    defaults: { _controller: ADMReportsBundle:Report:update }
 
 

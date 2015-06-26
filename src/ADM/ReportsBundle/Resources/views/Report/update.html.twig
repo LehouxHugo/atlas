@@ -19,13 +19,13 @@
 
 {% block extraheadcontent %}
     {# Fichiers pour utiliser tinyMCE Wysiwyg editor #}
-   <script src="{{ asset('bundles/admcore/js/plugins/tinyMCE/tinymce.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('bundles/admcore/js/plugins/tinyMCE/tinymce.min.js') }}" type="text/javascript"></script>
     <script>tinymce.init({selector:'textarea',
             skin: "light",
             plugins: "paste,autoresize",
             menubar: false,
             toolbar: " undo redo | formatselect | italic bold | alignleft aligncenter alignjustify | bullist numlist"
-            });</script>
+        });</script>
 
     <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
@@ -46,21 +46,21 @@
 {# Ajouter <a class="close-canvas-menu"><i class="fa fa-times"></i></a> si bodyclass=canvas-menu #}
 
 {% block menus %}
- {{ parent() }}
+    {{ parent() }}
 {% endblock %}
 
 {% block pagewrapperclass %}
- {{ parent() }}
+    {{ parent() }}
 {% endblock %}
 {# Options du pagewrapperclass : "gray-bg" "gray-bg dashboard-1" mais ça a pas l'air de servir grand chose "gray-bg sidebar-content" ajoute une jolie barre sur la droite  (peut-être pour mettre le sommaire des rapports). Par contre pas toujours terrible pour les téléphones car elle est prioritaireIl faut créer un <div class="sidebard-panel">. Voir exemple #}
 
 {% block navbarclass %}
- {{ parent() }}
+    {{ parent() }}
 {% endblock %}
 {# "navbar navbar-static-top" ou "navbar-fixed-top" si body class = fixed-nav #}
 
 {% block topnav %}
- {{ parent() }}
+    {{ parent() }}
 {% endblock %}
 
 {# On met soit le block dashboardheader ou pageheading mais pas les deux, on peut aussi les enlever tous les deux. Je mets du contenu pour l'exemple #}
@@ -152,17 +152,17 @@
                         <label>Contenu du rapport</label>
                         {{ form_widget(form.articleBody, {'attr': {'class': 'form-control'}}) }}
                     </div>
-                        {{ form_widget(form.published, {'attr': {'class': 'form-control hidden'}}) }}
-                <hr>
-                {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}
-                {{ form_rest(form) }}
+                    {{ form_widget(form.published, {'attr': {'class': 'form-control hidden'}}) }}
+                    <hr>
+                    {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}
+                    {{ form_rest(form) }}
 
-                {# Fermeture de la balise <form> du formulaire HTML #}
-                {{ form_end(form) }}
-            </div> {# end-ibox-content #}
-        </div> {# end-ibox #}
-    </div> {# end-col-lg-10 col-lg-offset-1 #}
-</div> {# end-row #}
+                    {# Fermeture de la balise <form> du formulaire HTML #}
+                    {{ form_end(form) }}
+                </div> {# end-ibox-content #}
+            </div> {# end-ibox #}
+        </div> {# end-col-lg-10 col-lg-offset-1 #}
+    </div> {# end-row #}
 
 
     {# MODAL ADD KEYWORD #}
@@ -178,10 +178,10 @@
                 <div class="modal-body">
                     <p><strong>Vous allez ajouter un nouveau mot-clé</strong> Choisissez un mot-clé qui soit le plus court et le plus explicite possible. Les études pourront être triées sur ce critère.</p>
                     <form id="form_adm_reportsbundle_keyword" action="{{ path('adm_add_new_keyword') }}" method="post">
-                    {{ form_errors(formKeyword) }}
-                    <div class="form-group">
-                        {{ form_widget(formKeyword.name, {'attr': {'class': 'form-control'}}) }}
-                    </div>
+                        {{ form_errors(formKeyword) }}
+                        <div class="form-group">
+                            {{ form_widget(formKeyword.name, {'attr': {'class': 'form-control'}}) }}
+                        </div>
                 </div>
                 <div class="modal-footer">
                     <div id="result_request">
@@ -209,31 +209,31 @@
 {% endblock %}
 
 {% block javascripts %}
-   {% javascripts
-   '@ADMCoreBundle/Resources/public/js/jquery-2.1.1.js'
-   '@ADMCoreBundle/Resources/public/js/bootstrap.min.js'
-   '@ADMCoreBundle/Resources/public/js/plugins/metisMenu/jquery.metisMenu.js'
-   '@ADMCoreBundle/Resources/public/js/plugins/pace/pace.min.js'
-   '@ADMCoreBundle/Resources/public/js/inspinia.js'
-   '@ADMCoreBundle/Resources/public/js/plugins/toastr/toastr.min.js'
-   '@ADMCoreBundle/Resources/public/js/plugins/slimscroll/jquery.slimscroll.min.js'
-   '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.js'
-   '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.tooltip.min.js'
-   '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.spline.js'
-   '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.resize.js'
-   '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.pie.js'
-   '@ADMCoreBundle/Resources/public/js/plugins/peity/jquery.peity.min.js'
-   '@ADMCoreBundle/Resources/public/js/demo/peity-demo.js'
-   '@ADMCoreBundle/Resources/public/js/plugins/jquery-ui/jquery-ui.min.js'
-   '@ADMCoreBundle/Resources/public/js/plugins/sparkline/jquery.sparkline.min.js'
-   '@ADMCoreBundle/Resources/public/js/demo/sparkline-demo.js'
-   '@ADMCoreBundle/Resources/public/js/plugins/chartJs/Chart.min.js'
-   '@ADMCoreBundle/Resources/public/js/plugins/chosen/chosen.jquery.js'
+    {% javascripts
+    '@ADMCoreBundle/Resources/public/js/jquery-2.1.1.js'
+    '@ADMCoreBundle/Resources/public/js/bootstrap.min.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/metisMenu/jquery.metisMenu.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/pace/pace.min.js'
+    '@ADMCoreBundle/Resources/public/js/inspinia.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/toastr/toastr.min.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/slimscroll/jquery.slimscroll.min.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.tooltip.min.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.spline.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.resize.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.pie.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/peity/jquery.peity.min.js'
+    '@ADMCoreBundle/Resources/public/js/demo/peity-demo.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/jquery-ui/jquery-ui.min.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/sparkline/jquery.sparkline.min.js'
+    '@ADMCoreBundle/Resources/public/js/demo/sparkline-demo.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/chartJs/Chart.min.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/chosen/chosen.jquery.js'
 
-   output='js/compiled/addReport.js'
-   %}
-   <script type="text/javascript" src="{{ asset_url }}"></script>
-   {% endjavascripts %}
+    output='js/compiled/addReport.js'
+    %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
     {{ form_javascript(form) }}
 {% endblock %}
 
@@ -245,14 +245,11 @@
 
     <script>
         L.mapbox.accessToken = 'pk.eyJ1IjoiaHVnb2xlaG91eCIsImEiOiItOHl6Sm5jIn0.12l_k0K_Z28UE-Jc0kDgpw';
-        {% block mapscript %}
-        var map = L.mapbox.map('map', 'examples.map-igb471ik')
-                .setView([0, 0], 2);
-        {% endblock %}
-        var latitude = document.getElementById('adm_reportsbundle_report_latitude');
-        var longitude = document.getElementById('adm_reportsbundle_report_longitude');
 
-        var marker = L.marker([0, 0], {
+        latitude = document.getElementById('adm_reportsbundle_report_update_latitude');
+        longitude = document.getElementById('adm_reportsbundle_report_update_longitude');
+        var map = L.mapbox.map('map', 'examples.map-igb471ik').setView([latitude.value, longitude.value], 8);
+        var marker = L.marker([latitude.value, longitude.value], {
             icon: L.mapbox.marker.icon({
                 'marker-color': '#f86767'
             }),
@@ -270,34 +267,26 @@
             latitude.value = m.lat;
             longitude.value = m.lng;
 
-                latI = document.getElementById('adm_reportsbundle_report_latitude').value;
-                lngI = document.getElementById('adm_reportsbundle_report_longitude').value;
+            latI = document.getElementById('adm_reportsbundle_report_update_latitude').value;
+            lngI = document.getElementById('adm_reportsbundle_report_update_longitude').value;
 
-                $.ajax({
-                    url: "http://ws.geonames.org/countryCode",
-                    type: 'get',
-                    dataType: "html",
-                    data: {
-                        username: "hugolehoux",
-                        lat: latI,
-                        lng: lngI
-                    },
-                    success: function (result) {
-                        document.getElementById('adm_reportsbundle_report_country').value = result;
-                    },
-                    error : function(result, statut, erreur){
-                        document.getElementById('adm_reportsbundle_report_country').value = "";
-                    }
-                });
+            $.ajax({
+                url: "http://ws.geonames.org/countryCode",
+                type: 'get',
+                dataType: "html",
+                data: {
+                    username: "hugolehoux",
+                    lat: latI,
+                    lng: lngI
+                },
+                success: function (result) {
+                    document.getElementById('adm_reportsbundle_report_update_country').value = result;
+                },
+                error : function(result, statut, erreur){
+                    document.getElementById('adm_reportsbundle_report_update_country').value = "";
+                }
+            });
         }
 
     </script>
-
-
-
-
-
-
-
-
 {% endblock %}

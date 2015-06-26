@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="702d6801-b4b0-4ff2-b52b-ce53304bbb9e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/success.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/ReportsBundle/Entity/Keyword.php" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Entity/Keyword.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/ReportsBundle/Form/KeywordType.php" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Form/KeywordType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/update.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/ReportsBundle/Controller/ReportController.php" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Controller/ReportController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/create.html.twig" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/create.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/config/routing.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -36,25 +33,14 @@
       <file leaf-file-name="create.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/create.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.037736" vertical-offset="5467" max-vertical-offset="6156">
-              <caret line="299" column="52" selection-start-line="299" selection-start-column="52" selection-end-line="299" selection-end-column="52" />
+            <state vertical-scroll-proportion="-4.576923" vertical-offset="4412" max-vertical-offset="5852">
+              <caret line="251" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="302" selection-end-column="14" />
               <folding>
+                <element signature="e#102#142#0#Twig" expanded="false" />
+                <element signature="e#3232#3245#0#Twig" expanded="false" />
                 <element signature="e#6746#6768#0#HTML" expanded="true" />
                 <element signature="e#7946#7968#0#HTML" expanded="true" />
-                <element signature="e#8752#8771#0#Twig" expanded="true" />
-                <element signature="e#9161#9202#0#Twig" expanded="true" />
-                <element signature="e#13814#13833#0#Twig" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="success.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/success.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="114">
-              <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -62,8 +48,8 @@
       <file leaf-file-name="ReportType.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Form/ReportType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.32" vertical-offset="729" max-vertical-offset="1444">
-              <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="40" />
+            <state vertical-scroll-proportion="-16.44" vertical-offset="539" max-vertical-offset="1444">
+              <caret line="52" column="5" selection-start-line="14" selection-start-column="4" selection-end-line="52" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -91,17 +77,60 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReportController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ReportController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Controller/ReportController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.63268894" vertical-offset="970" max-vertical-offset="1539">
-              <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
+            <state vertical-scroll-proportion="-22.76" vertical-offset="875" max-vertical-offset="2128">
+              <caret line="76" column="60" selection-start-line="76" selection-start-column="60" selection-end-line="76" selection-end-column="60" />
               <folding>
                 <element signature="e#49#106#0#PHP" expanded="true" />
-                <element signature="e#812#829#0#PHP" expanded="true" />
-                <element signature="e#1031#1073#0#PHP" expanded="true" />
-                <element signature="e#1435#1475#0#PHP" expanded="true" />
-                <element signature="e#2209#2228#1#PHP" expanded="true" />
+                <element signature="e#911#928#0#PHP" expanded="true" />
+                <element signature="e#1130#1172#0#PHP" expanded="true" />
+                <element signature="e#1534#1574#0#PHP" expanded="true" />
+                <element signature="e#2240#2257#0#PHP" expanded="true" />
+                <element signature="e#2472#2514#0#PHP" expanded="true" />
+                <element signature="e#3346#3365#1#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReportUpdateType.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Form/ReportUpdateType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.16" vertical-offset="0" max-vertical-offset="760">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding>
+                <element signature="e#42#82#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/update.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.43233743" vertical-offset="4675" max-vertical-offset="5643">
+              <caret line="259" column="40" selection-start-line="259" selection-start-column="40" selection-end-line="259" selection-end-column="40" />
+              <folding>
+                <element signature="e#102#142#0#Twig" expanded="true" />
+                <element signature="e#3241#3254#0#Twig" expanded="true" />
+                <element signature="e#6755#6777#0#HTML" expanded="true" />
+                <element signature="e#7987#8009#0#HTML" expanded="true" />
+                <element signature="e#8793#8812#0#Twig" expanded="true" />
+                <element signature="e#9218#9259#0#Twig" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Report.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Entity/Report.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.48" vertical-offset="1197" max-vertical-offset="8151">
+              <caret line="86" column="22" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
+              <folding>
+                <element signature="e#44#76#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,7 +140,7 @@
         <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="456">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -149,9 +178,11 @@
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Form/KeywordType.php" />
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Entity/Keyword.php" />
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/success.html.twig" />
-        <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/create.html.twig" />
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Controller/ReportController.php" />
+        <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Form/ReportUpdateType.php" />
+        <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/create.html.twig" />
+        <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/success.html.twig" />
+        <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/update.html.twig" />
       </list>
     </option>
   </component>
@@ -491,6 +522,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\atlas\src\ADM\ReportsBundle\Form" />
+      <recent name="C:\xampp\htdocs\atlas\src\ADM\ReportsBundle\Resources\views\Report" />
       <recent name="C:\xampp\htdocs\atlas\src\ADM" />
       <recent name="C:\xampp\htdocs\atlas\src\ADM\ReportsBundle\Resources" />
       <recent name="C:\xampp\htdocs\atlas\app\Resources" />
@@ -607,11 +640,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3648">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#102#142#0#Twig" expanded="false" />
+            <element signature="e#3232#3245#0#Twig" expanded="false" />
             <element signature="e#6746#6768#0#HTML" expanded="true" />
             <element signature="e#7946#7968#0#HTML" expanded="true" />
-            <element signature="e#8752#8771#0#Twig" expanded="true" />
-            <element signature="e#9161#9202#0#Twig" expanded="true" />
-            <element signature="e#13814#13833#0#Twig" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -914,28 +946,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Entity/Report.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.1698112" vertical-offset="7597" max-vertical-offset="8151">
-          <caret line="391" column="21" selection-start-line="391" selection-start-column="21" selection-end-line="391" selection-end-column="21" />
-          <folding>
-            <element signature="e#44#76#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8400673" vertical-offset="2028" max-vertical-offset="2698">
           <caret line="133" column="22" selection-start-line="133" selection-start-column="22" selection-end-line="133" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Form/ReportType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.32" vertical-offset="729" max-vertical-offset="1444">
-          <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -958,46 +972,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Entity/Report.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.48" vertical-offset="1197" max-vertical-offset="8151">
+          <caret line="86" column="22" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
+          <folding>
+            <element signature="e#44#76#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Form/ReportType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.44" vertical-offset="539" max-vertical-offset="1444">
+          <caret line="52" column="5" selection-start-line="14" selection-start-column="4" selection-end-line="52" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="456">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Controller/ReportController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.76" vertical-offset="875" max-vertical-offset="2128">
+          <caret line="76" column="60" selection-start-line="76" selection-start-column="60" selection-end-line="76" selection-end-column="60" />
+          <folding>
+            <element signature="e#49#106#0#PHP" expanded="true" />
+            <element signature="e#911#928#0#PHP" expanded="true" />
+            <element signature="e#1130#1172#0#PHP" expanded="true" />
+            <element signature="e#1534#1574#0#PHP" expanded="true" />
+            <element signature="e#2240#2257#0#PHP" expanded="true" />
+            <element signature="e#2472#2514#0#PHP" expanded="true" />
+            <element signature="e#3346#3365#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Form/ReportUpdateType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.16" vertical-offset="0" max-vertical-offset="760">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#42#82#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/success.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="582">
-          <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/create.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.037736" vertical-offset="5467" max-vertical-offset="6156">
-          <caret line="299" column="52" selection-start-line="299" selection-start-column="52" selection-end-line="299" selection-end-column="52" />
+        <state vertical-scroll-proportion="-4.576923" vertical-offset="4412" max-vertical-offset="5852">
+          <caret line="251" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="302" selection-end-column="14" />
           <folding>
+            <element signature="e#102#142#0#Twig" expanded="false" />
+            <element signature="e#3232#3245#0#Twig" expanded="false" />
             <element signature="e#6746#6768#0#HTML" expanded="true" />
             <element signature="e#7946#7968#0#HTML" expanded="true" />
-            <element signature="e#8752#8771#0#Twig" expanded="true" />
-            <element signature="e#9161#9202#0#Twig" expanded="true" />
-            <element signature="e#13814#13833#0#Twig" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Controller/ReportController.php">
+    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/update.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63268894" vertical-offset="970" max-vertical-offset="1539">
-          <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.43233743" vertical-offset="4675" max-vertical-offset="5643">
+          <caret line="259" column="40" selection-start-line="259" selection-start-column="40" selection-end-line="259" selection-end-column="40" />
           <folding>
-            <element signature="e#49#106#0#PHP" expanded="true" />
-            <element signature="e#812#829#0#PHP" expanded="true" />
-            <element signature="e#1031#1073#0#PHP" expanded="true" />
-            <element signature="e#1435#1475#0#PHP" expanded="true" />
-            <element signature="e#2209#2228#1#PHP" expanded="true" />
+            <element signature="e#102#142#0#Twig" expanded="true" />
+            <element signature="e#3241#3254#0#Twig" expanded="true" />
+            <element signature="e#6755#6777#0#HTML" expanded="true" />
+            <element signature="e#7987#8009#0#HTML" expanded="true" />
+            <element signature="e#8793#8812#0#Twig" expanded="true" />
+            <element signature="e#9218#9259#0#Twig" expanded="true" />
           </folding>
         </state>
       </provider>
