@@ -97,13 +97,13 @@
       <file leaf-file-name="read.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/read.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.82255083" vertical-offset="2006" max-vertical-offset="4541">
-              <caret line="129" column="47" selection-start-line="129" selection-start-column="47" selection-end-line="129" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.754159" vertical-offset="2632" max-vertical-offset="4484">
+              <caret line="160" column="22" selection-start-line="160" selection-start-column="22" selection-end-line="160" selection-end-column="22" />
               <folding>
                 <element signature="e#102#142#0#Twig" expanded="true" />
-                <element signature="e#2842#2855#0#Twig" expanded="true" />
-                <element signature="e#3748#3765#0#Twig" expanded="true" />
-                <element signature="e#5378#5413#0#HTML" expanded="true" />
+                <element signature="e#2844#2857#0#Twig" expanded="true" />
+                <element signature="e#3750#3767#0#Twig" expanded="true" />
+                <element signature="e#5380#5415#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -933,13 +933,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/read.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82255083" vertical-offset="2006" max-vertical-offset="4541">
-          <caret line="129" column="47" selection-start-line="129" selection-start-column="47" selection-end-line="129" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.754159" vertical-offset="2632" max-vertical-offset="4484">
+          <caret line="160" column="22" selection-start-line="160" selection-start-column="22" selection-end-line="160" selection-end-column="22" />
           <folding>
             <element signature="e#102#142#0#Twig" expanded="true" />
-            <element signature="e#2842#2855#0#Twig" expanded="true" />
-            <element signature="e#3748#3765#0#Twig" expanded="true" />
-            <element signature="e#5378#5413#0#HTML" expanded="true" />
+            <element signature="e#2844#2857#0#Twig" expanded="true" />
+            <element signature="e#3750#3767#0#Twig" expanded="true" />
+            <element signature="e#5380#5415#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
