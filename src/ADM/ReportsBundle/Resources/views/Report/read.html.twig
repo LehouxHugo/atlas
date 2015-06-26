@@ -68,14 +68,29 @@
         <div class="col-lg-10 col-lg-offset-1">
             <div class="ibox">
                 <div class="ibox-content">
-                    <div class="text-center article-title">
-                        <span class="text-muted"><i class="fa fa-clock-o"></i>
-                            {{ report.dateCreated | date('Y') }}
-                        </span>
-                        <h2>
-                            {{ report.name | upper }}
-                        </h2>
+                    <div class="pull-right">
+                        <a class="btn btn-white btn-xs" href="{{ path('adm_report_update',{'slug': report.slug}) }}" role="button"><i class="fa fa-pencil"></i> Editer</a>
                     </div>
+
+                    <div class="text-center article-title">
+                        <h1>
+                            {{ report.name | upper }}
+                        </h1>
+                        {% for author in report.authors %}
+                            {{ author.label }}
+                            {% if not loop.last %}
+                                ,
+                            {% endif %}
+                        {% endfor %} | {{ report.dateCreated | date('Y') }}<br/>
+                    </div>
+
+                    <label>Mots-clés</label>
+                    <div>
+                        {% for report in report.keywords %}
+                            <button class="btn btn-white btn-xs" type="button"><i class="fa fa-tag"></i> {{ report.name }}</button>
+                        {% endfor %}
+                    </div>
+                    <div class="hr-line-dashed"></div>
                             {{ report.articleBody | raw }}
                     <hr>
                     <div class="row">
