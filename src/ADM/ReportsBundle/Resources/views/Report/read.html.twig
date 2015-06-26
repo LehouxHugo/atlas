@@ -11,7 +11,7 @@
 {% block extraheadcontent %}
     <style>
         .article h1 {
-            font-size: 30px;
+            font-size: 25px;
         }
         #reportName{
             font-size: 40px;
@@ -23,8 +23,22 @@
             padding-bottom: 15px;
 
         }
+
+        .static-map {
+            width:100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .ibox-content{
+            padding-left: 5%;
+            padding-right:5%;
+        }
+
     </style>
 
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
 {% endblock %}
 
 {% block bodyclass %}
@@ -84,50 +98,70 @@
         <div class="col-lg-10 col-lg-offset-1">
             <div class="ibox">
                 <div class="ibox-content">
-                    <div class="pull-right">
-                        <a class="btn btn-white btn-xs" href="{{ path('adm_report_update',{'slug': report.slug}) }}" role="button"><i class="fa fa-pencil"></i> Editer</a>
-                    </div>
 
-                    <div class="text-center article-title">
-                        <div id="reportName">
-                            {{ report.name | upper }}
-                        </div>
-                        {% for author in report.authors %}
-                            {{ author.label }}
-                            {% if not loop.last %}
-                                ,
-                            {% endif %}
-                        {% endfor %} | {{ report.dateCreated | date('Y') }}<br/>
-                    </div>
-
-                    <label>Mots-clés</label>
-                    <div>
-                        {% for report in report.keywords %}
-                            <button class="btn btn-white btn-xs" type="button"><i class="fa fa-tag"></i> {{ report.name }}</button>
-                        {% endfor %}
-                    </div>
-                    
-                    <div class="hr-line-dashed"></div>
-                    <h1>Résumé</h1>
-                    {{ report.abstract | raw }}
-                    <div class="hr-line-dashed"></div>
-                            {{ report.articleBody | raw }}
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h5>Tags:</h5>
-                            <button class="btn btn-primary btn-xs" type="button">Test</button>
-                            <button class="btn btn-white btn-xs" type="button">Test</button>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="small text-right">
-                                <h5>Stats:</h5>
-                                <div> <i class="fa fa-comments-o"> </i> 56 comments
-                                </div>
-                                <i class="fa fa-eye"> </i> 144 views
+                            <div class="pull-right">
+                                <a class="btn btn-white btn-xs" href="{{ path('adm_report_update',{'slug': report.slug}) }}" role="button"><i class="fa fa-pencil"></i> Editer</a>
                             </div>
-                        </div> {# end-small text-right #}
-                    </div> {# end-col-md-6 #}
+
+                            <div class="text-center article-title">
+                                <div id="reportName">
+                                    {{ report.name | upper }}
+                                </div>
+                                {% for author in report.authors %}
+                                    {{ author.label }}
+                                    {% if not loop.last %}
+                                        ,
+                                    {% endif %}
+                                {% endfor %} | {{ report.dateCreated | date('Y') }}<br/>
+                            </div>
+
+
+                            {% if report.keywords  is not empty %}
+                            <label>Mots-clés</label>
+                            {% endif %}
+                            <div>
+                                {% for report in report.keywords %}
+                                    <button class="btn btn-white btn-xs" type="button"><i class="fa fa-tag"></i> {{ report.name }}</button>
+                                {% endfor %}
+                            </div>
+
+                            <div class="hr-line-dashed"></div>
+                            {% if report.abstract  is not empty %}
+                                <h1>Résumé</h1>
+                                {{ report.abstract | raw }}
+                                <div class="hr-line-dashed"></div>
+                            {% endif %}
+
+                            <div class="row" style="padding: none;margin: none;" >
+                                <div class="col-md-4">
+                                    <img class="static-map" id='static-map'>
+                                </div>
+                                <div class="col-md-4">
+                                    <img class="static-map" id='static-map-2'>
+                                </div>
+                                <div class="col-md-4">
+                                    <img class="static-map"  id='static-map-3'>
+                                </div>
+                            </div>
+
+                            <div class="hr-line-dashed"></div>
+                                    {{ report.articleBody | raw }}
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Tags:</h5>
+                                    <button class="btn btn-primary btn-xs" type="button">Test</button>
+                                    <button class="btn btn-white btn-xs" type="button">Test</button>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="small text-right">
+                                        <h5>Stats:</h5>
+                                        <div> <i class="fa fa-comments-o"> </i> 56 comments
+                                        </div>
+                                        <i class="fa fa-eye"> </i> 144 views
+                                    </div>
+                                </div> {# end-col-md-6 #}
+                            </div> {# end-row #}
                 </div> {# end-ibox-content #}
             </div> {# end-ibox #}
         </div> {# end-col-lg-10 col-lg-offset-1 #}
@@ -148,4 +182,53 @@
 {% endblock %}
 
 {% block extrascripts %}
+    <script>
+        L.mapbox.accessToken = 'pk.eyJ1IjoiaHVnb2xlaG91eCIsImEiOiItOHl6Sm5jIn0.12l_k0K_Z28UE-Jc0kDgpw';
+        longitude = {{ report.latitude }};
+        latitude = {{ report.longitude }};
+        var data = {
+        "type": "FeatureCollection",
+        "features": [
+                        {
+                        "type": "Feature",
+                        "properties": {},
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                            latitude,
+                            longitude
+                            ]
+                            }
+                         }
+                    ]
+                };
+
+        // The size of the desired map.
+        var size = [600, 600];
+
+
+        document.getElementById('static-map').src =
+        'https://api.tiles.mapbox.com/v4/hugolehoux.m2a2l7dj/' +
+        'pin-l+C5E96F(' + latitude + ',' + longitude + ')' + '/' +
+        latitude + ',' + longitude + ',' +
+        3 + '/' +
+        size.join('x') + '.png' +
+        '?access_token=' + L.mapbox.accessToken;
+
+        document.getElementById('static-map-2').src =
+                'https://api.tiles.mapbox.com/v4/hugolehoux.mi8n7fe4/' +
+                'pin-l(' + latitude + ',' + longitude + ')' + '/' +
+                latitude + ',' + longitude + ',' +
+                5 + '/' +
+                size.join('x') + '.png' +
+                '?access_token=' + L.mapbox.accessToken;
+
+        document.getElementById('static-map-3').src =
+                'https://api.tiles.mapbox.com/v4/examples.map-igb471ik/' +
+                'pin-l+C5E96F(' + latitude + ',' + longitude + ')' + '/' +
+                latitude + ',' + longitude + ',' +
+                7 + '/' +
+                size.join('x') + '.png' +
+                '?access_token=' + L.mapbox.accessToken;
+    </script>
 {% endblock %}
