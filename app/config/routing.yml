@@ -1,18 +1,32 @@
 # ADMReportsbundle
 adm_reports:
     resource: "@ADMReportsBundle/Resources/config/routing.yml"
-    prefix:   /reports
+    prefix:   /rapports
+    options:
+        expose: true
 
 # ADMCorebundle
 adm_core:
     resource: "@ADMCoreBundle/Resources/config/routing.yml"
     prefix:   /
+    options:
+        expose: true
+
+# ADMLeafletBundle
+adm_leaflet:
+    resource: "@ADMLeafletBundle/Resources/config/routing.yml"
+    prefix:   /
+    options:
+        expose: true
 
 # ADMUserBundle
 adm_user:
     resource: "@ADMUserBundle/Resources/config/routing.yml"
     prefix:   /
 
+# FOS Js Routing Bundle
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
 
 # Sonata User Bundle
 sonata_user_security:

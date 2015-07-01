@@ -3,8 +3,10 @@ adm_report_create:
     defaults: { _controller: ADMReportsBundle:Report:create }
 
 adm_add_new_keyword:
-    path:     /add/keyword
+    path:     /keyword/{kw}
     defaults: { _controller: ADMReportsBundle:Report:addNewKeyword }
+    options:
+        expose: true
 
 
 adm_report_read:

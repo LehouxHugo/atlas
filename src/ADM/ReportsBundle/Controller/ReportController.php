@@ -12,6 +12,7 @@ use ADM\ReportsBundle\Form\ReportUpdateType;
 use ADM\ReportsBundle\Form\ReportType;
 use ADM\ReportsBundle\Entity\Keyword;
 use ADM\ReportsBundle\Form\KeywordType;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 
 class ReportController extends Controller
@@ -28,12 +29,9 @@ class ReportController extends Controller
             return $this->redirect($this->generateUrl('adm_report_read', array('slug' => $report->getSlug())));
         }
 
-        $keyword = new Keyword();
-        $formKeyword = $this->get('form.factory')->create(new KeywordType, $keyword);
-
         return $this->render('ADMReportsBundle:Report:create.html.twig', array(
                 'form' => $form->createView(),
-                'formKeyword' => $formKeyword->createView(),
+
             ));
     }
 
@@ -53,6 +51,8 @@ class ReportController extends Controller
 
     public function updateAction(Report $report, Request $request)
     {
+
+
         $em = $this->getDoctrine()->getManager();
         $repository = $em->getRepository('ADMReportsBundle:Report');
 
@@ -84,24 +84,29 @@ class ReportController extends Controller
     /**
      * Add new keyword (that isn't yet in the database)
      */
-    public function addNewKeywordAction()
+    public function addNewKeywordAction(Request $request, $kw)
     {
-        $request = $this->container->get('request');
+        $logger = $this->get('logger');
+        $logger->info('Nous avons récupéré le logger');
 
         if($request->isXmlHttpRequest()) {
-            $kw = $request->request->get('kw');
+            $logger->info('Reconnaît Ajax Request');
             if($kw != ''){
                 $em = $this->getDoctrine()->getManager();
                 $keyword = new Keyword();
                 $keyword->setName($kw);
                 $em->persist($keyword);
                 $em->flush();
+                $logger->error('Entité entrée en base de donnée');
+
+                $newkeyword = $em->getRepository('ADMReportsBundle:Keyword')
+                                 ->findOneBy(array('name' => $kw ));
+                $response = new JsonResponse();
+                return $response->setData(array('newkeyword' => $newkeyword));
             }
-
-            $title = $request->request->get('title');
-
+        }else{
+            throw new \Exception("Erreur");
         }
-        return $this->redirect($this->generateUrl('adm_report_create'));
     }
 
 }
