@@ -137,7 +137,7 @@
         </a>
       </li>
     {% else %}
-      <a class="btn btn-primary" href="{{ path('fos_user_security_login') }}" role="button"><i class="fa fa-login"></i>Connexion</a>
+      <a class="btn btn-primary" href="{{ path('fos_user_security_login') }}" role="button" ><i class="fa fa-login"></i>Connexion</a>
     {% endif %}
     <li>
       <a href="{{ path('adm_report_create') }}">
@@ -351,8 +351,15 @@
     var map = L.mapbox.map('map', 'examples.map-igb471ik', { zoomControl: false }).setView([18, 22.5], 2);
     var markers = L.markerClusterGroup();
     var geoJsonLayer = L.geoJson(geojson);
+
     markers.addLayer(geoJsonLayer);
     map.addLayer(markers);
+    markers.on('mouseover', function(e) {
+      e.layer.openPopup();
+    });
+    markers.on('mouseout', function(e) {
+      e.layer.closePopup();
+    });
     markers.on('click', function(e) {
       window.open(e.layer.feature.properties.url);
     });
