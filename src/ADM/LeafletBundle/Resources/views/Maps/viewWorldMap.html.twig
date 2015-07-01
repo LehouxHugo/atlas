@@ -115,7 +115,7 @@
           <li>
             <a href="grid_options.html">
               <div>
-                <i class="fa fa-upload fa-fw"></i> Vous n'avez pas compété votre profil
+                <i class="fa fa-upload fa-fw"></i> Vous n'avez pas complété votre profil
                 <span class="pull-right text-muted small">4 minutes ago</span>
               </div>
             </a>
@@ -140,8 +140,8 @@
       <a class="btn btn-primary" href="{{ path('fos_user_security_login') }}" role="button"><i class="fa fa-login"></i>Connexion</a>
     {% endif %}
     <li>
-      <a href="#" style="color:white;">
-        <i class="fa fa-pencil"></i>
+      <a href="{{ path('adm_report_create') }}">
+        <i class="fa fa-plus"></i>
       </a>
     </li>
   </ul>
@@ -354,7 +354,7 @@
     markers.addLayer(geoJsonLayer);
     map.addLayer(markers);
     markers.on('click', function(e) {
-      sidebar.className('sidebar-open');
+      window.open(e.layer.feature.properties.url);
     });
 
   </script>

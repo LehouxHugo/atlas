@@ -51,6 +51,8 @@ class ReportController extends Controller
 
     public function updateAction(Report $report, Request $request)
     {
+
+
         $em = $this->getDoctrine()->getManager();
         $repository = $em->getRepository('ADMReportsBundle:Report');
 
