@@ -41,6 +41,8 @@ class AppKernel extends Kernel
             new SC\DatetimepickerBundle\SCDatetimepickerBundle(),
             //Geocoder
             new Bazinga\Bundle\GeocoderBundle\BazingaGeocoderBundle(),
+            //AJAX Routing
+            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
 
         );
 

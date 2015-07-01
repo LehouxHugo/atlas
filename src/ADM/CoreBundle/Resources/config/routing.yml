@@ -1,6 +1,8 @@
 adm_core_home:
     path:     /
     defaults: { _controller: ADMCoreBundle:Core:index }
+    options:
+        expose: true
 
 test_basic_layout:
     path:     /test/basiclayout

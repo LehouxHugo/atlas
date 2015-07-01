@@ -133,4 +133,7 @@ bazinga_geocoder:
             locale: fr
             region: FR
 
+fos_js_routing:
+    routes_to_expose: [ adm_add_new_keyword ]
+
 

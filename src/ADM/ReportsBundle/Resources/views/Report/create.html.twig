@@ -19,13 +19,13 @@
 
 {% block extraheadcontent %}
     {# Fichiers pour utiliser tinyMCE Wysiwyg editor #}
-   <script src="{{ asset('bundles/admcore/js/plugins/tinyMCE/tinymce.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('bundles/admcore/js/plugins/tinyMCE/tinymce.min.js') }}" type="text/javascript"></script>
     <script>tinymce.init({selector:'textarea',
             skin: "light",
             plugins: "paste,autoresize",
             menubar: false,
             toolbar: " undo redo | formatselect | italic bold | alignleft aligncenter alignjustify | bullist numlist"
-            });</script>
+        });</script>
 
     <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
@@ -46,21 +46,21 @@
 {# Ajouter <a class="close-canvas-menu"><i class="fa fa-times"></i></a> si bodyclass=canvas-menu #}
 
 {% block menus %}
- {{ parent() }}
+    {{ parent() }}
 {% endblock %}
 
 {% block pagewrapperclass %}
- {{ parent() }}
+    {{ parent() }}
 {% endblock %}
 {# Options du pagewrapperclass : "gray-bg" "gray-bg dashboard-1" mais ça a pas l'air de servir grand chose "gray-bg sidebar-content" ajoute une jolie barre sur la droite  (peut-être pour mettre le sommaire des rapports). Par contre pas toujours terrible pour les téléphones car elle est prioritaireIl faut créer un <div class="sidebard-panel">. Voir exemple #}
 
 {% block navbarclass %}
- {{ parent() }}
+    {{ parent() }}
 {% endblock %}
 {# "navbar navbar-static-top" ou "navbar-fixed-top" si body class = fixed-nav #}
 
 {% block topnav %}
- {{ parent() }}
+    {{ parent() }}
 {% endblock %}
 
 {# On met soit le block dashboardheader ou pageheading mais pas les deux, on peut aussi les enlever tous les deux. Je mets du contenu pour l'exemple #}
@@ -156,17 +156,17 @@
                         <label>Contenu du rapport</label>
                         {{ form_widget(form.articleBody, {'attr': {'class': 'form-control'}}) }}
                     </div>
-                        {{ form_widget(form.published, {'attr': {'class': 'form-control hidden'}}) }}
-                <hr>
-                {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}
-                {{ form_rest(form) }}
+                    {{ form_widget(form.published, {'attr': {'class': 'form-control hidden'}}) }}
+                    <hr>
+                    {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}
+                    {{ form_rest(form) }}
 
-                {# Fermeture de la balise <form> du formulaire HTML #}
-                {{ form_end(form) }}
-            </div> {# end-ibox-content #}
-        </div> {# end-ibox #}
-    </div> {# end-col-lg-10 col-lg-offset-1 #}
-</div> {# end-row #}
+                    {# Fermeture de la balise <form> du formulaire HTML #}
+                    {{ form_end(form) }}
+                </div> {# end-ibox-content #}
+            </div> {# end-ibox #}
+        </div> {# end-col-lg-10 col-lg-offset-1 #}
+    </div> {# end-row #}
 
 
     {# MODAL ADD KEYWORD #}
@@ -181,20 +181,14 @@
                 </div>
                 <div class="modal-body">
                     <p><strong>Vous allez ajouter un nouveau mot-clé</strong> Choisissez un mot-clé qui soit le plus court et le plus explicite possible. Les études pourront être triées sur ce critère.</p>
-                    <form id="form_adm_reportsbundle_keyword" action="{{ path('adm_add_new_keyword') }}" method="post">
-                    {{ form_errors(formKeyword) }}
-                    <div class="form-group">
-                        {{ form_widget(formKeyword.name, {'attr': {'class': 'form-control'}}) }}
-                    </div>
+
+                    <input id="input_new_keyword" type="text" name="input_new_keyword"><br/>
+
                 </div>
                 <div class="modal-footer">
-                    <div id="result_request">
-                        {% include 'ADMReportsBundle:Report:success.html.twig' %}
-                    </div>
                     <button type="button" class="btn btn-white" data-dismiss="modal">Fermer</button>
-                    {{ form_widget(formKeyword.save, {'attr': {'class': 'btn btn-primary'}}) }}
-                    {{ form_rest(formKeyword) }}
-                    {{ form_end(formKeyword) }}
+                    <button type="button" onclick="addNewKeyword()" id="submit_new_keyword" class="btn btn-primary">Ajouter</button>
+
                 </div>
             </div>
         </div>
@@ -213,31 +207,32 @@
 {% endblock %}
 
 {% block javascripts %}
-   {% javascripts
-   '@ADMCoreBundle/Resources/public/js/jquery-2.1.1.js'
-   '@ADMCoreBundle/Resources/public/js/bootstrap.min.js'
-   '@ADMCoreBundle/Resources/public/js/plugins/metisMenu/jquery.metisMenu.js'
-   '@ADMCoreBundle/Resources/public/js/plugins/pace/pace.min.js'
-   '@ADMCoreBundle/Resources/public/js/inspinia.js'
-   '@ADMCoreBundle/Resources/public/js/plugins/toastr/toastr.min.js'
-   '@ADMCoreBundle/Resources/public/js/plugins/slimscroll/jquery.slimscroll.min.js'
-   '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.js'
-   '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.tooltip.min.js'
-   '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.spline.js'
-   '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.resize.js'
-   '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.pie.js'
-   '@ADMCoreBundle/Resources/public/js/plugins/peity/jquery.peity.min.js'
-   '@ADMCoreBundle/Resources/public/js/demo/peity-demo.js'
-   '@ADMCoreBundle/Resources/public/js/plugins/jquery-ui/jquery-ui.min.js'
-   '@ADMCoreBundle/Resources/public/js/plugins/sparkline/jquery.sparkline.min.js'
-   '@ADMCoreBundle/Resources/public/js/demo/sparkline-demo.js'
-   '@ADMCoreBundle/Resources/public/js/plugins/chartJs/Chart.min.js'
-   '@ADMCoreBundle/Resources/public/js/plugins/chosen/chosen.jquery.js'
-
-   output='js/compiled/addReport.js'
-   %}
-   <script type="text/javascript" src="{{ asset_url }}"></script>
-   {% endjavascripts %}
+    {% javascripts
+    '@ADMCoreBundle/Resources/public/js/jquery-2.1.1.js'
+    '@ADMCoreBundle/Resources/public/js/bootstrap.min.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/metisMenu/jquery.metisMenu.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/pace/pace.min.js'
+    '@ADMCoreBundle/Resources/public/js/inspinia.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/toastr/toastr.min.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/slimscroll/jquery.slimscroll.min.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.tooltip.min.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.spline.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.resize.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.pie.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/peity/jquery.peity.min.js'
+    '@ADMCoreBundle/Resources/public/js/demo/peity-demo.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/jquery-ui/jquery-ui.min.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/sparkline/jquery.sparkline.min.js'
+    '@ADMCoreBundle/Resources/public/js/demo/sparkline-demo.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/chartJs/Chart.min.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/chosen/chosen.jquery.js'
+    'bundles/fosjsrouting/js/router.js'
+    'js/fos_js_routes.js'
+    output='js/compiled/addReport.js'
+    %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
     {{ form_javascript(form) }}
 {% endblock %}
 
@@ -274,34 +269,42 @@
             latitude.value = m.lat;
             longitude.value = m.lng;
 
-                latI = document.getElementById('adm_reportsbundle_report_latitude').value;
-                lngI = document.getElementById('adm_reportsbundle_report_longitude').value;
+            latI = document.getElementById('adm_reportsbundle_report_latitude').value;
+            lngI = document.getElementById('adm_reportsbundle_report_longitude').value;
 
-                $.ajax({
-                    url: "http://ws.geonames.org/countryCode",
-                    type: 'get',
-                    dataType: "html",
-                    data: {
-                        username: "hugolehoux",
-                        lat: latI,
-                        lng: lngI
-                    },
-                    success: function (result) {
-                        document.getElementById('adm_reportsbundle_report_country').value = result;
-                    },
-                    error : function(result, statut, erreur){
-                        document.getElementById('adm_reportsbundle_report_country').value = "";
-                    }
-                });
+            $.ajax({
+                url: "http://ws.geonames.org/countryCode",
+                type: 'get',
+                dataType: "html",
+                data: {
+                    username: "hugolehoux",
+                    lat: latI,
+                    lng: lngI
+                },
+                success: function (result) {
+                    document.getElementById('adm_reportsbundle_report_country').value = result;
+                },
+                error : function(result, statut, erreur){
+                    document.getElementById('adm_reportsbundle_report_country').value = "";
+                }
+            });
         }
 
     </script>
 
 
-
-
-
-
-
-
+    <script>
+        $(document).ready(function () {
+                $("#submit_new_keyword").click(function () {
+                    $.ajax({
+                        type: 'POST',
+                        url: Routing.generate('adm_add_new_keyword', { kw : document.getElementById('input_new_keyword').value;}),
+                        success: function (data) {function (index, value) {
+                                $('#adm_reportsbundle_report_keywords').append('<option value="' + index + '" selected="selected">' + value + '</option>')
+                            });
+                        }
+                    });
+                })
+            })
+    </script>
 {% endblock %}

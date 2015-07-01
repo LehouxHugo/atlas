@@ -29,8 +29,299 @@
   </style>
 {% endblock %}
 
+{% block topnav %}
+  <ul class="nav navbar-top-links navbar-right">
+    <li>
+      <span class="m-r-sm text-muted welcome-message">Atlas Numérique des Agricultures du Monde</span>
+    </li>
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+      <li class="dropdown">
+        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+          <i class="fa fa-envelope"></i>
+          <span class="label label-warning">16</span>
+        </a>
+        <ul class="dropdown-menu dropdown-messages">
+          <li>
+            <div class="dropdown-messages-box">
+              <a href="profile.html" class="pull-left">
+                <img alt="image" class="img-circle" src="img/a7.jpg">
+              </a>
+              <div class="media-body">
+                <small class="pull-right">46h ago</small>
+                <strong>Damien</strong>aime la page blabla. <br>
+                <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+              </div>
+            </div>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <div class="dropdown-messages-box">
+              <a href="profile.html" class="pull-left">
+                <img alt="image" class="img-circle" src="img/a4.jpg">
+              </a>
+              <div class="media-body ">
+                <small class="pull-right text-navy">5h ago</small>
+                <strong>Hugo Lehoux</strong>aime la page machin. <br>
+                <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+              </div>
+            </div>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <div class="dropdown-messages-box">
+              <a href="profile.html" class="pull-left">
+                <img alt="image" class="img-circle" src="http://webapplayers.com/inspinia_admin-v2.0/img/profile.jpg">
+              </a>
+              <div class="media-body ">
+                <small class="pull-right">23h ago</small>
+                <strong>Hugo Lehoux</strong>aime la page machin. <br>
+                <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+              </div>
+            </div>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <div class="text-center link-block">
+              <a href="mailbox.html">
+                <i class="fa fa-envelope"></i> <strong>Lire tous les messages</strong>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+          <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+        </a>
+        <ul class="dropdown-menu dropdown-alerts">
+          <li>
+            <a href="mailbox.html">
+              <div>
+                <i class="fa fa-envelope fa-fw"></i> Vous avez 16 messages
+                <span class="pull-right text-muted small">4 minutes ago</span>
+              </div>
+            </a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="profile.html">
+              <div>
+                <i class="fa fa-twitter fa-fw"></i> 3 Nouveaux followers
+                <span class="pull-right text-muted small">12 minutes ago</span>
+              </div>
+            </a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="grid_options.html">
+              <div>
+                <i class="fa fa-upload fa-fw"></i> Vous n'avez pas compété votre profil
+                <span class="pull-right text-muted small">4 minutes ago</span>
+              </div>
+            </a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <div class="text-center link-block">
+              <a href="notifications.html">
+                <strong>Voir toutes les alertes</strong>
+                <i class="fa fa-angle-right"></i>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="{{ path('fos_user_security_logout') }}">
+          <i class="fa fa-sign-out"></i> Se déconnecter
+        </a>
+      </li>
+    {% else %}
+      <a class="btn btn-primary" href="{{ path('fos_user_security_login') }}" role="button"><i class="fa fa-login"></i>Connexion</a>
+    {% endif %}
+    <li>
+      <a href="#" style="color:white;">
+        <i class="fa fa-pencil"></i>
+      </a>
+    </li>
+  </ul>
+
+{% endblock %}
+
 {% block pagecontent %}
   <div id='map'></div>
+{% endblock %}
+
+{% block plugins %}
+  <div id="right-sidebar">
+    <div class="sidebar-container">
+      <ul class="nav nav-tabs navs-3">
+        <li class="active"><a data-toggle="tab" href="#tab-1">
+            Détails
+          </a></li>
+        <li><a data-toggle="tab" href="#tab-2">
+            Images
+          </a></li>
+
+        <li class=""><a data-toggle="tab" href="#tab-3">
+            <i class="fa fa-gear"></i>
+          </a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="tab-1" class="tab-pane active">
+          <div class="sidebar-title" id="sidebar-title-report">
+            <h3 id="sidebar-title-report"> Titre du rapport </h3>
+            <small id="sidebar-title-authors"> Auteurs </small>
+          </div>
+
+          <div>
+            <ul class="sidebar-list">
+              <li>
+                <a href="#">
+                  <h4>Résumé</h4>
+                  <div id="sidebar-title-report-dateCreated" class="small pull-right m-t-xs">Année de l'étude</div>
+                  <p id="sidebar-title-report-articleBody"></p>
+                </a>
+              </li>
+              <li>
+
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+
+        <div id="tab-2" class="tab-pane">
+
+          <div class="sidebar-title">
+            <h3> <i class="fa fa-cube"></i> Latest projects</h3>
+            <small><i class="fa fa-tim"></i> You have 14 projects. 10 not completed.</small>
+          </div>
+
+
+
+        </div>
+
+        <div id="tab-3" class="tab-pane">
+
+          <div class="sidebar-title">
+            <h3><i class="fa fa-gears"></i> Settings</h3>
+            <small><i class="fa fa-tim"></i> You have 14 projects. 10 not completed.</small>
+          </div>
+
+          <div class="setings-item">
+                    <span>
+                        Show notifications
+                    </span>
+            <div class="switch">
+              <div class="onoffswitch">
+                <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example">
+                <label class="onoffswitch-label" for="example">
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="setings-item">
+                    <span>
+                        Disable Chat
+                    </span>
+            <div class="switch">
+              <div class="onoffswitch">
+                <input type="checkbox" name="collapsemenu" checked class="onoffswitch-checkbox" id="example2">
+                <label class="onoffswitch-label" for="example2">
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="setings-item">
+                    <span>
+                        Enable history
+                    </span>
+            <div class="switch">
+              <div class="onoffswitch">
+                <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example3">
+                <label class="onoffswitch-label" for="example3">
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="setings-item">
+                    <span>
+                        Show charts
+                    </span>
+            <div class="switch">
+              <div class="onoffswitch">
+                <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example4">
+                <label class="onoffswitch-label" for="example4">
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="setings-item">
+                    <span>
+                        Offline users
+                    </span>
+            <div class="switch">
+              <div class="onoffswitch">
+                <input type="checkbox" checked name="collapsemenu" class="onoffswitch-checkbox" id="example5">
+                <label class="onoffswitch-label" for="example5">
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="setings-item">
+                    <span>
+                        Global search
+                    </span>
+            <div class="switch">
+              <div class="onoffswitch">
+                <input type="checkbox" checked name="collapsemenu" class="onoffswitch-checkbox" id="example6">
+                <label class="onoffswitch-label" for="example6">
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="setings-item">
+                    <span>
+                        Update everyday
+                    </span>
+            <div class="switch">
+              <div class="onoffswitch">
+                <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example7">
+                <label class="onoffswitch-label" for="example7">
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-content">
+            <h4>Settings</h4>
+            <div class="small">
+              I belive that. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              And typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+              Over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock %}
 
 {% block extrascripts %}
@@ -47,7 +338,8 @@
         "coordinates": [{{ report.longitude }},{{ report.latitude}}]
       },
       "properties": {
-        "title": "{{ report.title }}",
+        "title": "{{ report.name }}",
+        "abstract": "{{ report.abstract }}",
         "marker-color": "#fc4353",
         "marker-size": "large",
         "marker-symbol": "monument",
@@ -56,15 +348,13 @@
     }{% if not loop.last %},{% endif %}
     {% endfor %}
     ];
-
-    var map = L.mapbox.map('map', 'examples.map-igb471ik', { zoomControl: false }).setView([18, 22.5], 2)
-    L.control.zoomslider().addTo(map);
+    var map = L.mapbox.map('map', 'examples.map-igb471ik', { zoomControl: false }).setView([18, 22.5], 2);
     var markers = L.markerClusterGroup();
     var geoJsonLayer = L.geoJson(geojson);
     markers.addLayer(geoJsonLayer);
     map.addLayer(markers);
     markers.on('click', function(e) {
-      window.open(e.layer.feature.properties.url);
+      sidebar.className('sidebar-open');
     });
 
   </script>
