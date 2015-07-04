@@ -42,7 +42,7 @@
             font-style: italic;
         }
 
-        #articleBody p, #articleBody ul {
+        .ibox-content p, .ibox-content ul, #articleBody p, #articleBody ul {
             font-size:15px;
             margin-left: 10%;
             margin-right: 5%;
@@ -327,13 +327,13 @@
 
 
                 if ($(this).is("h1")) {
-                    var lih1 = "<li><a href='#" + "toc" + index + "'>" + $(this).text().substr(0, 22) + "</a></li>";
+                    var lih1 = "<li><a href='#" + "toc" + index + "'>" + $(this).text() + "</a></li>";
                     prevH1List = $("<ul class='nav nav-third-level'></ul>");
                     prevH1Item = $(lih1);
                     prevH1Item.append(prevH1List);
                     prevH1Item.appendTo("#tocList");
                 } else {
-                    var lih2 = "<li><a style='padding-top: 2px; padding-bottom: 2px;' href='#" + "toc" + index + "'>" + $(this).text().substr(0, 22) + "</a></li>";
+                    var lih2 = "<li><a style='padding-top: 2px; padding-bottom: 2px;' href='#" + "toc" + index + "'>" + $(this).text() + "</a></li>";
                     prevH1List.append(lih2);
                 }
                 index++;

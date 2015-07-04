@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9e7264e4-dd4c-45b0-9105-8ca1e2cb0da6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/read.html.twig" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/read.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="atlas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,12 +34,12 @@
       <file leaf-file-name="read.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/read.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7669903" vertical-offset="669" max-vertical-offset="6973">
-              <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.26213592" vertical-offset="6230" max-vertical-offset="6973">
+              <caret line="335" column="134" selection-start-line="335" selection-start-column="134" selection-end-line="335" selection-end-column="134" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <marker date="1436032270753" expanded="true" signature="11898:11936" placeholder="..." />
+                <marker date="1436034942079" expanded="true" signature="11919:11957" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -543,12 +544,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/read.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7669903" vertical-offset="669" max-vertical-offset="6973">
-          <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.26213592" vertical-offset="6230" max-vertical-offset="6973">
+          <caret line="335" column="134" selection-start-line="335" selection-start-column="134" selection-end-line="335" selection-end-column="134" />
           <folding>
             <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1436032270753" expanded="true" signature="11898:11936" placeholder="..." />
+            <marker date="1436034942079" expanded="true" signature="11919:11957" placeholder="..." />
           </folding>
         </state>
       </provider>
