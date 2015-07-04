@@ -13,7 +13,8 @@
         .article h1 {
             font-size: 25px;
         }
-        #reportName{
+
+        #reportName {
             font-size: 40px;
             font-weight: 700;
             color: #2F4050;
@@ -25,24 +26,24 @@
         }
 
         .static-map {
-            width:100%;
+            width: 100%;
             margin-top: 10px;
             margin-bottom: 10px;
         }
 
-        .ibox-content{
+        .ibox-content {
             padding-left: 15%;
-            padding-right:15%;
+            padding-right: 15%;
         }
 
     </style>
 
     <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet'/>
 {% endblock %}
 
 {% block bodyclass %}
-    "skin-3 mini-navbar"
+    "skin-3 fixed-sidebar"
 {% endblock %}
 {# Options du bodyclass : "skin-1"  "skin-2" "skin-3" "mini-navbar" "fixed-sidebar" : dans ce cas ne pas oublier d'ajouter le script slimScroll qui se trouve dans js/inspinia.js file et décommenter le Fixed Sidebar comment and uncomment function et ajouter <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>"fixed-nav" : dans ce cas mettre navbar-fixed-top si body class = fixed-nav dans <nav>   En mettant mini-navbar ET fixed-sidebar ET fixed-nav, on ne voit plus du tout la barre de navigation de gauche et la barre du haut devient fixe (pour Rapports de stage peut-être), "canvas-menu"pour le OffCanvasLayout #}
 
@@ -51,21 +52,38 @@
 {# Ajouter <a class="close-canvas-menu"><i class="fa fa-times"></i></a> si bodyclass=canvas-menu #}
 
 {% block menus %}
-   {{ parent() }}
+    <li>
+        <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">Explorer</span> <span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level">
+            <li><a href={{ path('adm_leaflet_worldmap') }}>Atlas mondial</a></li>
+            <li ><a href="#">Pays<span class="label pull-right">En cours</span></a></li>
+            <li ><a href="#">Productions<span class="label pull-right">En cours</span></a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Messages </span><span class="label label-warning pull-right">16/24</span></a>
+        <ul class="nav nav-second-level">
+            <li><a href="mail_compose.html">Nouveau</a></li>
+            <li><a href="mailbox.html">Reçus</a></li>
+            <li><a href="mailbox.html">Envoyés</a></li>
+        </ul>
+    </li>
+    <li id="toc" class="active">
+    </li>{# end-col #}
 {% endblock %}
 
 {% block pagewrapperclass %}
-   {{ parent() }}
+    {{ parent() }}
 {% endblock %}
 {# Options du pagewrapperclass : "gray-bg" "gray-bg dashboard-1" mais ça a pas l'air de servir grand chose "gray-bg sidebar-content" ajoute une jolie barre sur la droite  (peut-être pour mettre le sommaire des rapports). Par contre pas toujours terrible pour les téléphones car elle est prioritaireIl faut créer un <div class="sidebard-panel">. Voir exemple #}
 
 {% block navbarclass %}
-   {{ parent() }}
+    {{ parent() }}
 {% endblock %}
 {# "navbar navbar-static-top" ou "navbar-fixed-top" si body class = fixed-nav #}
 
 {% block topnav %}
-   {{ parent() }}
+    {{ parent() }}
 {% endblock %}
 
 {# On met soit le block dashboardheader ou pageheading mais pas les deux, on peut aussi les enlever tous les deux. Je mets du contenu pour l'exemple #}
@@ -99,66 +117,93 @@
             <div class="ibox">
                 <div class="ibox-content">
 
-                            <div class="pull-right">
-                                <a class="btn btn-white btn-xs" href="{{ path('adm_report_update',{'slug': report.slug}) }}" role="button"><i class="fa fa-pencil"></i> Editer</a>
-                            </div>
+                    {# BOUTON EDITION, BOUTON PDF #}
+                    <div class="pull-right">
+                        <a class="btn btn-white btn-xs" href="{{ path('adm_report_update',{'slug': report.slug}) }}"
+                           role="button"><i class="fa fa-pencil"></i> Editer</a>
+                    </div>
 
-                            <div class="text-center article-title">
-                                <div id="reportName">
-                                    {{ report.name | upper }}
-                                </div>
-                                {% for author in report.authors %}
-                                    {{ author.label }}
-                                    {% if not loop.last %}
-                                        ,
-                                    {% endif %}
-                                {% endfor %} | {{ report.dateCreated | date('Y') }}<br/>
-                            </div>
+                    {# TITRE DU RAPPORT #}
+                    <div class="text-center article-title">
+                        <div id="reportName">
+                            {{ report.name | upper }}
+                        </div>
+                        {% for author in report.authors %}
+                            {{ author.label }}
+                            {% if not loop.last %} <span style="color: #d3d3d3">&</span>
+                            {% endif %}
+                        {% endfor %} | {{ report.dateCreated | date('Y') }}<br/>
+                    </div>
+
+                    {# LES MOTS-CLES #}
+                    {% if report.keywords  is not empty %}
+                        <label>Mots-clés</label>
+                        <div>
+                            {% for report in report.keywords %}
+                                <button class="btn btn-white btn-xs" type="button"><i
+                                            class="fa fa-tag"></i> {{ report.name }}</button>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+
+                    <div class="hr-line-dashed"></div>
+
+                    {# LE RESUME DU RAPPORT #}
+                    {% if report.abstract  is not empty %}
+                        <h1>Résumé</h1>
+                        {{ report.abstract | raw }}
+
+                        <div class="hr-line-dashed"></div>
+                    {% endif %}
+
+                    {# LES CARTES STATIQUES #}
+                    <div class="row" style="padding: none;margin: none;">
+                        <div class="col-md-4">
+                            <img class="static-map" id='static-map'>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="static-map" id='static-map-2'>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="static-map" id='static-map-3'>
+                        </div>
+                    </div>{# end-row #}
+
+                    <div class="hr-line-dashed"></div>
+                    {# Sommaire #}
+                    <div class="row">
+                        <h1>Sommaire</h1>
 
 
+                    </div>{# end-row #}
+
+                </div> {# end-ibox-content #}
+            </div> {# end-ibox #}
+
+            {# LE CONTENU DU RAPPORT #}
+
+            <div class="ibox">
+                <div class="ibox-content" id="articleBody">
+                    {{ report.articleBody | raw }}
+                </div>
+            </div> {# end-ibox #}
+
+            {# MOTS-CLES, COMMENTAIRES, NOMBRE DE VUE#}
+            <div class="ibox">
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-md-12">
                             {% if report.keywords  is not empty %}
-                            <label>Mots-clés</label>
-                            <div>
-                                {% for report in report.keywords %}
-                                    <button class="btn btn-white btn-xs" type="button"><i class="fa fa-tag"></i> {{ report.name }}</button>
-                                {% endfor %}
-                            </div>
+                                <label>Mots-clés</label>
+                                <div>
+                                    {% for report in report.keywords %}
+                                        <button class="btn btn-white btn-xs" type="button"><i
+                                                    class="fa fa-tag"></i> {{ report.name }}</button>
+                                    {% endfor %}
+                                </div>
                             {% endif %}
-
-                            <div class="hr-line-dashed"></div>
-                            {% if report.abstract  is not empty %}
-                                <h1>Résumé</h1>
-                                {{ report.abstract | raw }}
-                                <div class="hr-line-dashed"></div>
-                            {% endif %}
-
-                            <div class="row" style="padding: none;margin: none;" >
-                                <div class="col-md-4">
-                                    <img class="static-map" id='static-map'>
-                                </div>
-                                <div class="col-md-4">
-                                    <img class="static-map" id='static-map-2'>
-                                </div>
-                                <div class="col-md-4">
-                                    <img class="static-map"  id='static-map-3'>
-                                </div>
-                            </div>
-
-                            <div class="hr-line-dashed"></div>
-                                    {{ report.articleBody | raw }}
-                            <hr>
-                            <div class="row">
-                                <div class="col-md-12">
-                                {% if report.keywords  is not empty %}
-                                    <label>Mots-clés</label>
-                                    <div>
-                                        {% for report in report.keywords %}
-                                            <button class="btn btn-white btn-xs" type="button"><i class="fa fa-tag"></i> {{ report.name }}</button>
-                                        {% endfor %}
-                                    </div>
-                                {% endif %}
-                            </div> {# end-col-md-12 #}
-                      </div>{# end-row #}
+                        </div> {# end-col-md-12 #}
+                    </div>{# end-row #}
                 </div> {# end-ibox-content #}
             </div> {# end-ibox #}
         </div> {# end-col-lg-10 col-lg-offset-1 #}
@@ -175,42 +220,84 @@
 {% endblock %}
 
 {% block javascripts %}
-    {{ parent() }}
+    {% javascripts
+    '@ADMCoreBundle/Resources/public/js/jquery-2.1.1.js'
+    '@ADMCoreBundle/Resources/public/js/bootstrap.min.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/metisMenu/jquery.metisMenu.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/pace/pace.min.js'
+    '@ADMCoreBundle/Resources/public/js/inspinia.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/toastr/toastr.min.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/slimscroll/jquery.slimscroll.min.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.tooltip.min.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.spline.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.resize.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.pie.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/peity/jquery.peity.min.js'
+    '@ADMCoreBundle/Resources/public/js/demo/peity-demo.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/jquery-ui/jquery-ui.min.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/sparkline/jquery.sparkline.min.js'
+    '@ADMCoreBundle/Resources/public/js/demo/sparkline-demo.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/chartJs/Chart.min.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/toc/toc.min.js'
+    output='js/compiled/readReport.js' %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+
+
 {% endblock %}
 
 {% block extrascripts %}
+    <script type="text/javascript">
+        $('body.canvas-menu .sidebar-collapse').slimScroll({
+            height: '100%',
+            railOpacity: 0.9
+        });
+    </script>
+
+    <script>
+        $('#toc').toc({
+            'selectors': 'h1,h2,h3', //elements to use as headings
+            'container': '#articleBody', //element to find all selectors in
+            'prefix': '' //prefix for anchor tags and class names
+        });
+
+
+
+    </script>
+
     <script>
         L.mapbox.accessToken = 'pk.eyJ1IjoiaHVnb2xlaG91eCIsImEiOiItOHl6Sm5jIn0.12l_k0K_Z28UE-Jc0kDgpw';
         longitude = {{ report.latitude }};
         latitude = {{ report.longitude }};
         var data = {
-        "type": "FeatureCollection",
-        "features": [
-                        {
-                        "type": "Feature",
-                        "properties": {},
-                        "geometry": {
-                            "type": "Point",
-                            "coordinates": [
+            "type": "FeatureCollection",
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {},
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
                             latitude,
                             longitude
-                            ]
-                            }
-                         }
-                    ]
-                };
+                        ]
+                    }
+                }
+            ]
+        };
 
         // The size of the desired map.
         var size = [600, 600];
 
 
         document.getElementById('static-map').src =
-        'https://api.tiles.mapbox.com/v4/hugolehoux.m2a2l7dj/' +
-        'pin-l+C5E96F(' + latitude + ',' + longitude + ')' + '/' +
-        latitude + ',' + longitude + ',' +
-        3 + '/' +
-        size.join('x') + '.png' +
-        '?access_token=' + L.mapbox.accessToken;
+                'https://api.tiles.mapbox.com/v4/hugolehoux.m2a2l7dj/' +
+                'pin-l+C5E96F(' + latitude + ',' + longitude + ')' + '/' +
+                latitude + ',' + longitude + ',' +
+                3 + '/' +
+                size.join('x') + '.png' +
+                '?access_token=' + L.mapbox.accessToken;
 
         document.getElementById('static-map-2').src =
                 'https://api.tiles.mapbox.com/v4/hugolehoux.mi8n7fe4/' +
@@ -227,5 +314,12 @@
                 7 + '/' +
                 size.join('x') + '.png' +
                 '?access_token=' + L.mapbox.accessToken;
+    </script>
+
+
+    <script>
+            $('#toc > ul').addClass('nav nav-second-level');
+            $('#toc').prepend('<a href="#"><i class="fa fa-list-ul"></i> <span class="nav-label">Sommaire</span> <span class="fa arrow"></span></a>');
+            $('body').scrollspy({ target: '#toc' });
     </script>
 {% endblock %}
