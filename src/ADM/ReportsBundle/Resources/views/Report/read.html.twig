@@ -36,6 +36,12 @@
             padding-right: 15%;
         }
 
+        #tocList
+        > li > ul > li > a {
+            font-size:12px;
+            font-style: italic;
+        }
+
     </style>
 
     <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
@@ -53,15 +59,17 @@
 
 {% block menus %}
     <li>
-        <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">Explorer</span> <span class="fa arrow"></span></a>
+        <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">Explorer</span> <span
+                    class="fa arrow"></span></a>
         <ul class="nav nav-second-level">
             <li><a href={{ path('adm_leaflet_worldmap') }}>Atlas mondial</a></li>
-            <li ><a href="#">Pays<span class="label pull-right">En cours</span></a></li>
-            <li ><a href="#">Productions<span class="label pull-right">En cours</span></a></li>
+            <li><a href="#">Pays<span class="label pull-right">En cours</span></a></li>
+            <li><a href="#">Productions<span class="label pull-right">En cours</span></a></li>
         </ul>
     </li>
     <li>
-        <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Messages </span><span class="label label-warning pull-right">16/24</span></a>
+        <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Messages </span><span
+                    class="label label-warning pull-right">16/24</span></a>
         <ul class="nav nav-second-level">
             <li><a href="mail_compose.html">Nouveau</a></li>
             <li><a href="mailbox.html">Reçus</a></li>
@@ -69,6 +77,10 @@
         </ul>
     </li>
     <li id="toc" class="active">
+        <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">Sommaire</span> <span
+                    class="fa arrow"></span></a>
+        <ul id="tocList" class="nav nav-second-level collapse in nav-list affix">
+        </ul>
     </li>{# end-col #}
 {% endblock %}
 
@@ -256,12 +268,6 @@
     </script>
 
     <script>
-        $('#toc').toc({
-            'selectors': 'h1,h2,h3', //elements to use as headings
-            'container': '#articleBody', //element to find all selectors in
-            'prefix': '' //prefix for anchor tags and class names
-        });
-
 
 
     </script>
@@ -316,10 +322,38 @@
                 '?access_token=' + L.mapbox.accessToken;
     </script>
 
+    <script>$(document).ready(function () {
 
-    <script>
-            $('#toc > ul').addClass('nav nav-second-level');
-            $('#toc').prepend('<a href="#"><i class="fa fa-list-ul"></i> <span class="nav-label">Sommaire</span> <span class="fa arrow"></span></a>');
-            $('body').scrollspy({ target: '#toc' });
+            var prevH1Item = null;
+            var prevH1List = null;
+
+            var index = 0;
+            $("#articleBody > h1, #articleBody > h2").each(function () {
+
+                //insert an anchor to jump to, from the TOC link.
+                var anchor = "<a id='" + "toc" + index + "'></a>";
+                $(this).before(anchor);
+
+
+                if ($(this).is("h1")) {
+                    var lih1 = "<li><a href='#" + "toc" + index + "'>" + $(this).text().substr(0,22) + "</a></li>";
+                    prevH1List = $("<ul class='nav nav-third-level'></ul>");
+                    prevH1Item = $(lih1);
+                    prevH1Item.append(prevH1List);
+                    prevH1Item.appendTo("#tocList");
+                } else {
+                    var lih2 = "<li><a  style='padding-top: 2px; padding-bottom: 2px;' href='#" + "toc" +index + "'>" + $(this).text().substr(0,22) + "</a></li>";
+                    prevH1List.append(lih2);
+                }
+                index++;
+            });
+
+        });
+
+        $('body').scrollspy({ target: '#toc' });
     </script>
+
+
+
 {% endblock %}
+

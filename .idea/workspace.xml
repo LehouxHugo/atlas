@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e7264e4-dd4c-45b0-9105-8ca1e2cb0da6" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\.idea\symfony2.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/compiled/addReport.css" afterPath="$PROJECT_DIR$/web/css/compiled/addReport.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/compiled/addReport.js" afterPath="$PROJECT_DIR$/web/js/compiled/addReport.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/compiled/base.css" afterPath="$PROJECT_DIR$/web/css/compiled/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Common/navbar-menus.html.twig" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Common/navbar-menus.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/read.html.twig" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/read.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/compiled/register.css" afterPath="$PROJECT_DIR$/web/css/compiled/register.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="atlas.iws" />
@@ -40,12 +34,23 @@
       <file leaf-file-name="read.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/read.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6679612" vertical-offset="5755" max-vertical-offset="6270">
-              <caret line="321" column="55" selection-start-line="321" selection-start-column="55" selection-end-line="321" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.6679612" vertical-offset="6192" max-vertical-offset="6935">
+              <caret line="344" column="105" selection-start-line="344" selection-start-column="105" selection-end-line="344" selection-end-column="105" />
               <folding>
-                <element signature="e#5264#5286#0#HTML" expanded="true" />
-                <element signature="e#6403#6438#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <marker date="1436026320574" expanded="true" signature="13560:13598" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/test">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -89,6 +94,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Common/navbar-menus.html.twig" />
+        <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/test" />
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/read.html.twig" />
       </list>
     </option>
@@ -528,13 +534,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/read.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6679612" vertical-offset="5755" max-vertical-offset="6270">
-          <caret line="321" column="55" selection-start-line="321" selection-start-column="55" selection-end-line="321" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.6679612" vertical-offset="6192" max-vertical-offset="6935">
+          <caret line="344" column="105" selection-start-line="344" selection-start-column="105" selection-end-line="344" selection-end-column="105" />
           <folding>
-            <element signature="e#5264#5286#0#HTML" expanded="true" />
-            <element signature="e#6403#6438#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1436026320574" expanded="true" signature="13560:13598" placeholder="..." />
           </folding>
         </state>
       </provider>
