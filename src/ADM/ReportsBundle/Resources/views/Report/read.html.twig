@@ -42,13 +42,17 @@
             font-style: italic;
         }
 
-        #articleBody p {
+        #articleBody p, #articleBody ul {
+            font-size:15px;
             margin-left: 10%;
             margin-right: 5%;
             margin-bottom: 1.3em;
             text-align: justify;
             text-indent: 5%;
+            line-height: 26px;
         }
+
+
 
         #articleBody h1 {
         }
@@ -68,6 +72,8 @@
         #articleBody h5 {
             margin-left: 10%;
         }
+
+
 
     </style>
 
@@ -246,31 +252,7 @@
 {% endblock %}
 
 {% block javascripts %}
-    {% javascripts
-    '@ADMCoreBundle/Resources/public/js/jquery-2.1.1.js'
-    '@ADMCoreBundle/Resources/public/js/bootstrap.min.js'
-    '@ADMCoreBundle/Resources/public/js/plugins/metisMenu/jquery.metisMenu.js'
-    '@ADMCoreBundle/Resources/public/js/plugins/pace/pace.min.js'
-    '@ADMCoreBundle/Resources/public/js/inspinia.js'
-    '@ADMCoreBundle/Resources/public/js/plugins/toastr/toastr.min.js'
-    '@ADMCoreBundle/Resources/public/js/plugins/slimscroll/jquery.slimscroll.min.js'
-    '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.js'
-    '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.tooltip.min.js'
-    '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.spline.js'
-    '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.resize.js'
-    '@ADMCoreBundle/Resources/public/js/plugins/flot/jquery.flot.pie.js'
-    '@ADMCoreBundle/Resources/public/js/plugins/peity/jquery.peity.min.js'
-    '@ADMCoreBundle/Resources/public/js/demo/peity-demo.js'
-    '@ADMCoreBundle/Resources/public/js/plugins/jquery-ui/jquery-ui.min.js'
-    '@ADMCoreBundle/Resources/public/js/plugins/sparkline/jquery.sparkline.min.js'
-    '@ADMCoreBundle/Resources/public/js/demo/sparkline-demo.js'
-    '@ADMCoreBundle/Resources/public/js/plugins/chartJs/Chart.min.js'
-    '@ADMCoreBundle/Resources/public/js/plugins/toc/toc.min.js'
-    output='js/compiled/readReport.js' %}
-    <script type="text/javascript" src="{{ asset_url }}"></script>
-    {% endjavascripts %}
-
-
+    {{ parent() }}
 {% endblock %}
 
 {% block extrascripts %}
@@ -279,11 +261,6 @@
             height: '100%',
             railOpacity: 0.9
         });
-    </script>
-
-    <script>
-
-
     </script>
 
     <script>
