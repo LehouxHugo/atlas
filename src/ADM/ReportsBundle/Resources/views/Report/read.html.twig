@@ -38,8 +38,35 @@
 
         #tocList
         > li > ul > li > a {
-            font-size:12px;
+            font-size: 12px;
             font-style: italic;
+        }
+
+        #articleBody p {
+            margin-left: 10%;
+            margin-right: 5%;
+            margin-bottom: 1.3em;
+            text-align: justify;
+            text-indent: 5%;
+        }
+
+        #articleBody h1 {
+        }
+
+        #articleBody h2 {
+            margin-left: 5%;
+        }
+
+        #articleBody h3 {
+            margin-left: 10%;
+        }
+
+        #articleBody h4 {
+            margin-left: 10%;
+        }
+
+        #articleBody h5 {
+            margin-left: 10%;
         }
 
     </style>
@@ -63,25 +90,17 @@
                     class="fa arrow"></span></a>
         <ul class="nav nav-second-level">
             <li><a href={{ path('adm_leaflet_worldmap') }}>Atlas mondial</a></li>
-            <li><a href="#">Pays<span class="label pull-right">En cours</span></a></li>
-            <li><a href="#">Productions<span class="label pull-right">En cours</span></a></li>
         </ul>
     </li>
-    <li>
-        <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Messages </span><span
-                    class="label label-warning pull-right">16/24</span></a>
-        <ul class="nav nav-second-level">
-            <li><a href="mail_compose.html">Nouveau</a></li>
-            <li><a href="mailbox.html">Reçus</a></li>
-            <li><a href="mailbox.html">Envoyés</a></li>
-        </ul>
-    </li>
-    <li id="toc" class="active">
-        <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">Sommaire</span> <span
+
+
+    <li id="my-nav" class="active"><a href="#"><i class="fa fa-list-ul"></i> <span
+                    class="nav-label">Sommaire</span><span
                     class="fa arrow"></span></a>
-        <ul id="tocList" class="nav nav-second-level collapse in nav-list affix">
+        <ul id="tocList" class="nav nav-second-level ">
         </ul>
     </li>{# end-col #}
+
 {% endblock %}
 
 {% block pagewrapperclass %}
@@ -165,9 +184,12 @@
                         <h1>Résumé</h1>
                         {{ report.abstract | raw }}
 
-                        <div class="hr-line-dashed"></div>
                     {% endif %}
 
+                </div> {# end-ibox-content #}
+            </div> {# end-ibox #}
+            <div class="ibox">
+                <div class="ibox-content">
                     {# LES CARTES STATIQUES #}
                     <div class="row" style="padding: none;margin: none;">
                         <div class="col-md-4">
@@ -179,14 +201,6 @@
                         <div class="col-md-4">
                             <img class="static-map" id='static-map-3'>
                         </div>
-                    </div>{# end-row #}
-
-                    <div class="hr-line-dashed"></div>
-                    {# Sommaire #}
-                    <div class="row">
-                        <h1>Sommaire</h1>
-
-
                     </div>{# end-row #}
 
                 </div> {# end-ibox-content #}
@@ -331,18 +345,18 @@
             $("#articleBody > h1, #articleBody > h2").each(function () {
 
                 //insert an anchor to jump to, from the TOC link.
-                var anchor = "<a id='" + "toc" + index + "'></a>";
+                var anchor = "<div id='" + "toc" + index + "'></div>";
                 $(this).before(anchor);
 
 
                 if ($(this).is("h1")) {
-                    var lih1 = "<li><a href='#" + "toc" + index + "'>" + $(this).text().substr(0,22) + "</a></li>";
+                    var lih1 = "<li><a href='#" + "toc" + index + "'>" + $(this).text().substr(0, 22) + "</a></li>";
                     prevH1List = $("<ul class='nav nav-third-level'></ul>");
                     prevH1Item = $(lih1);
                     prevH1Item.append(prevH1List);
                     prevH1Item.appendTo("#tocList");
                 } else {
-                    var lih2 = "<li><a  style='padding-top: 2px; padding-bottom: 2px;' href='#" + "toc" +index + "'>" + $(this).text().substr(0,22) + "</a></li>";
+                    var lih2 = "<li><a style='padding-top: 2px; padding-bottom: 2px;' href='#" + "toc" + index + "'>" + $(this).text().substr(0, 22) + "</a></li>";
                     prevH1List.append(lih2);
                 }
                 index++;
@@ -350,8 +364,19 @@
 
         });
 
-        $('body').scrollspy({ target: '#toc' });
+
     </script>
+
+    <script>$(document).ready(function () {
+            $('li a').click(function () {
+                $('html, body').animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top
+                }, 500);
+                return false;
+            });
+        });
+    </script>
+
 
 
 

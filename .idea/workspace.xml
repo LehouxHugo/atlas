@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9e7264e4-dd4c-45b0-9105-8ca1e2cb0da6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/read.html.twig" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/read.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="atlas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,12 +33,12 @@
       <file leaf-file-name="read.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/read.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6679612" vertical-offset="6192" max-vertical-offset="6935">
-              <caret line="344" column="105" selection-start-line="344" selection-start-column="105" selection-end-line="344" selection-end-column="105" />
+            <state vertical-scroll-proportion="0.29514563" vertical-offset="741" max-vertical-offset="7410">
+              <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <marker date="1436026320574" expanded="true" signature="13560:13598" placeholder="..." />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <marker date="1436031067588" expanded="true" signature="13319:13357" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -544,12 +543,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/read.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6679612" vertical-offset="6192" max-vertical-offset="6935">
-          <caret line="344" column="105" selection-start-line="344" selection-start-column="105" selection-end-line="344" selection-end-column="105" />
+        <state vertical-scroll-proportion="0.29514563" vertical-offset="741" max-vertical-offset="7410">
+          <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
           <folding>
             <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1436026320574" expanded="true" signature="13560:13598" placeholder="..." />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1436031067588" expanded="true" signature="13319:13357" placeholder="..." />
           </folding>
         </state>
       </provider>
