@@ -22,9 +22,12 @@
     <script src="{{ asset('bundles/admcore/js/plugins/tinyMCE/tinymce.min.js') }}" type="text/javascript"></script>
     <script>tinymce.init({selector:'textarea',
             skin: "light",
-            plugins: "paste,autoresize",
+            plugins: "paste, autoresize, table, autolink, advlist, contextmenu, link, image",
             menubar: false,
-            toolbar: " undo redo | formatselect | italic bold | alignleft aligncenter alignjustify | bullist numlist"
+            content_css : ["{{ asset('bundles/admcore/css/bootstrap.min.css') }} "],
+            toolbar: "formatselect bold italic  bullist numlist link image inserttable undo redo",
+            autoresize_max_height: 500,
+            contextmenu: "formatselect italic bold | link image | inserttable  cell row column deletetable",
         });</script>
 
     <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
