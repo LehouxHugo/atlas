@@ -14,6 +14,11 @@ use Doctrine\Common\Collections\ArrayCollection;
  */
 class Organization
 {
+    public function __construct()
+    {
+        $this->reports = new  ArrayCollection();
+    }
+
     /**
      * @var integer
      *
@@ -72,7 +77,10 @@ class Organization
     private $foundingDate;
 
 
-
+    /**
+     * @ORM\ManyToMany(targetEntity="ADM\ReportsBundle\Entity\Report", mappedBy="organizations", cascade={"persist"})
+     **/
+    private $reports;
 
     /**
      * Get id
@@ -247,4 +255,37 @@ class Organization
 
 
 
+
+    /**
+     * Add reports
+     *
+     * @param \ADM\ReportsBundle\Entity\Report $reports
+     * @return Organization
+     */
+    public function addReport(\ADM\ReportsBundle\Entity\Report $report)
+    {
+        $this->reports[] = $report;
+
+        return $this;
+    }
+
+    /**
+     * Remove reports
+     *
+     * @param \ADM\ReportsBundle\Entity\Report $reports
+     */
+    public function removeReport(\ADM\ReportsBundle\Entity\Report $report)
+    {
+        $this->reports->removeElement($report);
+    }
+
+    /**
+     * Get reports
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getReports()
+    {
+        return $this->reports;
+    }
 }

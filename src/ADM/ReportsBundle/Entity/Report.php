@@ -21,6 +21,7 @@ class Report
         $this->dateModified = new \Datetime();
         $this->authors = new  ArrayCollection();
         $this->keywords = new  ArrayCollection();
+        $this->organizations = new  ArrayCollection();
     }
 
     /**
@@ -72,6 +73,12 @@ class Report
      * @ORM\JoinTable(name="report_author")
      **/
     private $authors;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="ADM\ReportsBundle\Entity\Organization", inversedBy="reports", cascade={"persist"})
+     * @ORM\JoinTable(name="report_organizations")
+     **/
+    private $organizations;
 
     /**
      * @var string
@@ -448,5 +455,38 @@ class Report
     public function getAbstract()
     {
         return $this->abstract;
+    }
+
+    /**
+     * Add organizations
+     *
+     * @param \ADM\ReportsBundle\Entity\Organization $organization
+     * @return Report
+     */
+    public function addOrganization(\ADM\ReportsBundle\Entity\Organization $organization)
+    {
+        $this->organizations[] = $organization;
+
+        return $this;
+    }
+
+    /**
+     * Remove organizations
+     *
+     * @param \ADM\ReportsBundle\Entity\Organization $organization
+     */
+    public function removeOrganization(\ADM\ReportsBundle\Entity\Organization $organization)
+    {
+        $this->organizations->removeElement($organization);
+    }
+
+    /**
+     * Get organizations
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getOrganizations()
+    {
+        return $this->organizations;
     }
 }

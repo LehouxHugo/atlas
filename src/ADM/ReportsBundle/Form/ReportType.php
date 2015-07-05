@@ -38,6 +38,11 @@ class ReportType extends AbstractType
                     'property' => 'label',
                     'multiple' => true
                 ))
+            ->add('organizations', 'entity', array(
+                    'class'    => 'ADMReportsBundle:Organization',
+                    'property' => 'legalName',
+                    'multiple' => true
+                ))
             ->add('keywords', 'entity', array(
                     'class'         => 'ADMReportsBundle:Keyword',
                     'property' => 'name',

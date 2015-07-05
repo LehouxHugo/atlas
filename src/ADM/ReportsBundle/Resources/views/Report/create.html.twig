@@ -123,6 +123,17 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group" >
+                                <label>Organisations partenaires</label>
+                                <div class="input-group ">
+                                    <span class="input-group-addon"><i class="fa fa-users"></i></span>
+                                    {{ form_widget(form.organizations, {'attr': {'class': 'form-control','data-placeholder': 'Montpellier SupAgro, AVSF, CIRAD...'}}) }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="hr-line-dashed"></div>
                     <label>Zone d'étude</label>
                     <div id='map'></div>

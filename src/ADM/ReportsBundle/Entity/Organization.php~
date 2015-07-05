@@ -14,6 +14,11 @@ use Doctrine\Common\Collections\ArrayCollection;
  */
 class Organization
 {
+    public function __construct()
+    {
+        $this->reports = new  ArrayCollection();
+    }
+
     /**
      * @var integer
      *
@@ -71,27 +76,11 @@ class Organization
      */
     private $foundingDate;
 
-    /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="dissolutionDate", type="datetime")
-     */
-    private $dissolutionDate;
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="logo", type="string", length=255)
-     */
-    private $logo;
-
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="numberOfEmployees", type="integer")
-     */
-    private $numberOfEmployees;
-
+     * @ORM\ManyToMany(targetEntity="ADM\ReportsBundle\Entity\Report", mappedBy="organizations", cascade={"persist"})
+     **/
+    private $reports;
 
     /**
      * Get id
@@ -147,6 +136,29 @@ class Organization
     public function getLegalName()
     {
         return $this->legalName;
+    }
+
+    /**
+     * Set label
+     *
+     * @param string $label
+     * @return Organization
+     */
+    public function setLabel($label)
+    {
+        $this->label = $label;
+
+        return $this;
+    }
+
+    /**
+     * Get label
+     *
+     * @return string
+     */
+    public function getLabel()
+    {
+        return $this->label;
     }
 
     /**
@@ -241,72 +253,6 @@ class Organization
         return $this->foundingDate;
     }
 
-    /**
-     * Set dissolutionDate
-     *
-     * @param \DateTime $dissolutionDate
-     * @return Organization
-     */
-    public function setDissolutionDate($dissolutionDate)
-    {
-        $this->dissolutionDate = $dissolutionDate;
 
-        return $this;
-    }
 
-    /**
-     * Get dissolutionDate
-     *
-     * @return \DateTime 
-     */
-    public function getDissolutionDate()
-    {
-        return $this->dissolutionDate;
-    }
-
-    /**
-     * Set logo
-     *
-     * @param string $logo
-     * @return Organization
-     */
-    public function setLogo($logo)
-    {
-        $this->logo = $logo;
-
-        return $this;
-    }
-
-    /**
-     * Get logo
-     *
-     * @return string 
-     */
-    public function getLogo()
-    {
-        return $this->logo;
-    }
-
-    /**
-     * Set numberOfEmployees
-     *
-     * @param integer $numberOfEmployees
-     * @return Organization
-     */
-    public function setNumberOfEmployees($numberOfEmployees)
-    {
-        $this->numberOfEmployees = $numberOfEmployees;
-
-        return $this;
-    }
-
-    /**
-     * Get numberOfEmployees
-     *
-     * @return integer 
-     */
-    public function getNumberOfEmployees()
-    {
-        return $this->numberOfEmployees;
-    }
 }
