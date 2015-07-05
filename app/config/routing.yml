@@ -1,7 +1,14 @@
 # ADMReportsbundle
 adm_reports:
     resource: "@ADMReportsBundle/Resources/config/routing.yml"
-    prefix:   /rapports
+    prefix:   /rapport
+    options:
+        expose: true
+
+# ADMReportsbundle
+adm_organizations:
+    resource: "@ADMReportsBundle/Resources/config/routingOrganization.yml"
+    prefix:   /organisation
     options:
         expose: true
 

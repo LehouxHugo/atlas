@@ -1,0 +1,11 @@
+adm_organization_create:
+    path:     /ajouter
+    defaults: { _controller: ADMReportsBundle:Organization:create }
+
+adm_organization_read:
+    path:     /{label}
+    defaults: { _controller: ADMReportsBundle:Organization:read }
+
+adm_organization_update:
+    path:     /{label}/editer
+    defaults: { _controller: ADMReportsBundle:Organization:update }
