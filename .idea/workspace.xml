@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e7264e4-dd4c-45b0-9105-8ca1e2cb0da6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/formReportType.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/ReportsBundle/Entity/Organization.php" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Entity/Organization.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/ReportsBundle/Form/OrganizationType.php" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Form/OrganizationType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/ReportsBundle/Entity/Report.php" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Entity/Report.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/ReportsBundle/Form/ReportType.php" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Form/ReportType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/create.html.twig" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/create.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/listReportsByKeyword.html.twig" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/listReportsByKeyword.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/read.html.twig" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/read.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/update.html.twig" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/update.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/formReportType.html.twig" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/formReportType.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/LeafletBundle/Resources/views/Maps/viewWorldMap.html.twig" afterPath="$PROJECT_DIR$/src/ADM/LeafletBundle/Resources/views/Maps/viewWorldMap.html.twig" />
     </list>
     <ignored path="atlas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,8 +67,18 @@
       <file leaf-file-name="update.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/update.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.5849056" vertical-offset="1615" max-vertical-offset="3705">
+            <state vertical-scroll-proportion="-4.6603775" vertical-offset="1558" max-vertical-offset="3705">
               <caret line="95" column="69" selection-start-line="95" selection-start-column="69" selection-end-line="95" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="formReportType.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/formReportType.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.48987108" vertical-offset="1007" max-vertical-offset="2147">
+              <caret line="67" column="78" selection-start-line="67" selection-start-column="78" selection-end-line="67" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -116,11 +118,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReportType.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ReportType.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Form/ReportType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8489209" vertical-offset="174" max-vertical-offset="1615">
+            <state vertical-scroll-proportion="-23.44" vertical-offset="60" max-vertical-offset="1615">
               <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewWorldMap.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ADM/LeafletBundle/Resources/views/Maps/viewWorldMap.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.68" vertical-offset="6436" max-vertical-offset="7068">
+              <caret line="362" column="57" selection-start-line="362" selection-start-column="57" selection-end-line="362" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -136,7 +148,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Common/navbar-menus.html.twig" />
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/test" />
-        <option value="$PROJECT_DIR$/src/ADM/LeafletBundle/Resources/views/Maps/viewWorldMap.html.twig" />
         <option value="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/tinyMCE/plugins/moxiemanager/plugin.min.js" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Organization/create.html.twig" />
@@ -152,7 +163,6 @@
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Entity/ReportRepository.php" />
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Controller/ReportController.php" />
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/Forms/reportType.html.twig" />
-        <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/formReportType.html.twig" />
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Form/OrganizationType.php" />
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Entity/Organization.php" />
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Entity/Report.php" />
@@ -161,6 +171,8 @@
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/listReportsByKeyword.html.twig" />
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/read.html.twig" />
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Form/ReportType.php" />
+        <option value="$PROJECT_DIR$/src/ADM/LeafletBundle/Resources/views/Maps/viewWorldMap.html.twig" />
+        <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/formReportType.html.twig" />
       </list>
     </option>
   </component>
@@ -325,6 +337,70 @@
               <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Report" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ADM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReportsBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ADM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReportsBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -397,96 +473,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="LeafletBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ADM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LeafletBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ADM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LeafletBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ADM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LeafletBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -813,14 +799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADM/LeafletBundle/Resources/views/Maps/viewWorldMap.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.794964" vertical-offset="6094" max-vertical-offset="7068">
-          <caret line="344" column="14" selection-start-line="344" selection-start-column="14" selection-end-line="344" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ADM/UserBundle/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.3147483" vertical-offset="2047" max-vertical-offset="2603">
@@ -828,26 +806,6 @@
           <folding>
             <element signature="e#41#73#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/formReportType.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29514563" vertical-offset="551" max-vertical-offset="2147">
-          <caret line="37" column="57" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
-          <folding>
-            <element signature="e#1779#1801#0#HTML" expanded="true" />
-            <element signature="e#2872#2894#0#HTML" expanded="true" />
-            <element signature="e#4403#4425#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/update.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.5849056" vertical-offset="1615" max-vertical-offset="3705">
-          <caret line="95" column="69" selection-start-line="95" selection-start-column="69" selection-end-line="95" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -886,10 +844,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADM/LeafletBundle/Resources/views/Maps/viewWorldMap.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.68" vertical-offset="6436" max-vertical-offset="7068">
+          <caret line="362" column="57" selection-start-line="362" selection-start-column="57" selection-end-line="362" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Form/ReportType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8489209" vertical-offset="174" max-vertical-offset="1615">
+        <state vertical-scroll-proportion="-23.44" vertical-offset="60" max-vertical-offset="1615">
           <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/update.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.6603775" vertical-offset="1558" max-vertical-offset="3705">
+          <caret line="95" column="69" selection-start-line="95" selection-start-column="69" selection-end-line="95" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/formReportType.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48987108" vertical-offset="1007" max-vertical-offset="2147">
+          <caret line="67" column="78" selection-start-line="67" selection-start-column="78" selection-end-line="67" selection-end-column="78" />
           <folding />
         </state>
       </provider>
