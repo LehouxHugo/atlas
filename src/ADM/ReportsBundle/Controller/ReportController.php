@@ -121,10 +121,17 @@ class ReportController extends Controller
             ->getReportsWithKeyword($keywordName)
             ;
 
+            $keyword=$this
+                ->getDoctrine()
+                ->getManager()
+                ->getRepository('ADMReportsBundle:Keyword')
+                ->findOneByLabel($label);
+
         return $this->render(
             'ADMReportsBundle:Report:listReportsByKeyword.html.twig',
             array(
-                'listReports' => $listReports
+                'listReports' => $listReports,
+                'keyword' => $keyword
             )
         );
     }
