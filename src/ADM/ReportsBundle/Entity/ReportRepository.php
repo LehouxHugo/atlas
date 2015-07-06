@@ -4,6 +4,7 @@ namespace ADM\ReportsBundle\Entity;
 
 use Doctrine\ORM\EntityRepository;
 use Doctrine\ORM\QueryBuilder;
+use ADM\ReportsBundle\Entity\Keyword;
 
 /**
  * ReportRepository
@@ -13,21 +14,15 @@ use Doctrine\ORM\QueryBuilder;
  */
 class ReportRepository extends EntityRepository
 {
-    public function getReportsWithKeyword(Keyword $keyword)
+    public function getReportsWithKeywords(array $keywordNames)
     {
-        $qb = $this->createQueryBuilder('a');
+        $qb = $this
+        ->createQueryBuilder('r')
+        ->leftJoin('r.keywords', 'k')
+        ->addSelect('k');
 
-        // On fait une jointure avec l'entité Category avec pour alias « c »
-        $qb
-            ->join('a.keywords', 'c')
-            ->addSelect('c')
-        ;
+        $qb->where($qb->expr()->in('k.name', $keywordNames));
 
-        // Puis on filtre sur le nom des catégories à l'aide d'un IN
-        $qb->where($qb->expr()->in('c.name', $keyword));
-        // La syntaxe du IN et d'autres expressions se trouve dans la documentation Doctrine
-
-        // Enfin, on retourne le résultat
         return $qb
             ->getQuery()
             ->getResult()

@@ -4,6 +4,7 @@ namespace ADM\ReportsBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 
 /**
@@ -37,6 +38,12 @@ class Keyword
      * @ORM\Column(name="name", type="string", length=255)
      */
     private $name;
+
+    /**
+     * @Gedmo\Slug(fields={"name"})
+     * @ORM\Column(length=128, unique=true)
+     */
+    private $label;
 
     /**
      * @ORM\ManyToMany(targetEntity="ADM\ReportsBundle\Entity\Report", mappedBy="keywords", cascade={"persist"})
@@ -113,4 +120,27 @@ class Keyword
     }
 
 
+
+    /**
+     * Set label
+     *
+     * @param string $label
+     * @return Keyword
+     */
+    public function setLabel($label)
+    {
+        $this->label = $label;
+
+        return $this;
+    }
+
+    /**
+     * Get label
+     *
+     * @return string 
+     */
+    public function getLabel()
+    {
+        return $this->label;
+    }
 }

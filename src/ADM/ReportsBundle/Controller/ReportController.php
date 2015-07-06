@@ -109,4 +109,21 @@ class ReportController extends Controller
         }
     }
 
+    public function listReportsByKeywordAction()
+    {
+            $listReports= $this
+            ->getDoctrine()
+            ->getManager()
+            ->getRepository('ADMReportsBundle:Report')
+            ->getReportsWithKeywords(array('Inde'))
+            ;
+
+        return $this->render(
+            'ADMReportsBundle:Report:listReportsByKeyword.html.twig',
+            array(
+                'listReports' => $listReports
+            )
+        );
+    }
+
 }

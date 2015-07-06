@@ -10,7 +10,10 @@ adm_report_update:
     path:     /{slug}/editer
     defaults: { _controller: ADMReportsBundle:Report:update }
 
-adm_add_new_keyword:
-    path:     /keyword/{kw}
-    defaults: { _controller: ADMReportsBundle:Report:addNewKeyword }
+adm_keyword_create:
+    path:     /tag/ajouter
+    defaults: { _controller: ADMReportsBundle:Keyword:create }
 
+adm_list_report_by_keyword:
+    path:     /tag/{label}
+    defaults: { _controller: ADMReportsBundle:Report:listReportsByKeyword }
