@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e7264e4-dd4c-45b0-9105-8ca1e2cb0da6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/ReportsBundle/Controller/ReportController.php" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Controller/ReportController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/listReportsByKeyword.html.twig" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/listReportsByKeyword.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -91,8 +90,8 @@
       <file leaf-file-name="listReportsByKeyword.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/listReportsByKeyword.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.92621356" vertical-offset="10714" max-vertical-offset="12008">
-              <caret line="589" column="11" selection-start-line="589" selection-start-column="11" selection-end-line="589" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.7067961" vertical-offset="10333" max-vertical-offset="11571">
+              <caret line="563" column="100" selection-start-line="563" selection-start-column="100" selection-end-line="563" selection-end-column="100" />
               <folding />
             </state>
           </provider>
@@ -1298,8 +1297,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/listReportsByKeyword.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.92621356" vertical-offset="10714" max-vertical-offset="12008">
-          <caret line="589" column="11" selection-start-line="589" selection-start-column="11" selection-end-line="589" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.7067961" vertical-offset="10333" max-vertical-offset="11571">
+          <caret line="563" column="100" selection-start-line="563" selection-start-column="100" selection-end-line="563" selection-end-column="100" />
           <folding />
         </state>
       </provider>
