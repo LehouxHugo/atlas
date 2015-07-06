@@ -166,11 +166,7 @@
                         <div id="reportName">
                             {{ report.name | upper }}
                         </div>
-                        {% for author in report.authors %}
-                            {{ author.label }}
-                            {% if not loop.last %} <span style="color: #d3d3d3">&</span>
-                            {% endif %}
-                        {% endfor %} | {{ report.dateCreated | date('Y') }}<br/>
+                        {% for author in report.authors %}{{ author.label  }}{% if not loop.last %}, {% endif %}{% endfor %} | {{ report.dateCreated | date('Y') }}<br/>
                     </div>
 
                     {# LES MOTS-CLES #}

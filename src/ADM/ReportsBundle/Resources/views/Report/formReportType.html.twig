@@ -1,0 +1,108 @@
+<div class="row">
+    <div class="col-lg-10 col-lg-offset-1">
+        <div class="ibox">
+            <div class="ibox-content">
+                {{ form_start(form) }}
+                {{ form_errors(form) }}
+                <div class="row">
+                    <div class="col-lg-10">
+                        <div class="form-group" >
+                            <label>Titre</label>
+                            {{ form_widget(form.name, {'attr': {'class': 'form-control'}}) }}
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="form-group" >
+                            <label>Année de l'étude</label>
+                            <div class="input-group date">
+                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                {{ form_widget(form.dateCreated, {'attr': {'class': 'form-control'}}) }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10">
+                        <div class="form-group" >
+                            <label>Auteurs</label>
+                            <div class="input-group date">
+                                <span class="input-group-addon"><i class="fa fa-users"></i></span>
+                                {{ form_widget(form.authors, {'attr': {'class': 'form-control','data-placeholder': 'Michel, Geneviève...'}}) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="form-group" >
+                            <label><span style="color:#ffffff;">A</span></label>
+                            <div class="text-left">
+                                <a class="btn btn-default" href="{{ path('fos_user_registration_register') }}"><i class="fa fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10">
+                        <div class="form-group" >
+                            <label>Organisations partenaires</label>
+                            <div class="input-group ">
+                                <span class="input-group-addon"><i class="fa fa-cubes"></i></span>
+                                {{ form_widget(form.organizations, {'attr': {'class': 'form-control','data-placeholder': 'Montpellier SupAgro, AVSF, CIRAD...'}}) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="form-group" >
+                            <label><span style="color:#ffffff;">A</span></label>
+                            <div class="text-left">
+                                <a class="btn btn-default" href="{{ path('adm_organization_create') }}"><i class="fa fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <label>Zone d'étude</label>
+                <div id='map'></div>
+
+                {{ form_widget(form.latitude, {'attr': {'class': 'form-control hidden'}}) }}
+                {{ form_widget(form.longitude, {'attr': {'class': 'form-control hidden'}}) }}
+                {{ form_widget(form.country, {'attr': {'class': 'form-control hidden'}}) }}
+                <div class="hr-line-dashed"></div>
+                <div class="row">
+                    <div class="col-lg-10">
+                        <div class="form-group" >
+                            <label>Mots-clés</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-tags"></i></span>
+                                {{ form_widget(form.keywords, {'attr': {'class': 'form-control','data-placeholder': 'Agro-foresterie, Accaparement foncier...'}}) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="form-group" >
+                            <label><span style="color:#ffffff;">A</span></label>
+                            <div class="text-left">
+                                <a class="btn btn-default" href="{{ path('adm_keyword_create') }}"><i class="fa fa-plus"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="form-group" >
+                    <label>Résumé</label>
+                    {{ form_widget(form.abstract, {'attr': {'class': 'form-control'}}) }}
+                </div>
+                <div class="form-group" >
+                    <label>Contenu du rapport</label>
+                    {{ form_widget(form.articleBody, {'attr': {'class': 'form-control'}}) }}
+                </div>
+                {{ form_widget(form.published, {'attr': {'class': 'form-control hidden'}}) }}
+                <hr>
+                {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}
+                {{ form_rest(form) }}
+
+                {# Fermeture de la balise <form> du formulaire HTML #}
+                {{ form_end(form) }}
+            </div> {# end-ibox-content #}
+        </div> {# end-ibox #}
+    </div> {# end-col-lg-10 col-lg-offset-1 #}
+</div> {# end-row #}

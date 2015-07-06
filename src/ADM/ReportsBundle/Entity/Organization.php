@@ -44,35 +44,35 @@ class Organization
     /**
      * @var string
      *
-     * @ORM\Column(name="legalName", type="string", length=255)
+     * @ORM\Column(name="legalName", type="string", length=255, nullable=true)
      */
     private $legalName;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="email", type="string", length=255)
+     * @ORM\Column(name="email", type="string", length=255, nullable=true)
      */
     private $email;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="telephone", type="string", length=255)
+     * @ORM\Column(name="telephone", type="string", length=255, nullable=true)
      */
     private $telephone;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="url", type="string", length=255)
+     * @ORM\Column(name="url", type="string", length=255, nullable=true)
      */
     private $url;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="foundingDate", type="datetime")
+     * @ORM\Column(name="foundingDate", type="datetime", nullable=true)
      */
     private $foundingDate;
 

@@ -16,12 +16,14 @@ class OrganizationType extends AbstractType
     {
         $builder
             ->add('name','text')
-            ->add('legalName','text')
-            ->add('email','email')
-            ->add('telephone','text')
-            ->add('url','url')
+            ->add('legalName','text', array('required'=>false))
+            ->add('email','email', array('required'=>false))
+            ->add('telephone','text', array('required'=>false))
+            ->add('url','url', array('required'=>false))
             ->add('foundingDate','collot_datetime',
-                array( 'pickerOptions' =>
+                array(
+                    'required'=>false,
+                    'pickerOptions' =>
                     array('format' => 'yyyy',
                         'endDate' => date('Y'),
                         'autoclose' => true,

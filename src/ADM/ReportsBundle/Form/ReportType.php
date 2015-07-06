@@ -34,16 +34,19 @@ class ReportType extends AbstractType
                         'showMeridian' => false,
                     )))
             ->add('authors', 'entity', array(
+                    'required'=>false,
                     'class'    => 'ADMUserBundle:User',
                     'property' => 'label',
                     'multiple' => true
                 ))
             ->add('organizations', 'entity', array(
+                    'required'=>false,
                     'class'    => 'ADMReportsBundle:Organization',
                     'property' => 'legalName',
                     'multiple' => true
                 ))
             ->add('keywords', 'entity', array(
+                    'required'=>false,
                     'class'         => 'ADMReportsBundle:Keyword',
                     'property' => 'name',
                     'multiple' => true

@@ -83,7 +83,7 @@ class Report
     /**
      * @var string
      *
-     * @ORM\Column(name="abstract", type="text")
+     * @ORM\Column(name="abstract", type="text", nullable=true)
      */
     private $abstract;
 
