@@ -77,11 +77,30 @@
 {# Options du pagewrapperclass : "wrapper wrapper-content" "wrapper wrapper-content animated fadeInRight" voire "wrapper wrapper-content animated fadeInRight article" pour faire apparaître le contenu de façon un peu dynamique (voir animate.css pour toutes les options) #}
 
 {% block pagecontent %}
+    {%  if keyword.description is not empty %}
     <div class="row">
         <div class="col-lg-12">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>Liste des rapports</h5>
+                    <h5>Description</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    {{ keyword.description }}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Rapports associés</h5>
                     <div class="ibox-tools">
                         <a class="collapse-link">
                             <i class="fa fa-chevron-up"></i>
@@ -90,7 +109,7 @@
                 </div>
                 <div class="ibox-content">
 
-                    <table class="table table-bordered table-hover dataTables-example" >
+                    <table class="table table-bordered table-hover dataTables-example">
                         <thead>
 
                         <tr>
@@ -102,12 +121,14 @@
                         </thead>
                         <tbody>
                         {% for report in listReports %}
-                        <tr>
-                            <td><a href="{{ path('adm_report_read', { 'slug': report.slug }) }}">{{ report.name }}</a></td>
-                            <td>{% for author in report.authors %}{{ author.label  }}{% if not loop.last %}, {% endif %}{% endfor %}</td>
-                            <td>{{ report.dateCreated | date('Y') }}</td>
-                            <td>{{ report.country }}</td>
-                        </tr>
+                            <tr>
+                                <td>
+                                    <a href="{{ path('adm_report_read', { 'slug': report.slug }) }}">{{ report.name }}</a>
+                                </td>
+                                <td>{% for author in report.authors %}{{ author.label }}{% if not loop.last %}, {% endif %}{% endfor %}</td>
+                                <td>{{ report.dateCreated | date('Y') }}</td>
+                                <td>{{ report.country }}</td>
+                            </tr>
                         {% endfor %}
 
                         <tfoot>
@@ -156,7 +177,7 @@
     {{ parent() }}
 
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('.dataTables-example').dataTable({
                 responsive: true,
                 "dom": 'T<"clear">lfrtip',
@@ -172,9 +193,10 @@
             background: #fff;
 
         }
+
         .DTTT_Print #page-wrapper {
             margin: 0;
-            background:#fff;
+            background: #fff;
         }
 
         button.DTTT_button, div.DTTT_button, a.DTTT_button {
@@ -184,6 +206,7 @@
             box-shadow: none;
             padding: 6px 8px;
         }
+
         button.DTTT_button:hover, div.DTTT_button:hover, a.DTTT_button:hover {
             border: 1px solid #d2d2d2;
             background: #fff;

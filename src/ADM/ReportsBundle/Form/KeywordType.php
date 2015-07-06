@@ -16,6 +16,7 @@ class KeywordType extends AbstractType
     {
         $builder
             ->add('name', 'text')
+            ->add('description', 'text')
             ->add('save', 'submit')
         ;
     }

@@ -46,6 +46,13 @@ class Keyword
     private $label;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="description", type="text", nullable=true)
+     */
+    private $description;
+
+    /**
      * @ORM\ManyToMany(targetEntity="ADM\ReportsBundle\Entity\Report", mappedBy="keywords", cascade={"persist"})
      **/
     private $reports;
@@ -120,4 +127,27 @@ class Keyword
     }
 
 
+
+    /**
+     * Set label
+     *
+     * @param string $label
+     * @return Keyword
+     */
+    public function setLabel($label)
+    {
+        $this->label = $label;
+
+        return $this;
+    }
+
+    /**
+     * Get label
+     *
+     * @return string 
+     */
+    public function getLabel()
+    {
+        return $this->label;
+    }
 }

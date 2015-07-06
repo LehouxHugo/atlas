@@ -225,9 +225,9 @@
                             {% if report.keywords  is not empty %}
                                 <label>Mots-clés</label>
                                 <div>
-                                    {% for report in report.keywords %}
-                                        <button class="btn btn-white btn-xs" type="button"><i
-                                                    class="fa fa-tag"></i> {{ report.name }}</button>
+                                    {% for keyword in report.keywords %}
+                                        <a class="btn btn-white btn-xs" href="{{ path('adm_list_report_by_keyword',{'label': keyword.label}) }}"
+                                           role="button"><i class="fa fa-tag"></i> {{ keyword.name }}</a>
                                     {% endfor %}
                                 </div>
                             {% endif %}
