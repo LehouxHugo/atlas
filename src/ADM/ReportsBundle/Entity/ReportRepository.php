@@ -14,14 +14,14 @@ use ADM\ReportsBundle\Entity\Keyword;
  */
 class ReportRepository extends EntityRepository
 {
-    public function getReportsWithKeywords(array $keywordNames)
+    public function getReportsWithKeyword(array $keywordName)
     {
         $qb = $this
         ->createQueryBuilder('r')
         ->leftJoin('r.keywords', 'k')
         ->addSelect('k');
 
-        $qb->where($qb->expr()->in('k.name', $keywordNames));
+        $qb->where($qb->expr()->in('k.label', $keywordName));
 
         return $qb
             ->getQuery()

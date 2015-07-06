@@ -109,13 +109,16 @@ class ReportController extends Controller
         }
     }
 
-    public function listReportsByKeywordAction()
+    public function listReportsByKeywordAction($label)
     {
+
+            $keywordName = array($label);
+
             $listReports= $this
             ->getDoctrine()
             ->getManager()
             ->getRepository('ADMReportsBundle:Report')
-            ->getReportsWithKeywords(array('Inde'))
+            ->getReportsWithKeyword($keywordName)
             ;
 
         return $this->render(
