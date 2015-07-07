@@ -17,16 +17,6 @@
       height: calc(100vh - 60px);
     }
   </style>
-
-  <style>
-    /* Adjustments to account for mapbox.css box-sizing rules */
-    .leaflet-control-zoomslider-knob { width:14px; height:6px; }
-    .leaflet-container .leaflet-control-zoomslider-body {
-      -webkit-box-sizing:content-box;
-      -moz-box-sizing:content-box;
-      box-sizing:content-box;
-    }
-  </style>
 {% endblock %}
 
 {% block topnav %}
@@ -339,6 +329,7 @@
       },
       "properties": {
         "title": "{{ report.name }}",
+        "popupContent":"Test",
         "marker-color": "#fc4353",
         "marker-size": "large",
         "marker-symbol": "monument",
@@ -349,19 +340,27 @@
     ];
     var map = L.mapbox.map('map', 'examples.map-igb471ik', { zoomControl: false }).setView([18, 22.5], 2);
     var markers = L.markerClusterGroup();
-    var geoJsonLayer = L.geoJson(geojson);
+    var geoJsonLayer = L.geoJson(geojson, {
+      onEachFeature: onEachFeature
+    });
 
     markers.addLayer(geoJsonLayer);
     map.addLayer(markers);
-    markers.on('mouseover', function(e) {
-      e.layer.openPopup();
-    });
-    markers.on('mouseout', function(e) {
-      e.layer.closePopup();
-    });
+
+
     markers.on('click', function(e) {
       window.open(e.layer.feature.properties.url, "_self");
     });
 
+    function onEachFeature(feature, layer) {
+      // does this feature have a property named popupContent?
+      if (feature.properties && feature.properties.popupContent) {
+        layer.bindPopup(feature.properties.popupContent);
+      }
+    }
   </script>
+
+
+
+  
 {% endblock %}
