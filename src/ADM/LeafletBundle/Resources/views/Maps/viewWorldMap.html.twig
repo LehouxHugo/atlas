@@ -17,6 +17,30 @@
       height: calc(100vh - 60px);
     }
   </style>
+
+  <style>
+    /*
+     * These CSS rules affect the tooltips within maps with the custom-popup
+     * class. See the full CSS for all customizable options:
+     * https://github.com/mapbox/mapbox.js/blob/001754177f3985c0e6b4a26e3c869b0c66162c99/theme/style.css#L321-L366
+     */
+    .custom-popup .leaflet-popup-content-wrapper {
+      background:#F4F6FA;
+      color:#676a6c;
+      font-size:14px;
+      border-color:#e7eaec;
+    }
+
+    .custom-popup .leaflet-popup-tip-container {
+      width:20px;
+      height:15px;
+    }
+    .custom-popup .leaflet-popup-tip {
+      border-left:5px solid transparent;
+      border-right:5px solid transparent;
+      border-top:5px solid transparent;
+    }
+  </style>
 {% endblock %}
 
 {% block topnav %}
@@ -139,7 +163,7 @@
 {% endblock %}
 
 {% block pagecontent %}
-  <div id='map'></div>
+  <div class='custom-popup' id='map'></div>
 {% endblock %}
 
 {% block plugins %}
@@ -329,17 +353,13 @@
       },
       "properties": {
         "title": "{{ report.name }}",
-        "popupContent":"Test",
-        "marker-color": "#fc4353",
-        "marker-size": "large",
-        "marker-symbol": "monument",
-        url: '{{ path('adm_report_read', { 'slug': report.slug }) }}'
+        "popupContent":"<b>{{ report.name }}</b><br/><a href='{{ path('adm_report_read', { 'slug': report.slug }) }}'>Lire</a>",
       }
     }{% if not loop.last %},{% endif %}
     {% endfor %}
     ];
     var map = L.mapbox.map('map', 'examples.map-igb471ik', { zoomControl: false }).setView([18, 22.5], 2);
-    var markers = L.markerClusterGroup();
+    var markers = L.markerClusterGroup({showCoverageOnHover: false,});
     var geoJsonLayer = L.geoJson(geojson, {
       onEachFeature: onEachFeature
     });
@@ -347,20 +367,20 @@
     markers.addLayer(geoJsonLayer);
     map.addLayer(markers);
 
-
-    markers.on('click', function(e) {
-      window.open(e.layer.feature.properties.url, "_self");
-    });
-
     function onEachFeature(feature, layer) {
-      // does this feature have a property named popupContent?
       if (feature.properties && feature.properties.popupContent) {
         layer.bindPopup(feature.properties.popupContent);
+        layer.setIcon(L.mapbox.marker.icon({
+          'marker-color': '#ECBA52',
+          'marker-size': 'medium',
+        }));
       }
+
+
+
+
+
     }
   </script>
 
-
-
-  
 {% endblock %}
