@@ -25,7 +25,7 @@
      * https://github.com/mapbox/mapbox.js/blob/001754177f3985c0e6b4a26e3c869b0c66162c99/theme/style.css#L321-L366
      */
     .custom-popup .leaflet-popup-content-wrapper {
-      background:#F4F6FA;
+      background: white;
       color:#676a6c;
       font-size:14px;
       border-color:#e7eaec;
@@ -358,12 +358,12 @@
     }{% if not loop.last %},{% endif %}
     {% endfor %}
     ];
-    var map = L.mapbox.map('map', 'examples.map-igb471ik', { zoomControl: false }).setView([18, 22.5], 2);
+    var map = L.mapbox.map('map', 'examples.map-igb471ik', { minZoom: 2, worldCopyJump: true }).setView([18, 22.5], 2);
     var markers = L.markerClusterGroup({showCoverageOnHover: false, iconCreateFunction: function(cluster) {
       return L.mapbox.marker.icon({
         // show the number of markers in the cluster on the icon.
         'marker-symbol': cluster.getChildCount(),
-        'marker-color': '#422'
+        'marker-color': '#422121'
       });
     }
     });
@@ -383,11 +383,6 @@
           'marker-symbol':'library',
         }));
       }
-
-
-
-
-
     }
   </script>
 
