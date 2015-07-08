@@ -3,6 +3,7 @@
 namespace ADM\CoreBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use ADM\CoreBundle\Entity\Country;
 
 class CoreController extends Controller
 {
@@ -10,7 +11,6 @@ class CoreController extends Controller
     {
         return $this->render('ADMCoreBundle:Core:index.html.twig');
     }
-
 
     public function testBasicLayoutAction()
     {

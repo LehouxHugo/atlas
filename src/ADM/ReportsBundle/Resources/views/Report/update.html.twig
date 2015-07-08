@@ -10,9 +10,8 @@
     'bundles/admcore/font-awesome/css/font-awesome.css'
     'bundles/admcore/css/style.css'
     'bundles/admcore/css/animate.css'
-    'bundles/admcore/css/plugins/chosen/chosen.css'
-    %}
-    <link rel="stylesheet" href="{{ asset_url }}" />
+    'bundles/admcore/css/plugins/chosen/chosen.css' %}
+    <link rel="stylesheet" href="{{ asset_url }}"/>
     {% endstylesheets %}
     {{ form_stylesheet(form) }}
 {% endblock %}
@@ -20,20 +19,25 @@
 {% block extraheadcontent %}
     {# Fichiers pour utiliser tinyMCE Wysiwyg editor #}
     <script src="{{ asset('bundles/admcore/js/plugins/tinyMCE/tinymce.min.js') }}" type="text/javascript"></script>
-    <script>tinymce.init({selector:'textarea',
+    <script>tinymce.init({
+            selector: 'textarea',
             skin: "light",
             plugins: "paste, autoresize, table, autolink, advlist, contextmenu, link, image",
             menubar: false,
-            content_css : ["{{ asset('bundles/admcore/css/bootstrap.min.css') }} "],
+            content_css: ["{{ asset('bundles/admcore/css/bootstrap.min.css') }} "],
             toolbar: "formatselect bold italic  bullist numlist link image inserttable undo redo",
             autoresize_max_height: 500,
             contextmenu: "formatselect italic bold | link image | inserttable  cell row column deletetable",
         });</script>
 
     <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet'/>
     <style>
-        #map { height:70vh; width:100%; margin-bottom: 15px; }
+        #map {
+            height: 70vh;
+            width: 100%;
+            margin-bottom: 15px;
+        }
     </style>
 
 
@@ -128,8 +132,7 @@
     '@ADMCoreBundle/Resources/public/js/plugins/chartJs/Chart.min.js'
     '@ADMCoreBundle/Resources/public/js/plugins/chosen/chosen.jquery.js'
 
-    output='js/compiled/addReport.js'
-    %}
+    output='js/compiled/addReport.js' %}
     <script type="text/javascript" src="{{ asset_url }}"></script>
     {% endjavascripts %}
     {{ form_javascript(form) }}
@@ -142,49 +145,53 @@
     </script>
 
     <script>
-        L.mapbox.accessToken = 'pk.eyJ1IjoiaHVnb2xlaG91eCIsImEiOiItOHl6Sm5jIn0.12l_k0K_Z28UE-Jc0kDgpw';
+        $(document).ready(function () {
+                    L.mapbox.accessToken = 'pk.eyJ1IjoiaHVnb2xlaG91eCIsImEiOiItOHl6Sm5jIn0.12l_k0K_Z28UE-Jc0kDgpw';
 
-        latitude = document.getElementById('adm_reportsbundle_report_update_latitude');
-        longitude = document.getElementById('adm_reportsbundle_report_update_longitude');
-        var map = L.mapbox.map('map', 'examples.map-igb471ik').setView([latitude.value, longitude.value], 8);
-        var marker = L.marker([latitude.value, longitude.value], {
-            icon: L.mapbox.marker.icon({
-                'marker-color': '#f86767'
-            }),
-            draggable: true
-        }).addTo(map);
+                    latitude = document.getElementById('adm_reportsbundle_report_update_latitude');
+                    longitude = document.getElementById('adm_reportsbundle_report_update_longitude');
+                    latitude.value = latitude.value.replace(/,/g, '.');
+                    longitude.value = longitude.value.replace(/,/g, '.');
+                    var map = L.mapbox.map('map', 'examples.map-igb471ik').setView([latitude.value, longitude.value], 8);
+                    var marker = L.marker([latitude.value, longitude.value], {
+                        icon: L.mapbox.marker.icon({
+                            'marker-color': '#f86767'
+                        }),
+                        draggable: true
+                    }).addTo(map);
 
-        // every time the marker is dragged, update the coordinates container
-        marker.on('dragend', ondragend);
+                    // every time the marker is dragged, update the coordinates container
+                    marker.on('dragend', ondragend);
 
-        // Set the initial marker coordinate on load.
-        ondragend();
+                    // Set the initial marker coordinate on load.
+                    ondragend();
 
-        function ondragend() {
-            var m = marker.getLatLng();
-            latitude.value = m.lat;
-            longitude.value = m.lng;
+                    function ondragend() {
+                        var m = marker.getLatLng();
+                        latitude.value = m.lat;
+                        longitude.value = m.lng;
 
-            latI = document.getElementById('adm_reportsbundle_report_update_latitude').value;
-            lngI = document.getElementById('adm_reportsbundle_report_update_longitude').value;
+                        latI = document.getElementById('adm_reportsbundle_report_update_latitude').value;
+                        lngI = document.getElementById('adm_reportsbundle_report_update_longitude').value;
 
-            $.ajax({
-                url: "http://ws.geonames.org/countryCode",
-                type: 'get',
-                dataType: "html",
-                data: {
-                    username: "hugolehoux",
-                    lat: latI,
-                    lng: lngI
-                },
-                success: function (result) {
-                    document.getElementById('adm_reportsbundle_report_update_country').value = result;
-                },
-                error : function(result, statut, erreur){
-                    document.getElementById('adm_reportsbundle_report_update_country').value = "";
+                        $.ajax({
+                            url: "http://ws.geonames.org/countryCode",
+                            type: 'get',
+                            dataType: "html",
+                            data: {
+                                username: "hugolehoux",
+                                lat: latI,
+                                lng: lngI
+                            },
+                            success: function (result) {
+                                document.getElementById('adm_reportsbundle_report_update_country').value = result;
+                            },
+                            error: function (result, statut, erreur) {
+                                document.getElementById('adm_reportsbundle_report_update_country').value = "";
+                            }
+                        });
+                    }
                 }
-            });
-        }
-
+        );
     </script>
 {% endblock %}

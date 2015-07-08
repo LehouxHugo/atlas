@@ -39,6 +39,7 @@ class OrganizationType extends AbstractType
                         'viewSelect' => 'decade',
                         'showMeridian' => false,
                     )))
+            ->add('description', 'textarea', array('required'=>false))
             ->add('save',      'submit')
         ;
     }

@@ -53,8 +53,14 @@ class ReportType extends AbstractType
                 ))
             ->add('abstract', 'textarea', array('required'=>false))
             ->add('articleBody', 'textarea', array('required'=>false))
-            ->add('latitude', 'number')
-            ->add('longitude', 'number')
+            ->add('latitude', 'number', array(
+                    'scale' => 12,
+                    'precision' => 12
+                ))
+            ->add('longitude', 'number', array(
+                    'scale' => 12,
+                    'precision' => 12
+                ))
             ->add('country', 'text', array('required'=>false))
             ->add('published', 'checkbox')
             ->add('save',      'submit')

@@ -44,35 +44,42 @@ class Organization
     /**
      * @var string
      *
-     * @ORM\Column(name="legalName", type="string", length=255)
+     * @ORM\Column(name="legalName", type="string", length=255, nullable=true)
      */
     private $legalName;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="email", type="string", length=255)
+     * @ORM\Column(name="description", type="text")
+     */
+    private $description;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="email", type="string", length=255, nullable=true)
      */
     private $email;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="telephone", type="string", length=255)
+     * @ORM\Column(name="telephone", type="string", length=255, nullable=true)
      */
     private $telephone;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="url", type="string", length=255)
+     * @ORM\Column(name="url", type="string", length=255, nullable=true)
      */
     private $url;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="foundingDate", type="datetime")
+     * @ORM\Column(name="foundingDate", type="datetime", nullable=true)
      */
     private $foundingDate;
 
@@ -255,4 +262,37 @@ class Organization
 
 
 
+
+    /**
+     * Add reports
+     *
+     * @param \ADM\ReportsBundle\Entity\Report $reports
+     * @return Organization
+     */
+    public function addReport(\ADM\ReportsBundle\Entity\Report $report)
+    {
+        $this->reports[] = $report;
+
+        return $this;
+    }
+
+    /**
+     * Remove reports
+     *
+     * @param \ADM\ReportsBundle\Entity\Report $reports
+     */
+    public function removeReport(\ADM\ReportsBundle\Entity\Report $report)
+    {
+        $this->reports->removeElement($report);
+    }
+
+    /**
+     * Get reports
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getReports()
+    {
+        return $this->reports;
+    }
 }

@@ -51,6 +51,13 @@ class Organization
     /**
      * @var string
      *
+     * @ORM\Column(name="description", type="text", nullable=true)
+     */
+    private $description;
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="email", type="string", length=255, nullable=true)
      */
     private $email;
@@ -287,5 +294,28 @@ class Organization
     public function getReports()
     {
         return $this->reports;
+    }
+
+    /**
+     * Set description
+     *
+     * @param string $description
+     * @return Organization
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * Get description
+     *
+     * @return string 
+     */
+    public function getDescription()
+    {
+        return $this->description;
     }
 }
