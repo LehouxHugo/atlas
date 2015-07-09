@@ -26,9 +26,40 @@
      */
     .custom-popup .leaflet-popup-content-wrapper {
       background: white;
-      color:#676a6c;
+      color:#2E3942;
       font-size:14px;
       border-color:#e7eaec;
+      border-radius: 0px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 10px;
+    }
+
+    .custom-popup .leaflet-popup-header {
+      background: #F5F8F9;
+      color:#2E3942;
+      font-size:14px;
+      border-color:#e7eaec;
+      margin-left: -20px;
+      margin-right: -20px;
+      margin-top: -25px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .custom-popup .leaflet-popup-header a {
+      color:#2E3942;
+      font-weight: bold;
+    }
+    .custom-popup .leaflet-popup-header a:hover {
+      color:#2E3942;
+      text-decoration: underline;
+    }
+
+    a .leaflet-popup-close-button{
+      color=#e0e2e2;
     }
 
     .custom-popup .leaflet-popup-tip-container {
@@ -353,7 +384,7 @@
       },
       "properties": {
         "title": "{{ report.name }}",
-        "popupContent":"<b>{{ report.name }}</b><br/><a href='{{ path('adm_report_read', { 'slug': report.slug }) }}'>Lire</a>",
+        "popupContent":"<div class='leaflet-popup-header'><b><a href='{{ path('adm_report_read', { 'slug': report.slug }) }}'>{{ report.name }}</a> <span style='color:#ACB2B7'>{{ report.dateCreated | date('Y') }}</span></b></div><div style='padding-top:10px;'>{% for author in report.authors %}{{ author.label }}{% if not loop.last %}, {% endif %}{% endfor %}</div>",
       }
     }{% if not loop.last %},{% endif %}
     {% endfor %}
@@ -363,7 +394,7 @@
       return L.mapbox.marker.icon({
         // show the number of markers in the cluster on the icon.
         'marker-symbol': cluster.getChildCount(),
-        'marker-color': '#422121'
+        'marker-color': '#9A1219'
       });
     }
     });
@@ -378,9 +409,10 @@
       if (feature.properties && feature.properties.popupContent) {
         layer.bindPopup(feature.properties.popupContent);
         layer.setIcon(L.mapbox.marker.icon({
-          'marker-color': '#ECBA52',
+          'marker-color': '#9A1219',
           'marker-size': 'medium',
-          'marker-symbol':'library',
+          'marker-symbol':'1',
+          'marker-line-width':0.1,
         }));
       }
     }
