@@ -104,6 +104,16 @@
       color: white;
       text-align: center;
       cursor: pointer;
+
+    .leaflet-control-layers-toggle{
+      width:auto;
+      background-position:3px 50% ;
+      padding:3px;
+      padding-left:36px;
+      text-decoration:none;
+      line-height:36px;
+
+    }
     }
   </style>
 {% endblock %}
@@ -427,7 +437,14 @@
     }{% if not loop.last %},{% endif %}
     {% endfor %}
     ];
+
     var map = L.mapbox.map('map', 'examples.map-igb471ik', { minZoom: 2, worldCopyJump: true }).setView([18, 22.5], 2);
+
+    L.control.layers({
+      "Satellite": L.mapbox.tileLayer("examples.map-igb471ik"),
+      "Light": L.mapbox.tileLayer("hugolehoux.mi8n7fe4"),
+    }, null).addTo(map);
+
     var markers = L.markerClusterGroup({showCoverageOnHover: false, iconCreateFunction: function (cluster) {
       var nbChilds = cluster.getChildCount();
       var small =  nbChilds < 4;
