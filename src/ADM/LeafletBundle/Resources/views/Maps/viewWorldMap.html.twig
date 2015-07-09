@@ -33,10 +33,13 @@
       padding-left: 10px;
       padding-right: 10px;
       padding-top: 10px;
+      -webkit-box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.25);
+      -moz-box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.25);
+      box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.25);
     }
 
     .custom-popup .leaflet-popup-header {
-      background: #F5F8F9;
+      background: #edf0f1;
       color:#2E3942;
       font-size:14px;
       border-color:#e7eaec;
@@ -47,6 +50,7 @@
       padding-right: 20px;
       padding-top: 10px;
       padding-bottom: 10px;
+      border-bottom: solid 1px #d9dcdd;
     }
 
     .custom-popup .leaflet-popup-header a {
@@ -58,18 +62,14 @@
       text-decoration: underline;
     }
 
-    a .leaflet-popup-close-button{
-      color=#e0e2e2;
-    }
-
     .custom-popup .leaflet-popup-tip-container {
-      width:20px;
+      width:15px;
       height:15px;
     }
     .custom-popup .leaflet-popup-tip {
-      border-left:5px solid transparent;
-      border-right:5px solid transparent;
-      border-top:5px solid transparent;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid white;
     }
 
     .my-icon {
@@ -104,25 +104,6 @@
       color: white;
       text-align: center;
       cursor: pointer;
-    }
-
-    .mycluster1 {
-      border-radius: 20px;
-      width: 40px;
-      height: 40px;
-      background-color: greenyellow;
-      text-align: center;
-      font-size: 24px;
-    }
-    .mycluster2 {
-      border-radius: 30px;
-      width: 60px;
-      height: 60px;
-      background-color: #ffdb58;
-      text-align: center;
-      font-size: 24px;
-      padding-top: 10px;
-      box-sizing: border-box;
     }
   </style>
 {% endblock %}
@@ -441,7 +422,7 @@
           "html": '1'
         },
         "title": "{{ report.name }}",
-        "popupContent":"<div class='leaflet-popup-header'><b><a href='{{ path('adm_report_read', { 'slug': report.slug }) }}'>{{ report.name }}</a> <span style='color:#ACB2B7'>{{ report.dateCreated | date('Y') }}</span> </b></div><div style='padding-top:10px;'>{% for author in report.authors %}{{ author.label }}{% if not loop.last %}, {% endif %}{% endfor %}</div>",
+        "popupContent":"<div class='leaflet-popup-header'><b><a href='{{ path('adm_report_read', { 'slug': report.slug }) }}'>{{ report.name|upper }}</a></b></div><div style='padding-top:10px;'>{% for author in report.authors %}{{ author.label }}{% if not loop.last %}, {% endif %}{% endfor %} | {{ report.dateCreated | date('Y') }}<br/><a href='{{ path('adm_report_read', { 'slug': report.slug }) }}' class='btn btn-warning btn-block btn-sm' style='margin-top:10px;font-weight:bold;color:white;margin-left:55%;width:45%;' role='button' type='button'>Lire</a></div>"
       }
     }{% if not loop.last %},{% endif %}
     {% endfor %}
