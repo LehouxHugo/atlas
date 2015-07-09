@@ -71,6 +71,59 @@
       border-right:5px solid transparent;
       border-top:5px solid transparent;
     }
+
+    .my-icon {
+      padding-top:0.1em !important;
+      font-size: 1.2em;
+      font-weight: bold;
+      padding-top:20%;
+      line-height:1.5em;
+      min-width: 1.7em;
+      min-height: 1.7em;
+      border-radius: 100%;
+      background: hsla(357, 79%, 34%, 1);
+      box-shadow:
+      hsla(360, 100%, 100%, 0.15) 0 0 0 4px;
+      color: white;
+      text-align: center;
+      cursor: pointer;
+    }
+
+
+    .my-icon-medium {
+      padding-top:0.2em !important;
+      font-size: 1.4em;
+      font-weight: bold;
+      line-height:1.5em;
+      min-width: 1.9em;
+      min-height: 1.9em;
+      border-radius: 100%;
+      background: hsla(357, 79%, 34%, 1);
+      box-shadow:
+      hsla(360, 100%, 100%, 0.15) 0 0 0 5px;
+      color: white;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .mycluster1 {
+      border-radius: 20px;
+      width: 40px;
+      height: 40px;
+      background-color: greenyellow;
+      text-align: center;
+      font-size: 24px;
+    }
+    .mycluster2 {
+      border-radius: 30px;
+      width: 60px;
+      height: 60px;
+      background-color: #ffdb58;
+      text-align: center;
+      font-size: 24px;
+      padding-top: 10px;
+      box-sizing: border-box;
+    }
   </style>
 {% endblock %}
 
@@ -383,19 +436,22 @@
         "coordinates": [{{ report.longitude }},{{ report.latitude}}]
       },
       "properties": {
+        "icon": {
+          "className": 'my-icon',
+          "html": '1'
+        },
         "title": "{{ report.name }}",
-        "popupContent":"<div class='leaflet-popup-header'><b><a href='{{ path('adm_report_read', { 'slug': report.slug }) }}'>{{ report.name }}</a> <span style='color:#ACB2B7'>{{ report.dateCreated | date('Y') }}</span></b></div><div style='padding-top:10px;'>{% for author in report.authors %}{{ author.label }}{% if not loop.last %}, {% endif %}{% endfor %}</div>",
+        "popupContent":"<div class='leaflet-popup-header'><b><a href='{{ path('adm_report_read', { 'slug': report.slug }) }}'>{{ report.name }}</a> <span style='color:#ACB2B7'>{{ report.dateCreated | date('Y') }}</span> </b></div><div style='padding-top:10px;'>{% for author in report.authors %}{{ author.label }}{% if not loop.last %}, {% endif %}{% endfor %}</div>",
       }
     }{% if not loop.last %},{% endif %}
     {% endfor %}
     ];
     var map = L.mapbox.map('map', 'examples.map-igb471ik', { minZoom: 2, worldCopyJump: true }).setView([18, 22.5], 2);
-    var markers = L.markerClusterGroup({showCoverageOnHover: false, iconCreateFunction: function(cluster) {
-      return L.mapbox.marker.icon({
-        // show the number of markers in the cluster on the icon.
-        'marker-symbol': cluster.getChildCount(),
-        'marker-color': '#9A1219'
-      });
+    var markers = L.markerClusterGroup({showCoverageOnHover: false, iconCreateFunction: function (cluster) {
+      var nbChilds = cluster.getChildCount();
+      var small =  nbChilds < 4;
+      var className = small ? 'my-icon' : 'my-icon-medium';
+      return L.divIcon({ html: nbChilds, className: className });
     }
     });
     var geoJsonLayer = L.geoJson(geojson, {
@@ -408,12 +464,7 @@
     function onEachFeature(feature, layer) {
       if (feature.properties && feature.properties.popupContent) {
         layer.bindPopup(feature.properties.popupContent);
-        layer.setIcon(L.mapbox.marker.icon({
-          'marker-color': '#9A1219',
-          'marker-size': 'medium',
-          'marker-symbol':'1',
-          'marker-line-width':0.1,
-        }));
+        layer.setIcon(L.divIcon(feature.properties.icon));
       }
     }
   </script>

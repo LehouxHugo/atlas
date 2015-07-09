@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e7264e4-dd4c-45b0-9105-8ca1e2cb0da6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/create.html.twig" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/create.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/update.html.twig" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/update.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/LeafletBundle/Resources/views/Maps/viewWorldMap.html.twig" afterPath="$PROJECT_DIR$/src/ADM/LeafletBundle/Resources/views/Maps/viewWorldMap.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="atlas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,10 +89,10 @@
       <file leaf-file-name="viewWorldMap.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ADM/LeafletBundle/Resources/views/Maps/viewWorldMap.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5451197" vertical-offset="7038" max-vertical-offset="8094">
-              <caret line="386" column="219" selection-start-line="386" selection-start-column="219" selection-end-line="386" selection-end-column="219" />
+            <state vertical-scroll-proportion="0.37016574" vertical-offset="1224" max-vertical-offset="9063">
+              <caret line="75" column="21" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
               <folding>
-                <element signature="e#13725#13740#0#Twig" expanded="true" />
+                <element signature="e#15009#15024#0#Twig" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1034,10 +1031,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ADM/LeafletBundle/Resources/views/Maps/viewWorldMap.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5451197" vertical-offset="7038" max-vertical-offset="8094">
-          <caret line="386" column="219" selection-start-line="386" selection-start-column="219" selection-end-line="386" selection-end-column="219" />
+        <state vertical-scroll-proportion="0.37016574" vertical-offset="1224" max-vertical-offset="9063">
+          <caret line="75" column="21" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
           <folding>
-            <element signature="e#13725#13740#0#Twig" expanded="true" />
+            <element signature="e#15009#15024#0#Twig" expanded="true" />
           </folding>
         </state>
       </provider>
