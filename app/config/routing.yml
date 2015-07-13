@@ -12,6 +12,13 @@ adm_organizations:
     options:
         expose: true
 
+# ADMCountrybundle
+adm_country:
+    resource: "@ADMCoreBundle/Resources/config/routingCountry.yml"
+    prefix:   /pays
+    options:
+        expose: true
+
 # ADMCorebundle
 adm_core:
     resource: "@ADMCoreBundle/Resources/config/routing.yml"

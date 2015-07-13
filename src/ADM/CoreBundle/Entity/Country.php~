@@ -88,6 +88,13 @@ class Country
      */
     private $description;
 
+    /**
+     * @ORM\OneToMany(targetEntity="ADM\ReportsBundle\Entity\Report", mappedBy="country")
+     */
+    protected $reports;
+
+
+
 
     /**
      * Get id
@@ -283,29 +290,5 @@ class Country
     public function getNumericCountryCode()
     {
         return $this->numericCountryCode;
-    }
-
-
-    /**
-     * Set nameEN
-     *
-     * @param string $nameEN
-     * @return Country
-     */
-    public function setNameEN($nameEN)
-    {
-        $this->nameEN = $nameEN;
-
-        return $this;
-    }
-
-    /**
-     * Get nameEN
-     *
-     * @return string 
-     */
-    public function getNameEN()
-    {
-        return $this->nameEN;
     }
 }

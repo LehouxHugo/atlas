@@ -1,0 +1,5 @@
+adm_country_read:
+    path:     /{countryCode2}
+    defaults: { _controller: ADMCoreBundle:Country:read }
+
+
