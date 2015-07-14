@@ -15,7 +15,7 @@ class CountryController extends Controller
 
         $countryRepository = $em->getRepository('ADMCoreBundle:Country');
 
-        $url="http://data.fao.org/developers/api/v1/fr/resources/faostat/crop-prod/facts.json?page=1&pageSize=200&filter=cnt.iso3%20eq%20BRA&fields=cnt.iso3%20AS%20iso3%2C%20year%2C%20item%20AS%20crop%2C%20m5419%20as%20Production";
+        $url="http://data.fao.org/developers/api/v1/fr/resources/faostat/crop-prod/facts.json?page=1&pageSize=500&filter=cnt.iso3%20eq%20BRA&fields=cnt.iso3%20AS%20iso3%2C%20year%2C%20item%20AS%20crop%2C%20m5419%20as%20Production";
         $json = file_get_contents($url);
         $json = json_decode($json, true);
         $json = $json['result'];

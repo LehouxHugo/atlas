@@ -5,17 +5,7 @@
 {% endblock %}
 
 {% block stylesheets %}
-    {% stylesheets output="css/compiled/countryRead.css" filter="cssrewrite"
-    'bundles/admcore/css/bootstrap.min.css'
-    'bundles/admcore/font-awesome/css/font-awesome.css'
-    'bundles/admcore/css/plugins/dataTables/dataTables.bootstrap.css'
-    'bundles/admcore/css/plugins/dataTables/dataTables.responsive.css'
-    'bundles/admcore/css/plugins/dataTables/dataTables.tableTools.min.css'
-    'bundles/admcore/css/style.css'
-    'bundles/admcore/css/animate.css'
-    'bundles/admcore/css/plugins/toastr/toastr.min.css' %}
-    <link rel="stylesheet" href="{{ asset_url }}"/>
-    {% endstylesheets %}
+    {{ parent() }}
 {% endblock %}
 
 {% block extraheadcontent %}
@@ -117,8 +107,6 @@
                         <img class="static-map" id='static-map'>
                     </div>
                     <div class="ibox-content profile-content">
-                        <a href="http://faostat3.fao.org/browse/area/{{ country.numericCountryCode }}/E">Statistiques du
-                            pays sur FAOStat</a>
                     </div>
                 </div>
             </div>
@@ -126,9 +114,18 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <table class="table table-bordered table-hover dataTables-example" id="YTDSummary">
+            <table id="YTDSummary">
 
             </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <script src="http://code.highcharts.com/highcharts.js"></script>
+            <script src="http://code.highcharts.com/modules/data.js"></script>
+            <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+            <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
         </div>
     </div>
 {% endblock %}
@@ -189,7 +186,7 @@
 
         mydata.forEach(function (record) {
                     record.year = record.year.toString();
-                    console.log(record.year);
+                    delete record.area;
                 }
         );
 
@@ -197,110 +194,41 @@
         jQuery("#YTDSummary").jqGrid('jqPivot', mydata,
                 {
                     xDimension: [{
-                        dataName: 'Item',
-                        label: 'Item',
-                        width: 50
+                        dataName: 'Item'
                     }],
                     yDimension: [{
                         dataName: 'year'
                     }],
                     aggregates: [{
-                        label: 'Production',
                         member: 'Production',
-                        name: 'Production',
                         aggregator: 'sum',
-                        width: 40,
                         formatter: 'number',
                         align: 'right',
                         summaryType: 'sum'
-                    }],
-                    rowTotals: true,
-                    colTotals: true
+                    }]
                 }, {
-                    loadComplete: function () {
-                        reSizeGrid();
-                    }
-                }, {
-                    cmTemplate: {
-                        autoResizable: true
-                    },
+
                     autoResizing: {
                         compact: true
                     },
-                    autoresizeOnLoad: true,
-                    shrinkToFit: false,
-                    //width: 600,
-                    //height: "auto",
-                    rowNum: 10,
+                    shrinkToFit: true,
+                    width: "auto",
+                    height: "auto",
+                    rowNum: "auto",
                     iconSet: "fontAwesome",
                     pager: true,
-                    caption: "Atlas",
                     onInitGrid: function () {
                         var p = $(this).jqGrid("getGridParam");
 
                         p.datastr = $.grep(p.datastr, function (item) {
                             return item.ComponentType !== "";
                         });
-                    },
-                    rowattr: function (rd) {
-                        if (rd.parent === "null") { //  && rd.name === "Cash"
-                            return {
-                                class: "myMarking"
-                            };
-                        }
                     }
                 });
 
-        function reSizeGrid() {
-            jQuery("#YTDSummary").setGridWidth(1200, true);
-            jQuery("#YTDSummary").setGridHeight(800, true);
-
-        }
     </script>
 
-    <script>
-        $(document).ready(function () {
-            $('.ui-jqgrid-htable').dataTable({
-                responsive: true,
-                "dom": 'T<"clear">lfrtip',
-                "tableTools": {
-                    "sSwfPath": "http://cdn.datatables.net/tabletools/2.2.2/swf/copy_csv_xls_pdf.swf"
-                }
-            });
-        });
-    </script>
 
-    <style>
-        body.DTTT_Print {
-            background: #fff;
 
-        }
-
-        .DTTT_Print #page-wrapper {
-            margin: 0;
-            background: #fff;
-        }
-
-        button.DTTT_button, div.DTTT_button, a.DTTT_button {
-            border: 1px solid #e7eaec;
-            background: #fff;
-            color: #676a6c;
-            box-shadow: none;
-            padding: 6px 8px;
-        }
-
-        button.DTTT_button:hover, div.DTTT_button:hover, a.DTTT_button:hover {
-            border: 1px solid #d2d2d2;
-            background: #fff;
-            color: #676a6c;
-            box-shadow: none;
-            padding: 6px 8px;
-        }
-
-        .dataTables_filter label {
-            margin-right: 5px;
-
-        }
-    </style>
 {% endblock %}
 
