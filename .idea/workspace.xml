@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9e7264e4-dd4c-45b0-9105-8ca1e2cb0da6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Controller/CountryController.php" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Controller/CountryController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Country/read.html.twig" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Country/read.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/config/routingCountry.yml" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/config/routingCountry.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="atlas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,24 +36,26 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="read.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/read.html.twig">
+        <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Country/read.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.84" vertical-offset="342" max-vertical-offset="6916">
-              <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="31" selection-end-column="9" />
-              <folding />
+            <state vertical-scroll-proportion="-14.12" vertical-offset="4055" max-vertical-offset="4712">
+              <caret line="232" column="14" selection-start-line="232" selection-start-column="14" selection-end-line="232" selection-end-column="14" />
+              <folding>
+                <element signature="e#102#142#0#Twig" expanded="true" />
+                <element signature="e#3157#3170#0#Twig" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="read.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Country/read.html.twig">
+      <file leaf-file-name="CountryController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Controller/CountryController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40515652" vertical-offset="3903" max-vertical-offset="4560">
-              <caret line="217" column="20" selection-start-line="217" selection-start-column="20" selection-end-line="217" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.5101289" vertical-offset="160" max-vertical-offset="950">
+              <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="83" />
               <folding>
-                <element signature="e#102#142#0#Twig" expanded="true" />
-                <element signature="e#2375#2388#0#Twig" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="e#45#102#0#PHP" expanded="true" />
+                <element signature="e#1461#1499#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,37 +64,12 @@
       <file leaf-file-name="listReportsByKeyword.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/listReportsByKeyword.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.36" vertical-offset="3865" max-vertical-offset="4408">
-              <caret line="221" column="12" selection-start-line="178" selection-start-column="4" selection-end-line="221" selection-end-column="12" />
+            <state vertical-scroll-proportion="-3.0" vertical-offset="3364" max-vertical-offset="4408">
+              <caret line="181" column="16" selection-start-line="181" selection-start-column="16" selection-end-line="185" selection-end-column="17" />
               <folding>
                 <element signature="e#102#142#0#Twig" expanded="false" />
                 <element signature="e#2713#2726#0#Twig" expanded="false" />
                 <element signature="e#5097#5112#0#Twig" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Country.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Entity/Country.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-32.36" vertical-offset="4929" max-vertical-offset="6023">
-              <caret line="302" column="17" selection-start-line="302" selection-start-column="17" selection-end-line="302" selection-end-column="17" />
-              <folding>
-                <element signature="e#41#73#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CountryController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Controller/CountryController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.72" vertical-offset="255" max-vertical-offset="798">
-              <caret line="17" column="111" selection-start-line="17" selection-start-column="111" selection-end-line="17" selection-end-column="111" />
-              <folding>
-                <element signature="e#45#102#0#PHP" expanded="true" />
-                <element signature="e#885#923#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,10 +114,11 @@
         <option value="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Country/readCountryPortal.html.twig" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Entity/Report.php" />
-        <option value="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/config/routingCountry.yml" />
         <option value="$PROJECT_DIR$/src/ADM/CoreBundle/Entity/Country.php" />
-        <option value="$PROJECT_DIR$/src/ADM/CoreBundle/Controller/CountryController.php" />
+        <option value="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/config/routingCountry.yml" />
+        <option value="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Country/test.html.twig" />
         <option value="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Country/read.html.twig" />
+        <option value="$PROJECT_DIR$/src/ADM/CoreBundle/Controller/CountryController.php" />
       </list>
     </option>
   </component>
@@ -357,32 +339,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ADM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ReportsBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -405,7 +361,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="LeafletBundle" />
+              <option name="myItemId" value="CoreBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ADM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoreBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -484,9 +466,9 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21104388" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -541,13 +523,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Controller/OrganizationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="489" max-vertical-offset="1501">
-          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Entity/Organization.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="862" max-vertical-offset="6175">
@@ -826,13 +801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="581">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5232358" vertical-offset="0" max-vertical-offset="1634">
@@ -847,14 +815,6 @@
           <folding>
             <element signature="e#49#106#0#PHP" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Resources/config/routingCountry.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="209">
-          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -882,24 +842,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/listReportsByKeyword.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.36" vertical-offset="3865" max-vertical-offset="4408">
-          <caret line="221" column="12" selection-start-line="178" selection-start-column="4" selection-end-line="221" selection-end-column="12" />
-          <folding>
-            <element signature="e#102#142#0#Twig" expanded="false" />
-            <element signature="e#2713#2726#0#Twig" expanded="false" />
-            <element signature="e#5097#5112#0#Twig" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Entity/Country.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-32.36" vertical-offset="4929" max-vertical-offset="6023">
           <caret line="302" column="17" selection-start-line="302" selection-start-column="17" selection-end-line="302" selection-end-column="17" />
           <folding>
-            <element signature="e#41#73#0#PHP" expanded="true" />
+            <element signature="e#41#73#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -908,29 +856,63 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.84" vertical-offset="342" max-vertical-offset="6916">
           <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="31" selection-end-column="9" />
+          <folding>
+            <element signature="e#102#142#0#Twig" expanded="false" />
+            <element signature="e#2837#2857#0#Twig" expanded="false" />
+            <element signature="e#4154#4167#0#Twig" expanded="false" />
+            <element signature="e#5289#5306#0#Twig" expanded="false" />
+            <element signature="e#6197#6223#0#Twig" expanded="false" />
+            <element signature="e#8367#8393#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="581">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Controller/CountryController.php">
+    <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Resources/config/routingCountry.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.72" vertical-offset="255" max-vertical-offset="798">
-          <caret line="17" column="111" selection-start-line="17" selection-start-column="111" selection-end-line="17" selection-end-column="111" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247">
+          <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/listReportsByKeyword.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.0" vertical-offset="3364" max-vertical-offset="4408">
+          <caret line="181" column="16" selection-start-line="181" selection-start-column="16" selection-end-line="185" selection-end-column="17" />
           <folding>
-            <element signature="e#45#102#0#PHP" expanded="true" />
-            <element signature="e#885#923#0#PHP" expanded="true" />
+            <element signature="e#102#142#0#Twig" expanded="false" />
+            <element signature="e#2713#2726#0#Twig" expanded="false" />
+            <element signature="e#5097#5112#0#Twig" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Country/read.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40515652" vertical-offset="3903" max-vertical-offset="4560">
-          <caret line="217" column="20" selection-start-line="217" selection-start-column="20" selection-end-line="217" selection-end-column="20" />
+        <state vertical-scroll-proportion="-14.12" vertical-offset="4055" max-vertical-offset="4712">
+          <caret line="232" column="14" selection-start-line="232" selection-start-column="14" selection-end-line="232" selection-end-column="14" />
           <folding>
             <element signature="e#102#142#0#Twig" expanded="true" />
-            <element signature="e#2375#2388#0#Twig" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="e#3157#3170#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Controller/CountryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5101289" vertical-offset="160" max-vertical-offset="950">
+          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="83" />
+          <folding>
+            <element signature="e#45#102#0#PHP" expanded="true" />
+            <element signature="e#1461#1499#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

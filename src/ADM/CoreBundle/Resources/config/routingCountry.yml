@@ -2,4 +2,6 @@ adm_country_read:
     path:     /{countryCode2}
     defaults: { _controller: ADMCoreBundle:Country:read }
 
-
+adm_country_test:
+    path:     /test/{countryCode2}
+    defaults: { _controller: ADMCoreBundle:Country:test }
