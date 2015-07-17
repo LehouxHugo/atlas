@@ -25,9 +25,12 @@
             plugins: "paste, autoresize, table, autolink, advlist, contextmenu, link, image",
             menubar: false,
             content_css : ["{{ asset('bundles/admcore/css/bootstrap.min.css') }} "],
-            toolbar: "formatselect bold italic  bullist numlist link image inserttable undo redo",
+            toolbar: "formatselect bold italic  bullist numlist link image inserttable undo redo ",
             autoresize_max_height: 500,
             contextmenu: "formatselect italic bold | link image | inserttable  cell row column deletetable",
+            external_filemanager_path:"/web/filemanager/",
+            filemanager_title:"File manager",
+            external_plugins: { "filemanager" : "/web/filemanager/plugin.min.js"}
         });</script>
 
     <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>

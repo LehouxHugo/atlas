@@ -34,7 +34,11 @@
 
     <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet'/>
-    <link href='https://cdn.datatables.net/responsive/1.0.6/css/dataTables.responsive.css' rel='stylesheet'/>
+
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/data.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
 
 
 {% endblock %}
@@ -99,6 +103,9 @@
                     <h5>{{ country.name }}</h5>
                 </div>
                 <div class="ibox-content">
+                    <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto">
+                        {# Highchart will be displayed here #}
+                    </div>
                     <div>
                         <div id="results"></div>
                     </div>
@@ -178,8 +185,9 @@
                 '?access_token=' + L.mapbox.accessToken;
     </script>
 
-    <script>
 
+    <script>
+        /*
         var data = {{ FAOdata | raw }};
 
         var fields = [{
@@ -209,34 +217,47 @@
 
 
 
-        $(document).ready(function () {
-            setupPivot({
+            $('#pivot-menu-container').pivot_display('setup', {
                 json: data,
                 fields: fields,
-                rowLabels:["Item"],
-                columnLabels:["year"],
+                rowLabels:["year"],
+                columnLabels:["Item"],
                 summaries:["Production_sum"]
             });
-        });
 
-        function setupPivot(input) {
-            input.callbacks = {
-                afterUpdateResults: function () {
-                    $('#results > table').dataTable({
-                        responsive: true,
-                        "dom": 'T<"clear">lfrtip',
-                        "tableTools": {
-                            "sSwfPath": "http://cdn.datatables.net/tabletools/2.2.2/swf/copy_csv_xls_pdf.swf"
+            $('td').each(function(){
+                var $this = $(this);
+                $this.html($this.html().replace(/&nbsp;/g, ''));
+            });
+
+        $(document).ready(function () {
+            $(function () {
+                $('#container').highcharts({
+                    data: {
+                        table: 'pivot-table'
+                    },
+                    chart: {
+                        type: 'spline'
+                    },
+                    title: {
+                        text: 'Data extracted from a HTML table in the page'
+                    },
+                    yAxis: {
+                        allowDecimals: false,
+                        title: {
+                            text: 'Units'
                         }
-                    });
-                }
-            };
-            $('#pivot-menu-container').pivot_display('setup', input);
-        };
-
+                    },
+                    tooltip: {
+                        formatter: function () {
+                            return '<b>' + this.series.name + '</b><br/>' + this.point.y + ' ' + this.point.name.toLowerCase();
+                        }
+                    }
+                });
+            });
+        });
+*/
     </script>
-
-
 
 {% endblock %}
 
