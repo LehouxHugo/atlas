@@ -126,14 +126,25 @@ stof_doctrine_extensions:
 sc_datetimepicker:
     picker: ~
 
-# Geocoder
-bazinga_geocoder:
-    providers:
-        google_maps:
-            locale: fr
-            region: FR
-
 fos_js_routing:
     routes_to_expose: [ adm_add_new_keyword ]
 
-
+# TinyMCE
+stfalcon_tinymce:
+    include_jquery: true
+    tinymce_jquery: true
+    theme:
+        simple:
+            skin: "light"
+            plugins: "paste, autoresize, table, autolink, advlist, contextmenu, link, image"
+            menubar: false
+            content_css : "asset[bundles/admcore/css/bootstrap.min.css]"
+            toolbar: "formatselect bold italic  bullist numlist link image inserttable undo redo responsivefilemanager "
+            autoresize_max_height: 500
+            contextmenu: "formatselect italic bold | link image | inserttable  cell row column deletetable"
+            relative_urls: false
+            external_filemanager_path: "../../../web/bundles/admcore/filemanager/"
+            filemanager_title: "File Manager"
+    external_plugins:
+        filemanager:
+            url: "asset[bundles/admcore/filemanager/plugin.min.js]"

@@ -5,11 +5,647 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e7264e4-dd4c-45b0-9105-8ca1e2cb0da6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bundles/admcore/filemanager/config/config.php" afterPath="$PROJECT_DIR$/web/bundles/admcore/filemanager/config/config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/AC3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/ACE.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/ADE.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/ADP.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/AI.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/AIFF.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/AU.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/AVI.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/BAT.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/BIN.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/BMP.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/BUP.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/CAB.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/CAT.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/CHM.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/CSS.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/CSV.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/CUE.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/DAT.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/DCR.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/DER.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/DIC.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/DIVX.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/DIZ.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/DLL.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/DOC.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/DOCX.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/DOS.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/DVD.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/DWG.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/DWT.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/Default.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/Default2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/EMF.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/EXC.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/EXE.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/FLA.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/FON.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/GIF.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/HLP.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/HTM.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/HTML.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/IFO.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/INF.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/INI.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/INS.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/IP.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/ISO.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/ISP.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/JAVA.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/JFIF.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/JPEG.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/JPG.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/JS.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/LOG.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/M4A.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/MID.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/MMF.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/MMM.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/MOV.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/MOVIE.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/MP2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/MP2V.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/MP3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/MP4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/MPE.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/MPEG.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/MPG.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/MPV2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/NFO.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/PDD.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/PDF.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/PHP.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/PNG.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/PPT.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/PPTX.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/PSD.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/RAR.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/REG.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/RTF.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/SCP.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/SQL.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/THEME.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/TIF.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/TIFF.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/TLB.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/TTF.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/TXT.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/UIS.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/URL.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/VBS.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/VCR.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/VOB.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/WAV.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/WBA.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/WMA.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/WMV.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/WPL.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/WRI.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/WTX.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/XLS.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/XLSX.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/XML.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/XSL.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/ZAP.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/ZIP.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/images/fabric_plaid.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/folder.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/ico/folder_return.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/images/spritemap.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/images/spritemap@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/images/spritemap@2x_hu_HU.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/images/spritemap_hu_HU.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/css/basic.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/css/bootstrap-lightbox.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/js/bootstrap-lightbox.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/create_folder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/delete_file.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/delete_folder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/css/dropzone.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/js/dropzone.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/js/include.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/lang/it_IT.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/js/jquery.1.9.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/js/jquery.touchSwipe.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/js/modernizr.custom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/php_image_magician.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/utils.php" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ajax_calls.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\config\.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\config\config.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\execute.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\clipboard_apply.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\clipboard_clear.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\copy.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\cut.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\date.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\dimension.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\down.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\download.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\duplicate.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\edit_img.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\file_edit.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\ac3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\accdb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\ade.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\adp.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\ai.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\aiff.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\avi.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\bmp.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\css.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\csv.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\default.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\dmg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\doc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\docx.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\fla.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\flv.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\folder.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\folder_back.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\gif.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\gz.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\html.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\iso.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\jpeg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\jpg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\log.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\m4a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\mdb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\mid.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\mov.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\mp3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\mp4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\mpeg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\mpg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\odb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\odf.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\odg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\odp.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\ods.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\odt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\ogg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\otg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\otp.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\ots.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\ott.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\pdf.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\png.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\ppt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\pptx.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\psd.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\rar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\rtf.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\sql.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\svg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\tar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\tiff.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\txt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\wav.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\webm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\wma.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\xhtml.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\xls.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\xlsx.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\xml.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico\zip.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\ac3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\accdb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\ade.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\adp.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\ai.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\aiff.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\avi.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\bmp.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\css.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\csv.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\default.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\dmg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\doc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\docx.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\fla.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\flv.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\folder.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\folder_back.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\gif.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\gz.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\html.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\iso.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\jpeg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\jpg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\log.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\m4a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\mdb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\mid.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\mov.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\mp3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\mp4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\mpeg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\mpg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\odb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\odf.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\odg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\odp.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\ods.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\odt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\ogg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\otg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\otp.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\ots.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\ott.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\pdf.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\png.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\ppt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\pptx.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\psd.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\rar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\rtf.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\sql.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\svg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\tar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\tiff.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\txt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\wav.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\webm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\wma.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\xhtml.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\xls.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\xlsx.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\xml.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\ico_dark\zip.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\info.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\key.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\label.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\preview.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\rename.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\size.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\sort.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\up.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\upload.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\url.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\zip.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\include\Response.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\include\mime_type_lib.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\include\php_image_magician.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\include\utils.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\az_AZ.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\ca.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\da.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\el_GR.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\es.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\fa.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\he_IL.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\hr.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\id.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\it.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\ja.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\languages.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\lt.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\mn_MN.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\nb_NO.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\sk.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\sl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\sv_SE.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\tr_TR.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\uk_UA.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\zh_CN.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\uploader\index.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\uploader\jupload.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\uploader\success.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\uploader\success.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\uploader\wjhk.jupload.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\css\compiled\addReport.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\css\compiled\addReport_animate_4.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\css\compiled\addReport_bootstrap.min_1.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\css\compiled\addReport_chosen_5.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\css\compiled\addReport_font-awesome_2.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\css\compiled\addReport_style_3.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\css\compiled\base.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\css\compiled\base_animate_4.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\css\compiled\base_bootstrap.min_1.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\css\compiled\base_font-awesome_2.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\css\compiled\base_style_3.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\css\compiled\base_toastr.min_5.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\css\compiled\register.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\css\compiled\register_animate_4.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\css\compiled\register_bootstrap.min_2.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\css\compiled\register_font-awesome_5.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\css\compiled\register_normalize_1.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\css\compiled\register_style_3.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\ajax_calls.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\config\.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\config\config.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\dialog.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\execute.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\force_download.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\clipboard_apply.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\clipboard_clear.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\copy.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\cut.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\date.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\dimension.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\down.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\download.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\duplicate.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\edit_img.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\file_edit.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\ac3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\accdb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\ade.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\adp.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\ai.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\aiff.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\avi.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\bmp.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\css.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\csv.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\default.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\dmg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\doc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\docx.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\fla.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\flv.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\folder.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\folder_back.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\gif.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\gz.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\html.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\iso.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\jpeg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\jpg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\log.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\m4a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\mdb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\mid.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\mov.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\mp3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\mp4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\mpeg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\mpg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\odb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\odf.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\odg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\odp.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\ods.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\odt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\ogg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\otg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\otp.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\ots.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\ott.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\pdf.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\png.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\ppt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\pptx.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\psd.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\rar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\rtf.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\sql.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\svg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\tar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\tiff.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\txt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\wav.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\webm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\wma.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\xhtml.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\xls.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\xlsx.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\xml.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico\zip.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\ac3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\accdb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\ade.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\adp.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\ai.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\aiff.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\avi.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\bmp.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\css.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\csv.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\default.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\dmg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\doc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\docx.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\fla.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\flv.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\folder.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\folder_back.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\gif.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\gz.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\html.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\iso.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\jpeg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\jpg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\log.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\m4a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\mdb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\mid.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\mov.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\mp3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\mp4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\mpeg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\mpg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\odb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\odf.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\odg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\odp.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\ods.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\odt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\ogg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\otg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\otp.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\ots.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\ott.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\pdf.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\png.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\ppt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\pptx.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\psd.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\rar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\rtf.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\sql.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\svg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\tar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\tiff.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\txt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\wav.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\webm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\wma.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\xhtml.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\xls.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\xlsx.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\xml.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\ico_dark\zip.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\info.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\key.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\label.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\preview.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\processing.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\rename.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\size.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\sort.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\storing_animation.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\up.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\upload.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\url.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\img\zip.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\include\Response.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\include\mime_type_lib.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\include\php_image_magician.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\include\utils.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\az_AZ.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\bg_BG.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\ca.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\cs.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\da.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\de.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\el_GR.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\en_EN.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\es.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\fa.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\fr_FR.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\he_IL.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\hr.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\hu_HU.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\id.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\it.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\ja.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\languages.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\lt.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\mn_MN.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\nb_NO.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\nl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\pl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\pt_BR.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\pt_PT.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\ru.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\sk.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\sl.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\sv_SE.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\tr_TR.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\uk_UA.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\lang\zh_CN.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\upload.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\uploader\index.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\uploader\jupload.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\uploader\success.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\uploader\success.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\filemanager\uploader\wjhk.jupload.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\addReport.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\addReport_Chart.min_18.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\addReport_bootstrap.min_2.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\addReport_chosen.jquery_19.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\addReport_fos_js_routes_21.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\addReport_inspinia_5.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\addReport_jquery-2.1.1_1.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\addReport_jquery-ui.min_15.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\addReport_jquery.flot.pie_12.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\addReport_jquery.flot.resize_11.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\addReport_jquery.flot.spline_10.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\addReport_jquery.flot.tooltip.min_9.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\addReport_jquery.flot_8.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\addReport_jquery.metisMenu_3.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\addReport_jquery.peity.min_13.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\addReport_jquery.slimscroll.min_7.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\addReport_jquery.sparkline.min_16.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\addReport_pace.min_4.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\addReport_peity-demo_14.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\addReport_router_20.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\addReport_sparkline-demo_17.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\addReport_toastr.min_6.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\base.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\base_Chart.min_18.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\base_bootstrap.min_2.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\base_inspinia_5.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\base_jquery-2.1.1_1.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\base_jquery-ui.min_15.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\base_jquery.flot.pie_12.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\base_jquery.flot.resize_11.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\base_jquery.flot.spline_10.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\base_jquery.flot.tooltip.min_9.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\base_jquery.flot_8.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\base_jquery.metisMenu_3.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\base_jquery.peity.min_13.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\base_jquery.slimscroll.min_7.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\base_jquery.sparkline.min_16.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\base_pace.min_4.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\base_peity-demo_14.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\base_sparkline-demo_17.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\base_toastr.min_6.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\readReport.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\readReport_Chart.min_18.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\readReport_bootstrap.min_2.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\readReport_inspinia_5.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\readReport_jquery-2.1.1_1.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\readReport_jquery-ui.min_15.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\readReport_jquery.flot.pie_12.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\readReport_jquery.flot.resize_11.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\readReport_jquery.flot.spline_10.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\readReport_jquery.flot.tooltip.min_9.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\readReport_jquery.flot_8.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\readReport_jquery.metisMenu_3.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\readReport_jquery.peity.min_13.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\readReport_jquery.slimscroll.min_7.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\readReport_jquery.sparkline.min_16.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\readReport_pace.min_4.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\readReport_peity-demo_14.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\readReport_sparkline-demo_17.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\readReport_toastr.min_6.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\readReport_toc.min_19.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\register.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\register_bootstrap.min_2.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\register_inspinia_3.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\register_jquery-2.1.1_1.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\compiled\register_jquery-ui.min_4.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\js\fos_js_routes.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\resources\assets\less\style.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\resources\js\include.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\resources\js\modernizr.custom.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\resources\js\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\resources\js\plugin_responsivefilemanager_plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\resources\tmp\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\source\source.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\web\thumbs\thumbs.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/img/glyphicons-halflings-white.png" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/img/glyphicons-halflings-white.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/img/glyphicons-halflings.png" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/img/glyphicons-halflings.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/lang/bg_BG.php" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/lang/bg_BG.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/create.html.twig" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/create.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/lang/cs.php" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/lang/cs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/lang/de.php" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/lang/de.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/dialog.php" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/dialog.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/lang/en_EN.php" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/lang/en_EN.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/force_download.php" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/force_download.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/formReportType.html.twig" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/formReportType.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Country/read.html.twig" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Country/read.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/lang/fr_FR.php" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/lang/fr_FR.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/lang/hu_HU.php" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/lang/hu_HU.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/lang/nl.php" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/lang/nl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/lang/pl.php" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/lang/pl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/lang/pt_BR.php" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/lang/pt_BR.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/lang/pt_PT.php" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/lang/pt_PT.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/lang/ru.php" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/lang/ru.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/upload.php" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/upload.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="atlas.iws" />
@@ -38,12 +674,71 @@
       <file leaf-file-name="create.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/create.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.71639043" vertical-offset="200" max-vertical-offset="4142">
-              <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.55985266" vertical-offset="0" max-vertical-offset="3914">
+              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
               <folding>
                 <element signature="e#102#142#0#Twig" expanded="true" />
-                <element signature="e#3697#3710#0#Twig" expanded="true" />
+                <element signature="e#2786#2799#0#Twig" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="formReportType.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/formReportType.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.64" vertical-offset="1539" max-vertical-offset="2147">
+              <caret line="95" column="93" selection-start-line="95" selection-start-column="93" selection-end-line="95" selection-end-column="93" />
+              <folding>
+                <element signature="e#1945#1975#0#Twig" expanded="false" />
+                <element signature="e#3038#3061#0#Twig" expanded="false" />
+                <element signature="e#4569#4587#0#Twig" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.92" vertical-offset="114" max-vertical-offset="1558">
+              <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppKernel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-19.0" vertical-offset="323" max-vertical-offset="1292">
+              <caret line="43" column="70" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2396" max-vertical-offset="2964">
+              <caret line="149" column="67" selection-start-line="131" selection-start-column="9" selection-end-line="149" selection-end-column="67" />
+              <folding>
+                <marker date="1437219421760" expanded="true" signature="3567:4421" placeholder="stfalcon_tinymce:" />
+                <marker date="1437219421760" expanded="true" signature="3639:4310" placeholder="theme:" />
+                <marker date="1437219421760" expanded="true" signature="3654:4310" placeholder="simple:" />
+                <marker date="1437219421760" expanded="true" signature="4315:4421" placeholder="external_plugins:" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="475">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -91,9 +786,13 @@
         <option value="$PROJECT_DIR$/src/ADM/CoreBundle/Controller/CountryController.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Country/read.html.twig" />
-        <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/formReportType.html.twig" />
-        <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/create.html.twig" />
         <option value="$PROJECT_DIR$/web/bundles/admcore/filemanager/config/config.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/app/config/test.js" />
+        <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/formReportType.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/create.html.twig" />
       </list>
     </option>
   </component>
@@ -179,6 +878,92 @@
               <option name="myItemId" value="bundles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stfalcontinymce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tinymce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bundles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stfalcontinymce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tinymce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bundles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stfalcontinymce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bundles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -221,150 +1006,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="admcore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bundles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admcore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bundles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admcore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tinyMCE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bundles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admcore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tinyMCE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bundles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admcore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tinyMCE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -382,6 +1023,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stfalcon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tinymce-bundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stfalcon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -401,28 +1082,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ADM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ADM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ReportsBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -448,6 +1107,134 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ADM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoreBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ADM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoreBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ADM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoreBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filemanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ADM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoreBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filemanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -463,11 +1250,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public" />
+      <recent name="C:\xampp\htdocs\atlas\vendor\stfalcon\tinymce-bundle\Stfalcon\Bundle\TinymceBundle\Resources\public\vendor\tinymce\plugins" />
+      <recent name="C:\xampp\htdocs\atlas\web\bundles\stfalcontinymce\vendor\tinymce\plugins" />
+      <recent name="C:\xampp\htdocs\atlas\vendor\stfalcon\tinymce-bundle\Stfalcon\Bundle\TinymceBundle\Resources\public\vendor\tinymce\skins" />
       <recent name="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\config" />
-      <recent name="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Controller" />
-      <recent name="C:\xampp\htdocs\atlas\src\ADM\ReportsBundle\Controller" />
-      <recent name="C:\xampp\htdocs\atlas\src\ADM\ReportsBundle\Resources\views\Organization" />
-      <recent name="C:\xampp\htdocs\atlas\src\ADM\ReportsBundle\Resources\config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\atlas\src\ADM\ReportsBundle\Resources\views\Report" />
@@ -526,7 +1313,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21104388" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33089313" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24524158" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -580,58 +1367,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Form/OrganizationType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="337" max-vertical-offset="1292">
-          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Organization/create.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2345" max-vertical-offset="4028">
-          <caret line="140" column="20" selection-start-line="140" selection-start-column="20" selection-end-line="149" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Organization/update.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2687" max-vertical-offset="4028">
-          <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/formReportType.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1604" max-vertical-offset="2147">
-          <caret line="67" column="78" selection-start-line="67" selection-start-column="78" selection-end-line="67" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/update.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3838">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Form/ReportType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="801" max-vertical-offset="1729">
-          <caret line="61" column="37" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Entity/Report.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1501" max-vertical-offset="9424">
-          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="94" selection-end-column="25" />
-          <folding>
-            <element signature="e#44#76#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Entity/Keyword.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2839" max-vertical-offset="3420">
@@ -937,29 +1672,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/formReportType.html.twig">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6095765" vertical-offset="399" max-vertical-offset="2147">
-          <caret line="67" column="84" selection-start-line="67" selection-start-column="84" selection-end-line="67" selection-end-column="84" />
+        <state vertical-scroll-proportion="-12.92" vertical-offset="114" max-vertical-offset="1558">
+          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/bundles/admcore/filemanager/config/config.php">
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8854369" vertical-offset="1026" max-vertical-offset="6954">
-          <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+        <state vertical-scroll-proportion="-19.0" vertical-offset="323" max-vertical-offset="1292">
+          <caret line="43" column="70" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bundles/stfalcontinymce/vendor/tinymce/jquery.tinymce.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="568">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bundles/stfalcontinymce/vendor/tinymce/tinymce.jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="568">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="475">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/formReportType.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.64" vertical-offset="1539" max-vertical-offset="2147">
+          <caret line="95" column="93" selection-start-line="95" selection-start-column="93" selection-end-line="95" selection-end-column="93" />
+          <folding>
+            <element signature="e#1945#1975#0#Twig" expanded="false" />
+            <element signature="e#3038#3061#0#Twig" expanded="false" />
+            <element signature="e#4569#4587#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/filemanager/js/include.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6690141" vertical-offset="0" max-vertical-offset="3914">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2396" max-vertical-offset="2964">
+          <caret line="149" column="67" selection-start-line="131" selection-start-column="9" selection-end-line="149" selection-end-column="67" />
+          <folding>
+            <marker date="1437219421760" expanded="true" signature="3567:4421" placeholder="stfalcon_tinymce:" />
+            <marker date="1437219421760" expanded="true" signature="3639:4310" placeholder="theme:" />
+            <marker date="1437219421760" expanded="true" signature="3654:4310" placeholder="simple:" />
+            <marker date="1437219421760" expanded="true" signature="4315:4421" placeholder="external_plugins:" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/create.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71639043" vertical-offset="200" max-vertical-offset="4142">
-          <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.55985266" vertical-offset="0" max-vertical-offset="3914">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
           <folding>
             <element signature="e#102#142#0#Twig" expanded="true" />
-            <element signature="e#3697#3710#0#Twig" expanded="true" />
+            <element signature="e#2786#2799#0#Twig" expanded="true" />
           </folding>
         </state>
       </provider>
