@@ -9,6 +9,8 @@
 {% endblock %}
 
 {% block extraheadcontent %}
+    <link rel="stylesheet" href="http://cdn.bootcss.com/sweetalert/1.0.1/sweetalert.css">
+
     <style>
         .article h1 {
             font-size: 25px;
@@ -43,7 +45,7 @@
         }
 
         .ibox-content p, .ibox-content ul, #articleBody p, #articleBody ul {
-            font-size:15px;
+            font-size: 15px;
             margin-left: 10%;
             margin-right: 5%;
             margin-bottom: 1.3em;
@@ -51,8 +53,6 @@
             text-indent: 5%;
             line-height: 26px;
         }
-
-
 
         #articleBody h1 {
         }
@@ -72,7 +72,6 @@
         #articleBody h5 {
             margin-left: 10%;
         }
-
 
 
     </style>
@@ -156,8 +155,12 @@
 
                     {# BOUTON EDITION, BOUTON PDF #}
                     <div class="pull-right">
-                        <a class="btn btn-white btn-xs" href="{{ path('adm_report_update',{'slug': report.slug}) }}" role="button"><i class="fa fa-pencil"></i> Editer</a>
-                        <a class="btn  btn-xs btn-outline btn-danger" href="{{ path('adm_report_read', { 'slug': report.slug, '_format': "pdf" }) }}" role="button" ><i class="fa fa-file-pdf-o"></i> PDF</a>
+                        <a class="btn btn-white btn-xs"
+                           href="{{ path('adm_report_update',{'slug': report.slug}) }}" role="button"><i
+                                    class="fa fa-pencil"></i> Editer</a>
+                        <a class="btn btn-xs btn-outline btn-danger" id="downloadPDF"
+                           href="{{ path('adm_report_read',{'slug': report.slug, '_format':'pdf'}) }}"
+                           role="button"><i class="fa fa-file-pdf-o"></i> PDF</a>
 
                     </div>
 
@@ -166,7 +169,8 @@
                         <div id="reportName">
                             {{ report.name | upper }}
                         </div>
-                        {% for author in report.authors %}{{ author.label  }}{% if not loop.last %}, {% endif %}{% endfor %} | {{ report.dateCreated | date('Y') }}<br/>
+                        {% for author in report.authors %}{{ author.label }}{% if not loop.last %}, {% endif %}{% endfor %}
+                        | {{ report.dateCreated | date('Y') }}<br/>
                     </div>
 
                     {# LES MOTS-CLES #}
@@ -174,7 +178,8 @@
                         <label>Mots-clés</label>
                         <div>
                             {% for keyword in report.keywords %}
-                                <a class="btn btn-white btn-xs" href="{{ path('adm_list_report_by_keyword',{'label': keyword.label}) }}"
+                                <a class="btn btn-white btn-xs"
+                                   href="{{ path('adm_list_report_by_keyword',{'label': keyword.label}) }}"
                                    role="button"><i class="fa fa-tag"></i> {{ keyword.name }}</a>
                             {% endfor %}
                         </div>
@@ -226,7 +231,8 @@
                                 <label>Mots-clés</label>
                                 <div>
                                     {% for keyword in report.keywords %}
-                                        <a class="btn btn-white btn-xs" href="{{ path('adm_list_report_by_keyword',{'label': keyword.label}) }}"
+                                        <a class="btn btn-white btn-xs"
+                                           href="{{ path('adm_list_report_by_keyword',{'label': keyword.label}) }}"
                                            role="button"><i class="fa fa-tag"></i> {{ keyword.name }}</a>
                                     {% endfor %}
                                 </div>
@@ -250,6 +256,9 @@
 
 {% block javascripts %}
     {{ parent() }}
+
+
+    <script src="http://cdn.bootcss.com/sweetalert/1.0.1/sweetalert.min.js"></script>
 {% endblock %}
 
 {% block extrascripts %}
@@ -344,28 +353,37 @@
     <script>$(document).ready(function () {
             $('li a').click(function () {
                 $('html, body').animate({
-                    scrollTop: $($.attr(this, 'href')).offset().top-20
+                    scrollTop: $($.attr(this, 'href')).offset().top - 20
                 }, 500, 'swing');
                 return false;
             });
         });
     </script>
 
-    <script></script>
-    $('.demo3').click(function () {
-    swal({
-    title: "Are you sure?",
-    text: "You will not be able to recover this imaginary file!",
-    type: "warning",
-    showCancelButton: true,
-    confirmButtonColor: "#DD6B55",
-    confirmButtonText: "Yes, delete it!",
-    closeOnConfirm: false
-    }, function () {
-    swal("Deleted!", "Your imaginary file has been deleted.", "success");
-    });
-    });
+    <script>
+        $('#downloadPDF').click(function (e) {
+            e.preventDefault();
+            var link = $(this).attr('href');
 
+            swal({
+                        title: "Attention !",
+                        text: "L'utilisation des données de ce rapport doit être faite avec précaution. Décontextualiser des données peut mener à des absurdités. {% if not is_granted("IS_AUTHENTICATED_REMEMBERED") %} Vous devez être identifié pour pouvoir télécharger les PDF.{% endif %}",
+                        type: "warning",
+                        showCancelButton: true,
+                        {% if not is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                        confirmButtonText: "Se connecter",
+                        {% endif %}
+                    },
+                    function () {
+                        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                        window.location.href = link;
+                        {% else %}
+                        window.location.href = "{{ path('sonata_user_admin_security_login') }}";
+                        {% endif %}
+                    });
+        });
+
+    </script>
 
 {% endblock %}
 
