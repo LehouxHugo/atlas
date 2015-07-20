@@ -5,166 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e7264e4-dd4c-45b0-9105-8ca1e2cb0da6" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\config.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\create_folder.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\css\basic.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\css\bootstrap-lightbox.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\css\bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\css\dropzone.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\css\style.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\delete_file.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\delete_folder.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\dialog.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\force_download.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\AC3.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\ACE.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\ADE.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\ADP.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\AI.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\AIFF.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\AU.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\AVI.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\BAT.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\BIN.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\BMP.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\BUP.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\CAB.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\CAT.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\CHM.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\CSS.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\CSV.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\CUE.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\DAT.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\DCR.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\DER.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\DIC.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\DIVX.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\DIZ.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\DLL.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\DOC.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\DOCX.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\DOS.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\DVD.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\DWG.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\DWT.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\Default.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\Default2.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\EMF.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\EXC.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\EXE.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\FLA.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\FON.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\GIF.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\HLP.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\HTM.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\HTML.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\IFO.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\INF.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\INI.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\INS.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\IP.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\ISO.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\ISP.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\JAVA.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\JFIF.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\JPEG.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\JPG.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\JS.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\LOG.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\M4A.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\MID.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\MMF.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\MMM.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\MOV.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\MOVIE.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\MP2.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\MP2V.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\MP3.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\MP4.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\MPE.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\MPEG.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\MPG.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\MPV2.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\NFO.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\PDD.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\PDF.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\PHP.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\PNG.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\PPT.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\PPTX.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\PSD.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\RAR.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\REG.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\RTF.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\SCP.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\SQL.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\THEME.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\TIF.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\TIFF.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\TLB.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\TTF.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\TXT.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\UIS.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\URL.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\VBS.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\VCR.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\VOB.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\WAV.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\WBA.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\WMA.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\WMV.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\WPL.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\WRI.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\WTX.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\XLS.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\XLSX.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\XML.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\XSL.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\ZAP.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\ZIP.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\folder.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\ico\folder_return.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\images\fabric_plaid.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\images\spritemap.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\images\spritemap@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\images\spritemap@2x_hu_HU.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\images\spritemap_hu_HU.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\glyphicons-halflings-white.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\glyphicons-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\processing.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\img\storing_animation.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\js\bootstrap-lightbox.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\js\bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\js\dropzone.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\js\include.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\js\jquery.1.9.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\js\jquery.touchSwipe.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\js\modernizr.custom.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\bg_BG.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\cs.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\de.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\en_EN.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\fr_FR.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\hu_HU.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\it_IT.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\nl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\pl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\pt_BR.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\pt_PT.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\lang\ru.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\php_image_magician.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\upload.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\filemanager\utils.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\resources\assets\less\style.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\resources\js\include.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\resources\js\modernizr.custom.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\resources\js\plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\resources\js\plugin_responsivefilemanager_plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\resources\tmp\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\source\source.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public\thumbs\thumbs.txt" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/read.pdf.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/ReportsBundle/Controller/ReportController.php" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Controller/ReportController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/config/routing.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="atlas.iws" />
@@ -190,38 +37,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="create.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/create.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17495395" vertical-offset="0" max-vertical-offset="3914">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding>
-                <element signature="e#102#142#0#Twig" expanded="true" />
-                <element signature="e#2786#2799#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="formReportType.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/formReportType.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.64" vertical-offset="1539" max-vertical-offset="2147">
-              <caret line="95" column="93" selection-start-line="95" selection-start-column="93" selection-end-line="95" selection-end-column="93" />
-              <folding>
-                <element signature="e#1945#1975#0#Twig" expanded="false" />
-                <element signature="e#3038#3061#0#Twig" expanded="false" />
-                <element signature="e#4569#4587#0#Twig" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.92" vertical-offset="114" max-vertical-offset="1558">
-              <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+            <state vertical-scroll-proportion="-5.32" vertical-offset="627" max-vertical-offset="1577">
+              <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="read.pdf.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/read.pdf.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.52" vertical-offset="0" max-vertical-offset="190">
+              <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -230,33 +60,60 @@
       <file leaf-file-name="AppKernel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.0" vertical-offset="323" max-vertical-offset="1292">
-              <caret line="43" column="70" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
+            <state vertical-scroll-proportion="-19.0" vertical-offset="380" max-vertical-offset="1349">
+              <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <file leaf-file-name="PsPdfBundle.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/psliwa/pdf-bundle/Ps/PdfBundle/PsPdfBundle.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2396" max-vertical-offset="2964">
-              <caret line="149" column="67" selection-start-line="131" selection-start-column="9" selection-end-line="149" selection-end-column="67" />
+            <state vertical-scroll-proportion="-7.6" vertical-offset="0" max-vertical-offset="418">
+              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReportController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Controller/ReportController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.12" vertical-offset="812" max-vertical-offset="3515">
+              <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
               <folding>
-                <marker date="1437219421760" expanded="true" signature="3567:4421" placeholder="stfalcon_tinymce:" />
-                <marker date="1437219421760" expanded="true" signature="3639:4310" placeholder="theme:" />
-                <marker date="1437219421760" expanded="true" signature="3654:4310" placeholder="simple:" />
-                <marker date="1437219421760" expanded="true" signature="4315:4421" placeholder="external_plugins:" />
+                <element signature="e#49#106#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/test.js">
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="475">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.45783132" vertical-offset="0" max-vertical-offset="608">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hello.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/hello.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="114">
+              <caret line="0" column="17" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hello.pdf.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/hello.pdf.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.04" vertical-offset="0" max-vertical-offset="190">
+              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -275,9 +132,7 @@
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/config/routingOrganization.yml" />
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Keyword/create.html.twig" />
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Controller/KeywordController.php" />
-        <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Entity/ReportRepository.php" />
-        <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Controller/ReportController.php" />
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/Forms/reportType.html.twig" />
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/read.html.twig" />
         <option value="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Common/navbar-menus.html.twig" />
@@ -306,12 +161,17 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Country/read.html.twig" />
         <option value="$PROJECT_DIR$/web/bundles/admcore/filemanager/config/config.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/app/config/test.js" />
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/formReportType.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/create.html.twig" />
+        <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/read.pdf.twig" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Controller/ReportController.php" />
+        <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/hello.html.twig" />
+        <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/hello.pdf.twig" />
+        <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/config/routing.yml" />
       </list>
     </option>
   </component>
@@ -348,6 +208,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -376,453 +237,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bundles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stfalcontinymce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tinymce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bundles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stfalcontinymce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tinymce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bundles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stfalcontinymce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bundles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bundles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admcore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bundles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admcore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="filemanager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stfalcon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tinymce-bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Stfalcon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TinymceBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stfalcon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tinymce-bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Stfalcon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TinymceBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stfalcon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tinymce-bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Stfalcon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TinymceBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tinymce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stfalcon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tinymce-bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Stfalcon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TinymceBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tinymce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stfalcon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tinymce-bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Stfalcon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TinymceBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tinymce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="responsivefilemanager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stfalcon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tinymce-bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Stfalcon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TinymceBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -839,10 +254,195 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ADM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ADM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReportsBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ADM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReportsBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Report" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ADM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReportsBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ADM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReportsBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ADM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReportsBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ADM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReportsBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -855,11 +455,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\atlas\src\ADM\ReportsBundle\Resources\views\Report" />
       <recent name="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\public" />
       <recent name="C:\xampp\htdocs\atlas\vendor\stfalcon\tinymce-bundle\Stfalcon\Bundle\TinymceBundle\Resources\public\vendor\tinymce\plugins" />
       <recent name="C:\xampp\htdocs\atlas\web\bundles\stfalcontinymce\vendor\tinymce\plugins" />
       <recent name="C:\xampp\htdocs\atlas\vendor\stfalcon\tinymce-bundle\Stfalcon\Bundle\TinymceBundle\Resources\public\vendor\tinymce\skins" />
-      <recent name="C:\xampp\htdocs\atlas\src\ADM\CoreBundle\Resources\config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\atlas\src\ADM\ReportsBundle\Resources\views\Report" />
@@ -880,15 +480,15 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -924,13 +524,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -953,10 +553,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/src/ADM/ReportsBundle/Controller/ReportController.php</url>
-          <line>5</line>
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/ADM/ReportsBundle/Entity/Report.php</url>
           <line>4</line>
           <option name="timeStamp" value="1" />
@@ -972,20 +568,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Entity/Keyword.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2839" max-vertical-offset="3420">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/listReportsByKeyword.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4408">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Keyword/create.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
@@ -1056,13 +638,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.28" vertical-offset="39" max-vertical-offset="3420">
           <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="17" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5232358" vertical-offset="0" max-vertical-offset="581">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1164,7 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.03499079" vertical-offset="0" max-vertical-offset="2071">
           <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1179,16 +753,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5232358" vertical-offset="0" max-vertical-offset="1634">
           <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Controller/ReportController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-28.0" vertical-offset="3" max-vertical-offset="2736">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="49" selection-end-column="5" />
-          <folding>
-            <element signature="e#49#106#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1269,27 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="3.1344383" vertical-offset="3238" max-vertical-offset="5111">
           <caret line="260" column="4" selection-start-line="260" selection-start-column="4" selection-end-line="260" selection-end-column="4" />
-          <folding>
-            <element signature="e#102#142#0#Twig" expanded="false" />
-            <element signature="e#3265#3278#0#Twig" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.92" vertical-offset="114" max-vertical-offset="1558">
-          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.0" vertical-offset="323" max-vertical-offset="1292">
-          <caret line="43" column="70" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1297,7 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="568">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1305,51 +847,104 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="568">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/test.js">
+    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/create.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="475">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="3914">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/formReportType.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.64" vertical-offset="1539" max-vertical-offset="2147">
+        <state vertical-scroll-proportion="0.48987108" vertical-offset="1539" max-vertical-offset="2147">
           <caret line="95" column="93" selection-start-line="95" selection-start-column="93" selection-end-line="95" selection-end-column="93" />
-          <folding>
-            <element signature="e#1945#1975#0#Twig" expanded="false" />
-            <element signature="e#3038#3061#0#Twig" expanded="false" />
-            <element signature="e#4569#4587#0#Twig" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2396" max-vertical-offset="2964">
-          <caret line="149" column="67" selection-start-line="131" selection-start-column="9" selection-end-line="149" selection-end-column="67" />
+        <state vertical-scroll-proportion="0.7992958" vertical-offset="2415" max-vertical-offset="2983">
+          <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.32" vertical-offset="627" max-vertical-offset="1577">
+          <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/read.pdf.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.52" vertical-offset="0" max-vertical-offset="190">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.0" vertical-offset="380" max-vertical-offset="1349">
+          <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="581">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/psliwa/pdf-bundle/Ps/PdfBundle/PsPdfBundle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.6" vertical-offset="0" max-vertical-offset="418">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Controller/ReportController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.12" vertical-offset="812" max-vertical-offset="3515">
+          <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
           <folding>
-            <marker date="1437219421760" expanded="true" signature="3567:4421" placeholder="stfalcon_tinymce:" />
-            <marker date="1437219421760" expanded="true" signature="3639:4310" placeholder="theme:" />
-            <marker date="1437219421760" expanded="true" signature="3654:4310" placeholder="simple:" />
-            <marker date="1437219421760" expanded="true" signature="4315:4421" placeholder="external_plugins:" />
+            <element signature="e#49#106#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/create.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/hello.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17495395" vertical-offset="0" max-vertical-offset="3914">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#102#142#0#Twig" expanded="true" />
-            <element signature="e#2786#2799#0#Twig" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="556">
+          <caret line="0" column="17" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/hello.pdf.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.04" vertical-offset="0" max-vertical-offset="190">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45783132" vertical-offset="0" max-vertical-offset="608">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

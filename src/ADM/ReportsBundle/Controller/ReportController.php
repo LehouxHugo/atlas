@@ -13,6 +13,7 @@ use ADM\ReportsBundle\Form\ReportType;
 use ADM\ReportsBundle\Entity\Keyword;
 use ADM\ReportsBundle\Form\KeywordType;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Ps\PdfBundle\Annotation\Pdf;
 
 
 class ReportController extends Controller
@@ -26,13 +27,17 @@ class ReportController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->persist($report);
             $em->flush();
+
             return $this->redirect($this->generateUrl('adm_report_read', array('slug' => $report->getSlug())));
         }
 
-        return $this->render('ADMReportsBundle:Report:create.html.twig', array(
+        return $this->render(
+            'ADMReportsBundle:Report:create.html.twig',
+            array(
                 'form' => $form->createView(),
 
-            ));
+            )
+        );
     }
 
     public function readAction(Report $report)
@@ -41,10 +46,27 @@ class ReportController extends Controller
             ->getManager()
             ->getRepository('ADMReportsBundle:Report');
 
+        $format = $this->get('request')->get('_format');
+
         return $this->render(
-            'ADMReportsBundle:Report:read.html.twig',
+            sprintf('ADMReportsBundle:Report:read.%s.twig', $format),
             array(
-                'report' => $report
+                'report' => $report,
+            )
+        );
+    }
+
+    /**
+     * @Pdf()
+     */
+    public function helloAction($name)
+    {
+        $format = $this->get('request')->get('_format');
+
+        return $this->render(
+            sprintf('ADMReportsBundle:Report:hello.%s.twig', $format),
+            array(
+                'name' => $name,
             )
         );
     }
@@ -73,13 +95,32 @@ class ReportController extends Controller
         return $this->render(
             'ADMReportsBundle:Report:update.html.twig',
             array(
-                'form'   => $form->createView(),
+                'form' => $form->createView(),
                 'formKeyword' => $formKeyword->createView(),
                 'report' => $report
             )
         );
     }
 
+
+    /**
+     * @Pdf()
+     */
+    public function readPDF(Report $report)
+    {
+        $repository = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('ADMReportsBundle:Report');
+
+        $format = $this->get('request')->get('_format');
+
+        return $this->render(
+            sprintf('ADMReportsBundle:Report:read.%s.twig', $format),
+            array(
+                'report' => $report,
+            )
+        );
+    }
 
     /**
      * Add new keyword (that isn't yet in the database)
@@ -89,9 +130,9 @@ class ReportController extends Controller
         $logger = $this->get('logger');
         $logger->info('Nous avons récupéré le logger');
 
-        if($request->isXmlHttpRequest()) {
+        if ($request->isXmlHttpRequest()) {
             $logger->info('Reconnaît Ajax Request');
-            if($kw != ''){
+            if ($kw != '') {
                 $em = $this->getDoctrine()->getManager();
                 $keyword = new Keyword();
                 $keyword->setName($kw);
@@ -100,11 +141,12 @@ class ReportController extends Controller
                 $logger->error('Entité entrée en base de donnée');
 
                 $newkeyword = $em->getRepository('ADMReportsBundle:Keyword')
-                                 ->findOneBy(array('name' => $kw ));
+                    ->findOneBy(array('name' => $kw));
                 $response = new JsonResponse();
+
                 return $response->setData(array('newkeyword' => $newkeyword));
             }
-        }else{
+        } else {
             throw new \Exception("Erreur");
         }
     }
@@ -112,20 +154,19 @@ class ReportController extends Controller
     public function listReportsByKeywordAction($label)
     {
 
-            $keywordName = array($label);
+        $keywordName = array($label);
 
-            $listReports= $this
+        $listReports = $this
             ->getDoctrine()
             ->getManager()
             ->getRepository('ADMReportsBundle:Report')
-            ->getReportsWithKeyword($keywordName)
-            ;
+            ->getReportsWithKeyword($keywordName);
 
-            $keyword=$this
-                ->getDoctrine()
-                ->getManager()
-                ->getRepository('ADMReportsBundle:Keyword')
-                ->findOneByLabel($label);
+        $keyword = $this
+            ->getDoctrine()
+            ->getManager()
+            ->getRepository('ADMReportsBundle:Keyword')
+            ->findOneByLabel($label);
 
         return $this->render(
             'ADMReportsBundle:Report:listReportsByKeyword.html.twig',

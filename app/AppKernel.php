@@ -41,7 +41,10 @@ class AppKernel extends Kernel
             new SC\DatetimepickerBundle\SCDatetimepickerBundle(),
             //AJAX Routing
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
+            // TinyMCE
             new Stfalcon\Bundle\TinymceBundle\StfalconTinymceBundle(),
+            // Générateur de PDF
+            new Ps\PdfBundle\PsPdfBundle(),
 
         );
 

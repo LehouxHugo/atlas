@@ -148,3 +148,4 @@ stfalcon_tinymce:
     external_plugins:
         filemanager:
             url: "asset[bundles/admcore/filemanager/plugin.min.js]"
+
