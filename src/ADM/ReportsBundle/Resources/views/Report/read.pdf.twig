@@ -1,5 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pdf SYSTEM "%resources%/dtd/doctype.dtd">
 <pdf>
     <dynamic-page>
-        {{ name }}
+        <b>{{ report.name }}</b>
+        {{ report.articleBody | raw }}
     </dynamic-page>
 </pdf>

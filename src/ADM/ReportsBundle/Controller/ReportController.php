@@ -40,6 +40,15 @@ class ReportController extends Controller
         );
     }
 
+    /**
+     * Possible custom headers and external stylesheet file
+     *
+     * @Pdf(
+     * 	headers={"Expires"="Sat, 1 Jan 2000 12:00:00 GMT"},
+     * 	stylesheet="PsPdfBundle:Example:pdfStylesheet.xml.twig",
+     *  enableCache=false
+     * )
+     */
     public function readAction(Report $report)
     {
         $repository = $this->getDoctrine()
@@ -56,20 +65,7 @@ class ReportController extends Controller
         );
     }
 
-    /**
-     * @Pdf()
-     */
-    public function helloAction($name)
-    {
-        $format = $this->get('request')->get('_format');
 
-        return $this->render(
-            sprintf('ADMReportsBundle:Report:hello.%s.twig', $format),
-            array(
-                'name' => $name,
-            )
-        );
-    }
 
     public function updateAction(Report $report, Request $request)
     {

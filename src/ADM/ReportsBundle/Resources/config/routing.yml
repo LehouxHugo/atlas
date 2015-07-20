@@ -2,11 +2,6 @@ adm_report_create:
     path:     /ajouter
     defaults: { _controller: ADMReportsBundle:Report:create }
 
-adm_hello_read:
-    path:     /{name}.{_format}
-    defaults: { _controller: ADMReportsBundle:Report:hello, _format: html }
-    requirements:
-        _format: html|pdf
 adm_report_read:
     path:     /{slug}.{_format}
     defaults: { _controller: ADMReportsBundle:Report:read, _format: html }
