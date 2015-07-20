@@ -156,9 +156,9 @@
 
                     {# BOUTON EDITION, BOUTON PDF #}
                     <div class="pull-right">
-                        <a class="btn  btn-xs navbar-minimalize btn-white" href="#" role="button" style="background: white;border: 1px solid #e7eaec"><i class="fa fa-eye"></i> Lecture zen</a>
-                        <a class="btn btn-white btn-xs" href="{{ path('adm_report_update',{'slug': report.slug}) }}"
-                           role="button"><i class="fa fa-pencil"></i> Editer</a>
+                        <a class="btn btn-white btn-xs" href="{{ path('adm_report_update',{'slug': report.slug}) }}" role="button"><i class="fa fa-pencil"></i> Editer</a>
+                        <a class="btn  btn-xs btn-outline btn-danger" href="{{ path('adm_report_read', { 'slug': report.slug, '_format': "pdf" }) }}" role="button" ><i class="fa fa-file-pdf-o"></i> PDF</a>
+
                     </div>
 
                     {# TITRE DU RAPPORT #}
@@ -351,7 +351,20 @@
         });
     </script>
 
-
+    <script></script>
+    $('.demo3').click(function () {
+    swal({
+    title: "Are you sure?",
+    text: "You will not be able to recover this imaginary file!",
+    type: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#DD6B55",
+    confirmButtonText: "Yes, delete it!",
+    closeOnConfirm: false
+    }, function () {
+    swal("Deleted!", "Your imaginary file has been deleted.", "success");
+    });
+    });
 
 
 {% endblock %}

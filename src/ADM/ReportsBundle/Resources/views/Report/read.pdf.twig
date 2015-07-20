@@ -2,7 +2,19 @@
 <!DOCTYPE pdf SYSTEM "%resources%/dtd/doctype.dtd">
 <pdf>
     <dynamic-page>
-        <b>{{ report.name }}</b>
+        <placeholders>
+            <footer>
+                <div height="20px">
+                    <page-info format="%s / %s" />
+                </div>
+            </footer>
+        </placeholders>
+        <div class="body">
+        <div class="title">
+            {{ report.name | upper }}
+        </div>
+        <hr/>
         {{ report.articleBody | raw }}
+        </div>
     </dynamic-page>
 </pdf>
