@@ -5,16 +5,33 @@
         <placeholders>
             <footer>
                 <div height="20px">
-                    <page-info format="%s / %s" />
+                    <page-info format="%s / %s"/>
                 </div>
             </footer>
         </placeholders>
         <div class="body">
-        <div class="title">
-            {{ report.name | upper }}
+            <div class="title">
+                {{ report.name | upper }}
+            </div>
+            <div class="authors">
+                par {% for author in report.authors %}{{ author.label }}{% if not loop.last %}, {% endif %}{% endfor %}
+            </div>
+            <h1>Résumé</h1>
+            {{ report.abstract | striptags('<table><tr><td><p><b><i><em><br/><hr/><span><a><ul><li>') |raw }}
+            <br/><br/>
+            {% if report.keywords  is not empty %}
+
+                <p><b>Mots-clés </b>
+                    {% for keyword in report.keywords %}
+                        {{ keyword.name }}
+                        {% if not loop.last %}, {% endif %}
+                    {% endfor %}
+                </p>
+            {% endif %}
         </div>
-        <hr/>
-        {{ report.articleBody | striptags('<h1><h2><h3><h4><h5><h6><table><tr><td><p><b><i><em><br/><hr/>') |raw }}
+        <page-break/>
+        <div class="body">
+            {{ report.articleBody | striptags('<h1><h2><h3><h4><h5><h6><table><tr><td><p><b><i><em><br/><hr/><span><a><ul><li>') |raw }}
         </div>
     </dynamic-page>
 </pdf>

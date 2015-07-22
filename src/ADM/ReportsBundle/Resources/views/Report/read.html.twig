@@ -161,7 +161,6 @@
                         <a class="btn btn-xs btn-outline btn-danger" id="downloadPDF"
                            href="{{ path('adm_report_read',{'slug': report.slug, '_format':'pdf'}) }}"
                            role="button"><i class="fa fa-file-pdf-o"></i> PDF</a>
-
                     </div>
 
                     {# TITRE DU RAPPORT #}
@@ -370,16 +369,12 @@
                         text: "L'utilisation des données de ce rapport doit être faite avec précaution. Décontextualiser des données peut mener à des absurdités. {% if not is_granted("IS_AUTHENTICATED_REMEMBERED") %} Vous devez être identifié pour pouvoir télécharger les PDF.{% endif %}",
                         type: "warning",
                         showCancelButton: true,
-                        {% if not is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-                        confirmButtonText: "Se connecter",
-                        {% endif %}
+
                     },
                     function () {
-                        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+
                         window.location.href = link;
-                        {% else %}
-                        window.location.href = "{{ path('sonata_user_admin_security_login') }}";
-                        {% endif %}
+
                     });
         });
 
