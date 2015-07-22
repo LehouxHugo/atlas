@@ -5,7 +5,7 @@
         <placeholders>
             <footer>
                 <div height="20px">
-                    <page-info format="%s / %s"/>
+                    <page-info format="%s / %s" font-type="brandon" color="lightgrey"/>
                 </div>
             </footer>
         </placeholders>
@@ -15,7 +15,9 @@
             </div>
             <div class="authors">
                 par {% for author in report.authors %}{{ author.label }}{% if not loop.last %}, {% endif %}{% endfor %}
+                <span color="lightgrey"> {{ report.dateCreated | date('Y')}}</span>
             </div>
+
             <h1>Résumé</h1>
             {{ report.abstract | striptags('<table><tr><td><p><b><i><em><br/><hr/><span><a><ul><li>') |raw }}
             <br/><br/>
