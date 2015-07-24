@@ -139,9 +139,9 @@ stfalcon_tinymce:
             plugins: "paste, autoresize, table, autolink, advlist, contextmenu, link, image, responsivefilemanager"
             menubar: false
             content_css : "asset[bundles/admcore/css/bootstrap.min.css]"
-            toolbar: "formatselect bold italic  bullist numlist link image inserttable undo redo "
+            toolbar: "formatselect bold italic  bullist numlist link unlink image media inserttable undo redo "
             autoresize_max_height: 500
-            contextmenu: "formatselect italic bold | link image | inserttable  cell row column deletetable"
+            contextmenu: "formatselect bold italic link unlink image media inserttable cell row column deletetable"
             relative_urls: false
             remove_script_host : false
             external_filemanager_path: "/atlas/web/filemanager/"
