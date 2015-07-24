@@ -30,11 +30,9 @@
 {% block bodyclass %}
     "skin-3 mini-navbar"
 {% endblock %}
-{# Options du bodyclass : "skin-1"  "skin-2" "skin-3" "mini-navbar" "fixed-sidebar" : dans ce cas ne pas oublier d'ajouter le script slimScroll qui se trouve dans js/inspinia.js file et décommenter le Fixed Sidebar comment and uncomment function et ajouter <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>"fixed-nav" : dans ce cas mettre navbar-fixed-top si body class = fixed-nav dans <nav>   En mettant mini-navbar ET fixed-sidebar ET fixed-nav, on ne voit plus du tout la barre de navigation de gauche et la barre du haut devient fixe (pour Rapports de stage peut-être), "canvas-menu"pour le OffCanvasLayout #}
 
 {% block closeNavbar %}
 {% endblock %}
-{# Ajouter <a class="close-canvas-menu"><i class="fa fa-times"></i></a> si bodyclass=canvas-menu #}
 
 {% block menus %}
     {{ parent() }}
@@ -43,21 +41,17 @@
 {% block pagewrapperclass %}
     {{ parent() }}
 {% endblock %}
-{# Options du pagewrapperclass : "gray-bg" "gray-bg dashboard-1" mais ça a pas l'air de servir grand chose "gray-bg sidebar-content" ajoute une jolie barre sur la droite  (peut-être pour mettre le sommaire des rapports). Par contre pas toujours terrible pour les téléphones car elle est prioritaireIl faut créer un <div class="sidebard-panel">. Voir exemple #}
 
 {% block navbarclass %}
     {{ parent() }}
 {% endblock %}
-{# "navbar navbar-static-top" ou "navbar-fixed-top" si body class = fixed-nav #}
 
 {% block topnav %}
     {{ parent() }}
 {% endblock %}
 
-{# On met soit le block dashboardheader ou pageheading mais pas les deux, on peut aussi les enlever tous les deux. Je mets du contenu pour l'exemple #}
 {% block dashboardheader %}
 {% endblock %}
-
 
 {% block breadcrumb %}
     <h2>Ajouter une étude</h2>
@@ -77,7 +71,6 @@
 {% block wrappercontentclass %}
     "wrapper wrapper-content animated fadeInRight article"
 {% endblock %}
-{# Options du pagewrapperclass : "wrapper wrapper-content" "wrapper wrapper-content animated fadeInRight" voire "wrapper wrapper-content animated fadeInRight article" pour faire apparaître le contenu de façon un peu dynamique (voir animate.css pour toutes les options) #}
 
 {% block pagecontent %}
 
@@ -88,7 +81,6 @@
 {% block footerclass %}
     {{ parent() }}
 {% endblock %}
-{# Options du footerclass : "footer" "footer fixed" #}
 
 {% block plugins %}
     {{ parent() }}
@@ -124,8 +116,6 @@
 
 {% block extrascripts %}
     {{ parent() }}
-
-    {{ tinymce_init() }}
 
 
 
@@ -179,23 +169,9 @@
 
     </script>
 
-
-    <script>
-        $(document).ready(function () {
-                $("#submit_new_keyword").click(function () {
-                    $.ajax({
-                        type: 'POST',
-                        url: Routing.generate('adm_add_new_keyword', { kw : document.getElementById('input_new_keyword').value;}),
-                        success: function (data) {function (index, value) {
-                                $('#adm_reportsbundle_report_keywords').append('<option value="' + index + '" selected="selected">' + value + '</option>')
-                            });
-                        }
-                    });
-                })
-            })
-    </script>
-
     <script type="text/javascript">
         $("select").chosen();
     </script>
+
+    {{ tinymce_init() }}
 {% endblock %}

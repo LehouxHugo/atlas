@@ -17,18 +17,6 @@
 {% endblock %}
 
 {% block extraheadcontent %}
-    {# Fichiers pour utiliser tinyMCE Wysiwyg editor #}
-    <script src="{{ asset('bundles/admcore/js/plugins/tinyMCE/tinymce.min.js') }}" type="text/javascript"></script>
-    <script>tinymce.init({
-            selector: 'textarea',
-            skin: "light",
-            plugins: "paste, autoresize, table, autolink, advlist, contextmenu, link, image",
-            menubar: false,
-            content_css: ["{{ asset('bundles/admcore/css/bootstrap.min.css') }} "],
-            toolbar: "formatselect bold italic  bullist numlist link image inserttable undo redo",
-            autoresize_max_height: 500,
-            contextmenu: "formatselect italic bold | link image | inserttable  cell row column deletetable",
-        });</script>
 
     <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet'/>
@@ -131,7 +119,6 @@
     '@ADMCoreBundle/Resources/public/js/demo/sparkline-demo.js'
     '@ADMCoreBundle/Resources/public/js/plugins/chartJs/Chart.min.js'
     '@ADMCoreBundle/Resources/public/js/plugins/chosen/chosen.jquery.js'
-
     output='js/compiled/addReport.js' %}
     <script type="text/javascript" src="{{ asset_url }}"></script>
     {% endjavascripts %}
@@ -140,14 +127,12 @@
 
 {% block extrascripts %}
     {{ parent() }}
-    <script type="text/javascript">
-        $("select").chosen();
-    </script>
+
+
 
     <script>
         $(document).ready(function () {
                     L.mapbox.accessToken = 'pk.eyJ1IjoiaHVnb2xlaG91eCIsImEiOiItOHl6Sm5jIn0.12l_k0K_Z28UE-Jc0kDgpw';
-
                     latitude = document.getElementById('adm_reportsbundle_report_update_latitude');
                     longitude = document.getElementById('adm_reportsbundle_report_update_longitude');
                     latitude.value = latitude.value.replace(/,/g, '.');
@@ -194,4 +179,11 @@
                 }
         );
     </script>
+
+    <script type="text/javascript">
+        $("select").chosen();
+    </script>
+
+    {{ tinymce_init() }}
+
 {% endblock %}

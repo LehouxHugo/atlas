@@ -131,7 +131,7 @@ fos_js_routing:
 
 # TinyMCE
 stfalcon_tinymce:
-    include_jquery: true
+    include_jquery: false
     tinymce_jquery: true
     theme:
         simple:
