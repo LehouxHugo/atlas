@@ -164,7 +164,7 @@ $config = array(
 	// set maximum pixel width and/or maximum pixel height for all images
 	// If you set a maximum width or height, oversized images are converted to those limits. Images smaller than the limit(s) are unaffected
 	// if you don't need a limit set both to 0
-	'image_max_width'                         => 0,
+	'image_max_width'                         => 800,
 	'image_max_height'                        => 0,
 	'image_max_mode'                          => 'auto',
 	/*
