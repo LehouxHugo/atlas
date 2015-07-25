@@ -143,6 +143,7 @@ stfalcon_tinymce:
             autoresize_max_height: 500
             contextmenu: "formatselect bold italic link unlink image media inserttable cell row column deletetable"
             relative_urls: false
+            convert_urls : false
             remove_script_host : false
             external_filemanager_path: "/atlas/web/filemanager/"
             filemanager_title: "File Manager"

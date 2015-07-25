@@ -19,7 +19,7 @@
             </div>
 
             <h1>Résumé</h1>
-            {{ report.abstract | striptags('<table><tr><td><p><b><i><em><br/><hr/><span><a><ul><li>') |raw }}
+            {{ report.abstract | striptags('<img><h1><h2><h3><h4><h5><h6><table><tr><td><p><b><i><em><br/><hr/><span><a><ul><li>') |raw }}
             <br/><br/>
             {% if report.keywords  is not empty %}
 
@@ -32,8 +32,11 @@
             {% endif %}
         </div>
         <page-break/>
+        <p>
+        </p>
+
         <div class="body">
-            {{ report.articleBody | striptags('<h1><h2><h3><h4><h5><h6><table><tr><td><p><b><i><em><br/><hr/><span><a><ul><li>') |raw }}
+            {{ report.articleBody | striptags('<img><h1><h2><h3><h4><h5><h6><table><tr><td><p><b><i><em><br/><hr/><span><a><ul><li>') |raw }}
         </div>
     </dynamic-page>
 </pdf>

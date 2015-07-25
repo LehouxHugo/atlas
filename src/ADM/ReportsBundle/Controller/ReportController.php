@@ -57,6 +57,21 @@ class ReportController extends Controller
 
         $format = $this->get('request')->get('_format');
 
+        //Get right path to images for PDF generator
+        //NEEDS REFACTORING
+        if($format=="pdf") {
+            $oldArticleBody = $report->getArticleBody();
+            $oldArticleBody = preg_replace('/alt=\"\"/','',$oldArticleBody);
+            $oldArticleBody = preg_replace('/width=\"[0-9]*\"/','',$oldArticleBody);
+            $oldArticleBody = preg_replace('/height=\"[0-9]*\"/','',$oldArticleBody);
+            $pattern = "http://".$_SERVER['HTTP_HOST'];
+            $pattern = preg_quote($pattern, '/');
+            $replacement = $this->get('kernel')->getRootDir() . '/../web';
+            $report->setArticleBody(preg_replace('/'. $pattern .'/',$replacement , $oldArticleBody));
+            $oldArticleBody = $report->getArticleBody();
+            $report->setArticleBody(preg_replace('/\/app\/\.\./','',$oldArticleBody));
+        }
+
         return $this->render(
             sprintf('ADMReportsBundle:Report:read.%s.twig', $format),
             array(
