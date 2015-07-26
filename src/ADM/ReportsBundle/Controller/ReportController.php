@@ -40,7 +40,7 @@ class ReportController extends Controller
         );
     }
 
-    
+
     /**
      * @Pdf(
      * 	stylesheet="PsPdfBundle:Example:pdfStylesheet.xml.twig",
