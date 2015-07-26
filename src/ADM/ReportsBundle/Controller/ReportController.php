@@ -113,72 +113,30 @@ class ReportController extends Controller
         );
     }
 
-
-    /**
-     * @Pdf()
-     */
-    public function readPDF(Report $report)
+    public function deleteAction(Report $report)
     {
-        $repository = $this->getDoctrine()
-            ->getManager()
-            ->getRepository('ADMReportsBundle:Report');
+        $em = $this->getDoctrine()->getManager();
+        $repository = $em->getRepository('ADMReportsBundle:Report');
+        $em->remove($report);
+        $em->flush();
+        
+        // Rajouter un flash bag pour annoncer que le rapport a bien été supprimé
 
-        $format = $this->get('request')->get('_format');
-
-        return $this->render(
-            sprintf('ADMReportsBundle:Report:read.%s.twig', $format),
-            array(
-                'report' => $report,
-            )
-        );
+        return $this->render('ADMCoreBundle:Core:index.html.twig');
     }
 
-    /**
-     * Add new keyword (that isn't yet in the database)
-     */
-    public function addNewKeywordAction(Request $request, $kw)
-    {
-        $logger = $this->get('logger');
-        $logger->info('Nous avons récupéré le logger');
 
-        if ($request->isXmlHttpRequest()) {
-            $logger->info('Reconnaît Ajax Request');
-            if ($kw != '') {
-                $em = $this->getDoctrine()->getManager();
-                $keyword = new Keyword();
-                $keyword->setName($kw);
-                $em->persist($keyword);
-                $em->flush();
-                $logger->error('Entité entrée en base de donnée');
-
-                $newkeyword = $em->getRepository('ADMReportsBundle:Keyword')
-                    ->findOneBy(array('name' => $kw));
-                $response = new JsonResponse();
-
-                return $response->setData(array('newkeyword' => $newkeyword));
-            }
-        } else {
-            throw new \Exception("Erreur");
-        }
-    }
 
     public function listReportsByKeywordAction($label)
     {
-
         $keywordName = array($label);
-
-        $listReports = $this
-            ->getDoctrine()
-            ->getManager()
+        $em = $this->getDoctrine()->getManager();
+        $listReports = $em
             ->getRepository('ADMReportsBundle:Report')
             ->getReportsWithKeyword($keywordName);
-
-        $keyword = $this
-            ->getDoctrine()
-            ->getManager()
+        $keyword = $em
             ->getRepository('ADMReportsBundle:Keyword')
             ->findOneByLabel($label);
-
         return $this->render(
             'ADMReportsBundle:Report:listReportsByKeyword.html.twig',
             array(

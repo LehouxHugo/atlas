@@ -12,6 +12,10 @@ adm_report_update:
     path:     /{slug}/editer
     defaults: { _controller: ADMReportsBundle:Report:update }
 
+adm_report_delete:
+    path:     /{slug}/supprimer
+    defaults: { _controller: ADMReportsBundle:Report:delete }
+
 adm_keyword_create:
     path:     /tag/ajouter
     defaults: { _controller: ADMReportsBundle:Keyword:create }
