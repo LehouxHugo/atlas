@@ -40,6 +40,7 @@ class ReportController extends Controller
         );
     }
 
+    
     /**
      * @Pdf(
      * 	stylesheet="PsPdfBundle:Example:pdfStylesheet.xml.twig",
@@ -68,6 +69,7 @@ class ReportController extends Controller
         );
     }
 
+
     public function updateAction(Report $report, Request $request)
     {
         $em = $this->getDoctrine()->getManager();
@@ -95,6 +97,7 @@ class ReportController extends Controller
         );
     }
 
+
     public function deleteAction(Report $report)
     {
         $em = $this->getDoctrine()->getManager();
@@ -107,10 +110,8 @@ class ReportController extends Controller
     }
 
 
-
     public function listReportsByKeywordAction(Keyword $keyword)
     {
-
         $em = $this->getDoctrine()->getManager();
         $repository = $em
             ->getRepository('ADMReportsBundle:Keyword');
