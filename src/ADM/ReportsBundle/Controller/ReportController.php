@@ -41,10 +41,7 @@ class ReportController extends Controller
     }
 
     /**
-     * Possible custom headers and external stylesheet file
-     *
      * @Pdf(
-     * 	headers={"Expires"="Sat, 1 Jan 2000 12:00:00 GMT"},
      * 	stylesheet="PsPdfBundle:Example:pdfStylesheet.xml.twig",
      *  enableCache=false
      * )
@@ -54,60 +51,45 @@ class ReportController extends Controller
         $repository = $this->getDoctrine()
             ->getManager()
             ->getRepository('ADMReportsBundle:Report');
-
         $format = $this->get('request')->get('_format');
-
-        //Get right path to images for PDF generator
-        //NEEDS REFACTORING
+        // Set right images paths to generate PDFs, doesn't work on localhost
         if($format=="pdf") {
-            $oldArticleBody = $report->getArticleBody();
-            $oldArticleBody = preg_replace('/alt=\"\"/','',$oldArticleBody);
-            $oldArticleBody = preg_replace('/width=\"[0-9]*\"/','',$oldArticleBody);
-            $oldArticleBody = preg_replace('/height=\"[0-9]*\"/','',$oldArticleBody);
-            $pattern = "http://".$_SERVER['HTTP_HOST'];
-            $pattern = preg_quote($pattern, '/');
-            $replacement = $this->get('kernel')->getRootDir() . '/../web';
+            $oldArticleBody = preg_replace('/(alt|width|height)=("[^"]*")/','',$report->getArticleBody());
+            $pattern = preg_quote("http://".$_SERVER['HTTP_HOST'], '/');
+            $replacement = preg_replace('/\/app\/\.\./','',$this->get('kernel')->getRootDir() . '/../web');
             $report->setArticleBody(preg_replace('/'. $pattern .'/',$replacement , $oldArticleBody));
-            $oldArticleBody = $report->getArticleBody();
-            $report->setArticleBody(preg_replace('/\/app\/\.\./','',$oldArticleBody));
         }
 
         return $this->render(
             sprintf('ADMReportsBundle:Report:read.%s.twig', $format),
             array(
-                'report' => $report,
+                'report' => $report
             )
         );
     }
 
-
-
     public function updateAction(Report $report, Request $request)
     {
-
-
         $em = $this->getDoctrine()->getManager();
         $repository = $em->getRepository('ADMReportsBundle:Report');
-
         $form = $this->createForm(new ReportUpdateType(), $report);
 
         if ($form->handleRequest($request)->isValid()) {
-            // Inutile de persister ici, Doctrine connait déjà notre rapport
-            $em->flush();
+            $em->flush(); // Inutile de persister
 
-            $request->getSession()->getFlashBag()->add('notice', 'Annonce modifiée avec succès.');
-
-            return $this->redirect($this->generateUrl('adm_report_read', array('slug' => $report->getSlug())));
+            return $this->redirect($this->generateUrl(
+                    'adm_report_read',
+                    array(
+                        'slug' => $report->getSlug()
+                    )
+                )
+            );
         }
-
-        $keyword = new Keyword();
-        $formKeyword = $this->get('form.factory')->create(new KeywordType, $keyword);
 
         return $this->render(
             'ADMReportsBundle:Report:update.html.twig',
             array(
                 'form' => $form->createView(),
-                'formKeyword' => $formKeyword->createView(),
                 'report' => $report
             )
         );
@@ -119,7 +101,6 @@ class ReportController extends Controller
         $repository = $em->getRepository('ADMReportsBundle:Report');
         $em->remove($report);
         $em->flush();
-        
         // Rajouter un flash bag pour annoncer que le rapport a bien été supprimé
 
         return $this->render('ADMCoreBundle:Core:index.html.twig');
@@ -127,16 +108,16 @@ class ReportController extends Controller
 
 
 
-    public function listReportsByKeywordAction($label)
+    public function listReportsByKeywordAction(Keyword $keyword)
     {
-        $keywordName = array($label);
+
         $em = $this->getDoctrine()->getManager();
+        $repository = $em
+            ->getRepository('ADMReportsBundle:Keyword');
         $listReports = $em
             ->getRepository('ADMReportsBundle:Report')
-            ->getReportsWithKeyword($keywordName);
-        $keyword = $em
-            ->getRepository('ADMReportsBundle:Keyword')
-            ->findOneByLabel($label);
+            ->getReportsWithKeyword(array($keyword->getLabel()));
+
         return $this->render(
             'ADMReportsBundle:Report:listReportsByKeyword.html.twig',
             array(
