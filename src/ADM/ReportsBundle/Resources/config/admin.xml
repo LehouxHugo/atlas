@@ -12,5 +12,23 @@
                 <argument>ADMReportsBundle</argument>
             </call>
         </service>
+        <service id="sonata.admin.keyword" class="ADM\ReportsBundle\Admin\KeywordAdmin">
+            <tag name="sonata.admin" manager_type="orm" group="Contenu" label="Catégories"/>
+            <argument />
+            <argument>ADM\ReportsBundle\Entity\Keyword</argument>
+            <argument />
+            <call method="setTranslationDomain">
+                <argument>ADMReportsBundle</argument>
+            </call>
+        </service>
+        <service id="sonata.admin.organization" class="ADM\ReportsBundle\Admin\OrganizationAdmin">
+            <tag name="sonata.admin" manager_type="orm" group="Contenu" label="Organisations"/>
+            <argument />
+            <argument>ADM\ReportsBundle\Entity\Organization</argument>
+            <argument />
+            <call method="setTranslationDomain">
+                <argument>ADMReportsBundle</argument>
+            </call>
+        </service>
     </services>
 </container>
