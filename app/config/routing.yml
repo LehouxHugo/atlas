@@ -1,8 +1,3 @@
-# FOS Js Routing Bundle
-test_routing:
-    resource: "@PsPdfBundle/Resources/config/routing.yml"
-    prefix:   /yo
-
 # ADMReportsbundle
 adm_reports:
     resource: "@ADMReportsBundle/Resources/config/routing.yml"

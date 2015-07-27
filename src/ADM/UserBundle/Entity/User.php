@@ -128,4 +128,6 @@ class User extends BaseUser
         }
         return $this->getFirstname() .' '. $this->getLastname() .'';
     }
+
+
 }
