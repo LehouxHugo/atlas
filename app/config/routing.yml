@@ -43,10 +43,6 @@ adm_user:
     resource: "@ADMUserBundle/Resources/config/routing.yml"
     prefix:   /
 
-# FOS Js Routing Bundle
-fos_js_routing:
-    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
-
 # Sonata User Bundle
 sonata_user_security:
     resource: "@SonataUserBundle/Resources/config/routing/sonata_security_1.xml"
@@ -79,7 +75,7 @@ _sonata_admin:
 
 sonata_user:
     resource: '@SonataUserBundle/Resources/config/routing/admin_security.xml'
-    prefix:   /admin
+    prefix:   /
 
 sonata_user_impersonating:
     pattern:  /

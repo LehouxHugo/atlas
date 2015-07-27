@@ -58,12 +58,6 @@ doctrine:
         user:     "%database_user%"
         password: "%database_password%"
         charset:  UTF8
-        # if using pdo_sqlite as your database driver:
-        #   1. add the path in parameters.yml
-        #     e.g. database_path: "%kernel.root_dir%/data/data.db3"
-        #   2. Uncomment database_path in parameters.yml.dist
-        #   3. Uncomment next line:
-        #     path:     "%database_path%"
         types:
             json: Sonata\Doctrine\Types\JsonType
 
@@ -84,13 +78,16 @@ fos_user:
     user_class: ADM\UserBundle\Entity\User
     group:
         group_class: ADM\UserBundle\Entity\Group
+        group_manager: sonata.user.orm.group_manager
+    service:
+        user_manager: sonata.user.orm.user_manager
     from_email:
         address: hugo.lehoux@gmail.com
         sender_name: Hugo_Lehoux
 
 # SONATA User Bundle
 sonata_user:
-    security_acl: false
+    security_acl: true
     manager_type: orm
     class:
         user: ADM\UserBundle\Entity\User
@@ -116,6 +113,19 @@ sonata_block:
 
 sonata_admin:
     title:      Atlas
+    security:
+        handler: sonata.admin.security.handler.acl
+        # acl security information
+        information:
+            GUEST:    [VIEW, LIST]
+            STAFF:    [EDIT, LIST, CREATE]
+            EDITOR:   [OPERATOR, EXPORT]
+            ADMIN:    [MASTER]
+        # permissions not related to an object instance and also to be available when objects do not exist
+        # the DELETE admin permission means the user is allowed to batch delete objects
+        admin_permissions: [CREATE, LIST, DELETE, UNDELETE, EXPORT, OPERATOR, MASTER]
+        # permission related to the objects
+        object_permissions: [VIEW, EDIT, DELETE, UNDELETE, OPERATOR, MASTER, OWNER]
 
 # Stof\DoctrineExtensionBundle configuration
 stof_doctrine_extensions:
