@@ -1,5 +1,5 @@
 {# Accueil | Page d'accueil du site #}
-{% extends 'ADMCoreBundle::BasicLayout.html.twig' %}
+{% extends 'ADMCoreBundle::IndexLayout.html.twig' %}
 
 {% block title %}
     Accueil
@@ -10,6 +10,14 @@
 {% endblock %}
 
 {% block extraheadcontent %}
+    <style>
+    .static-map {
+    width: 100%;
+    }
+  </style>
+
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet'/>
 {% endblock %}
 
 {% block bodyclass %}
@@ -46,7 +54,8 @@
             <h2>Bienvenue</h2>
 
             <p>L'Atlas Numérique des Agricultures du Monde vous permet d'explorer la
-                diversité des systèmes agricoles du Monde simplement.
+                diversité des systèmes agricoles du Monde.<br/>
+                <a href="#">En savoir plus</a>
             </p>
         </div> {# end first column in row dashboard-header #}
     </div> {# end dashboard-header #}
@@ -74,18 +83,11 @@
                         <div class="hr-line-dashed"></div>
                         <button class="btn btn-primary btn-block">Ajouter une étude</button>
                         <div class="hr-line-dashed"></div>
-                        <h5>Systèmes agraires</h5>
+                        <h5>Mots-clés</h5>
                         <ul class="folder-list" style="padding: 0">
-                            <li><a href=""><i class="fa fa-folder"></i> Abattis-brûlis</a></li>
-                            <li><a href=""><i class="fa fa-folder"></i> Elevages transhumants</a></li>
-                            <li><a href=""><i class="fa fa-folder"></i> Oasis</a></li>
-                        </ul>
-                        <h5 class="tag-title">Mots-clés</h5>
-                        <ul class="tag-list" style="padding: 0">
-                            <li><a href="">Diagnostic agraire</a></li>
-                            <li><a href="">Crise du café</a></li>
-                            <li><a href="">Accaparement de terre</a></li>
-                            <li><a href="">Cohabitation des formes d'agriculture</a></li>
+                            <li><a href=""><i class="fa fa-tag"></i> Diagnostic agraire</a></li>
+                            <li><a href=""><i class="fa fa-tag"></i> Crise du café</a></li>
+                            <li><a href=""><i class="fa fa-tag"></i> Accaparement de terre</a></li>
                         </ul>
                         <div class="clearfix"></div>
                     </div>
@@ -95,6 +97,36 @@
         <div class="col-lg-9 animated fadeInRight">
             <div class="row">
                 <div class="col-lg-12">
+                    <div class="file-box">
+                        <div class="file">
+                            <a href="{{ path('adm_leaflet_worldmap') }}">
+                                <span class="corner"></span>
+
+
+                                <img id='static-map' class="static-map img-responsive">
+
+                                <div class="file-name">
+                                    Carte du Monde
+                                    <br/>
+                                    <small>Voir la carte</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="file-box">
+                        <div class="file">
+                            <a href="{{ path('adm_leaflet_worldmap') }}">
+                                <span class="corner"></span>
+
+                                <img id='static-map-2' class="static-map img-responsive">
+                                <div class="file-name">
+                                    Portail des pays
+                                    <br/>
+                                    <small>Voir la liste</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                     {% for report in listReports %}
                     <div class="file-box">
                         <div class="file">
@@ -119,52 +151,9 @@
             </div>
         </div>
     </div>
+    <div></div>
     <div class="row">
-        <div class="col-lg-4">
-            <div class="ibox float-e-margins">
-                <div class="ibox-title">
-                    <h5>Votre activité récente</h5>
-
-                    <div class="ibox-tools"> {# start ibox-tools #}
-                        <a class="collapse-link">
-                            <i class="fa fa-chevron-up"></i>
-                        </a>
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i class="fa fa-wrench"></i>
-                        </a>
-                        <ul class="dropdown-menu dropdown-user">
-                            <li><a href="#">Toutes les activités</a>
-                            </li>
-                            <li><a href="#">Seulement les messages reçus</a>
-                            </li>
-                        </ul>
-                        <a class="close-link">
-                            <i class="fa fa-times"></i>
-                        </a>
-                    </div> {# end ibox-tools #}
-                </div>
-                <div class="ibox-content no-padding">
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <p>
-                                <a class="text-info" href="#">@Hugo</a> Woaw mais ce site est vraiment génial !
-                            </p>
-                            <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 minute ago</small>
-                        </li>
-                        <li class="list-group-item">
-                            <p><a class="text-info" href="#">@Corentin</a> Merci, regarde la courbe des visites du site
-                                ! </p>
-
-                            <div class="text-center m">
-                                <span id="sparkline8"></span>
-                            </div>
-                            <small class="block text-muted"><i class="fa fa-clock-o"></i> 2 hours ago</small>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4">
+        <div class="col-lg-6">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
                     <h5>Les derniers ajouts</h5>
@@ -212,7 +201,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-6">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
                     <h5>Roadmap du site</h5>
@@ -296,6 +285,25 @@
 {% endblock %}
 
 {% block extrascripts %}
+   <script>
+    L.mapbox.accessToken = 'pk.eyJ1IjoiaHVnb2xlaG91eCIsImEiOiItOHl6Sm5jIn0.12l_k0K_Z28UE-Jc0kDgpw';
+    var size = [400, 267];
+
+    document.getElementById('static-map').src =
+    'https://api.tiles.mapbox.com/v4/hugolehoux.m2a2l7dj/' +
+    0 + ',' + 20 + ',' +
+    1 + '/' +
+    size.join('x') + '.png' +
+    '?access_token=' + L.mapbox.accessToken;
+
+    document.getElementById('static-map-2').src =
+            'https://api.tiles.mapbox.com/v4/hugolehoux.mi8n7fe4/' +
+            0 + ',' + 20 + ',' +
+            1 + '/' +
+            size.join('x') + '.png' +
+            '?access_token=' + L.mapbox.accessToken;
+   </script>
+
     <script>
         $(document).ready(function () {
             setTimeout(function () {
@@ -307,6 +315,14 @@
                 };
                 toastr.info('Le site est en cours de construction merci de votre tolérance', 'Bienvenue');
             }, 1300);
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('.file-box').each(function() {
+                animationHover(this, 'pulse');
+            });
         });
     </script>
 {% endblock %}

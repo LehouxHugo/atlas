@@ -57,17 +57,7 @@
                 "gray-bg dashboard-1" mais ça a pas l'air de servir grand chose
                 "gray-bg sidebar-content" ajoute une jolie barre sur la droite  (peut-être pour mettre le sommaire des rapports). Par contre pas toujours terrible pour les téléphones car elle est prioritaireIl faut créer un <div class="sidebard-panel">. Voir exemple
                 #}
-                <div class="row border-bottom">
-                    <nav class={% block navbarclass %}"navbar navbar-static-top"{% endblock %} {# navbar navbar-static-top ou navbar navbar-fixed-top si body class = fixed-nav  #} role="navigation" style="margin-bottom: 0">
-                        <div class="navbar-header">
-                            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
-                        </div>
-                        {% block topnav %}
-                            {# Cet include correspond aux menus du haut #}
-                            {% include 'ADMCoreBundle:Common:topnav.html.twig' %}
-                        {% endblock %}
-                    </nav>
-                </div>
+
                 {# On met soit le block dashboardheader ou pageheading mais pas les deux, on peut aussi les enlever tous les deux. Je mets du contenu pour l'exemple #}
                 {% block dashboardheader %}
                     <div id="dashboard-header" class="row  border-bottom white-bg dashboard-header">
