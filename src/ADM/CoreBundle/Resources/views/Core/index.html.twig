@@ -14,7 +14,8 @@
     .static-map {
     width: 100%;
     }
-  </style>
+
+    </style>
 
     <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet'/>
@@ -97,6 +98,7 @@
         <div class="col-lg-9 animated fadeInRight">
             <div class="row">
                 <div class="col-lg-12">
+                    <div class="row" style="padding-left: 0px;">
                     <div class="file-box">
                         <div class="file">
                             <a href="{{ path('adm_leaflet_worldmap') }}">
@@ -127,17 +129,25 @@
                             </a>
                         </div>
                     </div>
+                </div>
+                    <span style="font-weight: bold;">ETUDES RECENTES</span>
+                    <hr style="margin-top: 5px; margin-bottom: 15px;">
+                    <div class="row">
                     {% for report in listReports %}
                     <div class="file-box">
                         <div class="file">
-                            <a href="#">
+                            <a href="{{ path('adm_report_read', { 'slug': report.slug }) }}">
                                 <span class="corner"></span>
 
                                 <div class="icon">
                                     <i class="fa fa-file"></i>
                                 </div>
                                 <div class="file-name">
+                                    {% if report.name | length > 25 %}
+                                    {{ report.name |slice(0, 25) }}...
+                                    {% else %}
                                     {{ report.name }}
+                                    {% endif %}
                                     <br/>
                                     <small>{{ report.dateCreated |date('Y') }}</small>
                                 </div>
@@ -146,7 +156,7 @@
                     </div>
                     {% endfor %}
 
-
+                    </div>
                 </div>
             </div>
         </div>
