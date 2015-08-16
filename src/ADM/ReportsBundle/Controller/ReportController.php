@@ -128,4 +128,32 @@ class ReportController extends Controller
         );
     }
 
+    public function listReportsAction()
+    {
+        $listReports = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('ADMReportsBundle:Report')
+            ->findAll();
+
+        return $this->render(
+            'ADMReportsBundle:Report:listReports.html.twig',
+            array(
+                'listReports' => $listReports
+            )
+        );
+    }
+
+    public function ajaxSummaryAction(Report $report)
+    {
+        $repository = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('ADMReportsBundle:Report');
+
+        return $this->render(
+            'ADMReportsBundle:Report:ajaxReportSummary.html.twig',
+            array(
+                'report' => $report
+            )
+        );
+    }
 }

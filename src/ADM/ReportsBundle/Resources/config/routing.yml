@@ -1,3 +1,11 @@
+adm_list_reports:
+    path:     /
+    defaults: { _controller: ADMReportsBundle:Report:listReports }
+
+adm_ajax_summary_report:
+    path:     /ajax/{slug}
+    defaults: { _controller: ADMReportsBundle:Report:ajaxSummary }
+
 adm_report_create:
     path:     /ajouter
     defaults: { _controller: ADMReportsBundle:Report:create }

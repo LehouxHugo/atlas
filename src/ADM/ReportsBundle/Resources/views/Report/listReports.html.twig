@@ -1,0 +1,178 @@
+{# OffCanvas Layout | http://webapplayers.com/inspinia_admin-v2.1/off_canvas_menu.html #}
+{% extends "ADMCoreBundle::OffCanvasLayout.html.twig" %}
+
+{% block title %}
+{% endblock %}
+
+{% block stylesheets %}
+    {% stylesheets output="css/compiled/listReports.css" filter="cssrewrite"
+    'bundles/admcore/css/bootstrap.min.css'
+    'bundles/admcore/font-awesome/css/font-awesome.css'
+    'bundles/admcore/css/plugins/dataTables/dataTables.bootstrap.css'
+    'bundles/admcore/css/plugins/dataTables/dataTables.responsive.css'
+    'bundles/admcore/css/plugins/dataTables/dataTables.tableTools.min.css'
+    'bundles/admcore/css/style.css'
+    'bundles/admcore/css/animate.css'
+    'bundles/admcore/css/plugins/toastr/toastr.min.css'
+    'bundles/admcore/css/plugins/cubeportfolio/cubeportfolio.min.css'%}
+    <link rel="stylesheet" href="{{ asset_url }}"/>
+    {% endstylesheets %}
+{% endblock %}
+
+{% block extraheadcontent %}
+{% endblock %}
+
+{% block bodyclass %}
+    "skin-3 mini-navbar fixed-nav"
+{% endblock %}
+{# Options du bodyclass : "skin-1"  "skin-2" "skin-3" "mini-navbar" "fixed-sidebar" : dans ce cas ne pas oublier d'ajouter le script slimScroll qui se trouve dans js/inspinia.js file et décommenter le Fixed Sidebar comment and uncomment function et ajouter <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>"fixed-nav" : dans ce cas mettre navbar-fixed-top si body class = fixed-nav dans <nav>   En mettant mini-navbar ET fixed-sidebar ET fixed-nav, on ne voit plus du tout la barre de navigation de gauche et la barre du haut devient fixe (pour Rapports de stage peut-être), "canvas-menu"pour le OffCanvasLayout #}
+
+{% block closeNavbar %}
+{% endblock %}
+{# Ajouter <a class="close-canvas-menu"><i class="fa fa-times"></i></a> si bodyclass=canvas-menu #}
+
+{% block menus %}
+    {{ parent() }}
+{% endblock %}
+
+{% block pagewrapperclass %}
+    {{ parent() }}
+{% endblock %}
+{# Options du pagewrapperclass : "gray-bg" "gray-bg dashboard-1" mais ça a pas l'air de servir grand chose "gray-bg sidebar-content" ajoute une jolie barre sur la droite  (peut-être pour mettre le sommaire des rapports). Par contre pas toujours terrible pour les téléphones car elle est prioritaireIl faut créer un <div class="sidebard-panel">. Voir exemple #}
+
+{% block navbarclass %}
+    "navbar navbar-fixed-top"
+{% endblock %}
+{# "navbar navbar-static-top" ou "navbar-fixed-top" si body class = fixed-nav #}
+
+{% block topnav %}
+{{ parent() }}
+{% endblock %}
+
+{# On met soit le block dashboardheader ou pageheading mais pas les deux, on peut aussi les enlever tous les deux. Je mets du contenu pour l'exemple #}
+{% block dashboardheader %}
+{% endblock %}
+
+
+{% block breadcrumb %}
+
+{% endblock %}
+
+{% block wrappercontentclass %}
+    "wrapper wrapper-content"
+{% endblock %}
+{# Options du pagewrapperclass : "wrapper wrapper-content" "wrapper wrapper-content animated fadeInRight" voire "wrapper wrapper-content animated fadeInRight article" pour faire apparaître le contenu de façon un peu dynamique (voir animate.css pour toutes les options) #}
+
+{% block pagecontent %}
+    <div class="clearfix">
+        <div id="js-filters-awesome-work-filter-1" class="cbp-l-filters-dropdown cbp-l-filters-dropdown-floated">
+            <div class="cbp-l-filters-dropdownWrap">
+                <div class="cbp-l-filters-dropdownHeader">Sort Gallery</div>
+                <div class="cbp-l-filters-dropdownList">
+                    <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">All</div>
+                    <div data-filter=".identity" class="cbp-filter-item">Identity</div>
+                    <div data-filter=".web-design" class="cbp-filter-item">Web Design</div>
+                    <div data-filter=".print" class="cbp-filter-item">Print</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="js-filters-awesome-work-filter-2" class="cbp-l-filters-button cbp-l-filters-left">
+            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">All</div>
+            <div data-filter=".graphic" class="cbp-filter-item">Graphic</div>
+            <div data-filter=".logos" class="cbp-filter-item">Logo</div>
+            <div data-filter=".motion" class="cbp-filter-item">Motion</div>
+        </div>
+    </div>
+<div id="js-grid-lightbox-gallery" class="cbp cbp-l-grid-work">
+        {% for report in listReports %}
+            <div class="cbp-item web-design graphic print motion">
+                <a href="{{ url('adm_ajax_summary_report', { 'slug': report.slug }) }}" class="cbp-caption cbp-singlePageInline" data-title="{{ report.name }}" rel="nofollow">
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="http://scriptpie.com/cubeportfolio/img/?i=380x285/b385a1" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignLeft">
+                            <div class="cbp-l-caption-body">
+                                <div class="cbp-l-caption-title">{{ report.name }}</div>
+                                <div class="cbp-l-caption-desc">{{ report.dateCreated | date('Y') }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="{{ url('adm_ajax_summary_report', { 'slug': report.slug }) }}" class="cbp-l-grid-work-title cbp-singlePageInline" rel="nofollow">{{ report.name }}</a>
+                <div class="cbp-l-grid-work-desc">{{ report.dateCreated | date('Y') }}</div>
+            </div>
+        {% endfor %}
+
+    </div>
+    <div id="js-loadMore-awesome-work" class="cbp-l-loadMore-button">
+        <a href="ajax-awesome-work/loadMore.html" class="cbp-l-loadMore-link" rel="nofollow">
+            <span class="cbp-l-loadMore-defaultText">LOAD MORE</span>
+            <span class="cbp-l-loadMore-loadingText">LOADING...</span>
+            <span class="cbp-l-loadMore-noMoreLoading">NO MORE WORKS</span>
+        </a>
+    </div>
+
+{% endblock %}
+
+{% block footerclass %}
+    {{ parent() }}
+{% endblock %}
+{# Options du footerclass : "footer" "footer fixed" #}
+
+{% block plugins %}
+    {{ parent() }}
+{% endblock %}
+
+{% block javascripts %}
+    {% javascripts
+    '@ADMCoreBundle/Resources/public/js/jquery-2.1.1.js'
+    '@ADMCoreBundle/Resources/public/js/bootstrap.min.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/metisMenu/jquery.metisMenu.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/pace/pace.min.js'
+    '@ADMCoreBundle/Resources/public/js/inspinia.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/slimscroll/jquery.slimscroll.min.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/jquery-ui/jquery-ui.min.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/dataTables/jquery.dataTables.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/dataTables/dataTables.bootstrap.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/dataTables/dataTables.responsive.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/dataTables/dataTables.tableTools.min.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/cubeportfolio/jquery.cubeportfolio.min.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/cubeportfolio/templates/lightbox-gallery/js/main.js'
+    output='js/compiled/listReports.js' %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}
+
+{% block extrascripts %}
+    {{ parent() }}
+
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            var gridContainer = jQuery('#grid-container'),
+                    filtersContainer = $('#filters-container');
+
+            gridContainer.cubeportfolio({
+
+            });
+
+            //activate filters for cubeportfolio
+            filtersContainer.on('click', 'button', function (e) {
+
+                // cache current button clicked
+                var me = jQuery(this);
+
+                // add class cbp-filter-item-active on the current button clicked and remove from other buttons
+                me.addClass('cbp-filter-item-active').siblings().removeClass('cbp-filter-item-active');
+
+                // call cubeportfolio filter function
+                gridContainer.cubeportfolio('filter', me.data('filter'));
+            });
+
+        });
+    </script>
+{% endblock %}
+
+
+
