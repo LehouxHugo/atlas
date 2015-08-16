@@ -55,7 +55,27 @@
 
 
 {% block breadcrumb %}
+    <div class="clearfix">
+        <div id="js-filter-1" class="cbp-l-filters-dropdown" >
+            <div class="cbp-l-filters-dropdownWrap" style="text-transform: uppercase; margin:none;padding:none;">
+                <div class="cbp-l-filters-dropdownHeader">Tous</div>
+                <div class="cbp-l-filters-dropdownList">
+                    <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">All</div>
+                    {% for keyword in listKeywords %}
+                        <div data-filter=".{{ keyword.label }}" class="cbp-filter-item">{{ keyword.name }}</div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
 
+        {#  <div id="js-filter-2" class="cbp-l-filters-button cbp-l-filters-left">
+              <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Tous</div>
+              {% for keyword in listKeywords %}
+                  <div data-filter=".{{ keyword.label }} " class="cbp-filter-item">{{ keyword.name }}</div>
+              {% endfor %}
+          </div>
+          #}
+    </div>
 {% endblock %}
 
 {% block wrappercontentclass %}
@@ -64,40 +84,14 @@
 {# Options du pagewrapperclass : "wrapper wrapper-content" "wrapper wrapper-content animated fadeInRight" voire "wrapper wrapper-content animated fadeInRight article" pour faire apparaître le contenu de façon un peu dynamique (voir animate.css pour toutes les options) #}
 
 {% block pagecontent %}
-    <div class="clearfix">
-        <div id="js-filters-awesome-work-filter-1" class="cbp-l-filters-dropdown cbp-l-filters-dropdown-floated">
-            <div class="cbp-l-filters-dropdownWrap">
-                <div class="cbp-l-filters-dropdownHeader">Sort Gallery</div>
-                <div class="cbp-l-filters-dropdownList">
-                    <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">All</div>
-                    <div data-filter=".identity" class="cbp-filter-item">Identity</div>
-                    <div data-filter=".web-design" class="cbp-filter-item">Web Design</div>
-                    <div data-filter=".print" class="cbp-filter-item">Print</div>
-                </div>
-            </div>
-        </div>
-
-        <div id="js-filters-awesome-work-filter-2" class="cbp-l-filters-button cbp-l-filters-left">
-            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">All</div>
-            <div data-filter=".graphic" class="cbp-filter-item">Graphic</div>
-            <div data-filter=".logos" class="cbp-filter-item">Logo</div>
-            <div data-filter=".motion" class="cbp-filter-item">Motion</div>
-        </div>
-    </div>
-<div id="js-grid-lightbox-gallery" class="cbp cbp-l-grid-work">
+<div id="js-grid-gallery" class="cbp cbp-l-grid-work">
         {% for report in listReports %}
-            <div class="cbp-item web-design graphic print motion">
+            <div class="cbp-item {% for keyword in report.keywords %}{{ keyword.label }} {% endfor %}">
                 <a href="{{ url('adm_ajax_summary_report', { 'slug': report.slug }) }}" class="cbp-caption cbp-singlePageInline" data-title="{{ report.name }}" rel="nofollow">
                     <div class="cbp-caption-defaultWrap">
                         <img src="http://scriptpie.com/cubeportfolio/img/?i=380x285/b385a1" alt="">
                     </div>
                     <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignLeft">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">{{ report.name }}</div>
-                                <div class="cbp-l-caption-desc">{{ report.dateCreated | date('Y') }}</div>
-                            </div>
-                        </div>
                     </div>
                 </a>
                 <a href="{{ url('adm_ajax_summary_report', { 'slug': report.slug }) }}" class="cbp-l-grid-work-title cbp-singlePageInline" rel="nofollow">{{ report.name }}</a>
@@ -105,15 +99,17 @@
             </div>
         {% endfor %}
 
+
     </div>
+    {#
     <div id="js-loadMore-awesome-work" class="cbp-l-loadMore-button">
         <a href="ajax-awesome-work/loadMore.html" class="cbp-l-loadMore-link" rel="nofollow">
-            <span class="cbp-l-loadMore-defaultText">LOAD MORE</span>
-            <span class="cbp-l-loadMore-loadingText">LOADING...</span>
-            <span class="cbp-l-loadMore-noMoreLoading">NO MORE WORKS</span>
+            <span class="cbp-l-loadMore-defaultText">EN VOIR PLUS</span>
+            <span class="cbp-l-loadMore-loadingText">CHARGEMENT...</span>
+            <span class="cbp-l-loadMore-noMoreLoading"></span>
         </a>
     </div>
-
+#}
 {% endblock %}
 
 {% block footerclass %}
@@ -139,7 +135,7 @@
     '@ADMCoreBundle/Resources/public/js/plugins/dataTables/dataTables.responsive.js'
     '@ADMCoreBundle/Resources/public/js/plugins/dataTables/dataTables.tableTools.min.js'
     '@ADMCoreBundle/Resources/public/js/plugins/cubeportfolio/jquery.cubeportfolio.min.js'
-    '@ADMCoreBundle/Resources/public/js/plugins/cubeportfolio/templates/lightbox-gallery/js/main.js'
+    '@ADMCoreBundle/Resources/public/js/plugins/cubeportfolio/templates/atlascube/js/main.js'
     output='js/compiled/listReports.js' %}
     <script type="text/javascript" src="{{ asset_url }}"></script>
     {% endjavascripts %}
@@ -147,31 +143,6 @@
 
 {% block extrascripts %}
     {{ parent() }}
-
-    <script type="text/javascript">
-        jQuery(document).ready(function() {
-            var gridContainer = jQuery('#grid-container'),
-                    filtersContainer = $('#filters-container');
-
-            gridContainer.cubeportfolio({
-
-            });
-
-            //activate filters for cubeportfolio
-            filtersContainer.on('click', 'button', function (e) {
-
-                // cache current button clicked
-                var me = jQuery(this);
-
-                // add class cbp-filter-item-active on the current button clicked and remove from other buttons
-                me.addClass('cbp-filter-item-active').siblings().removeClass('cbp-filter-item-active');
-
-                // call cubeportfolio filter function
-                gridContainer.cubeportfolio('filter', me.data('filter'));
-            });
-
-        });
-    </script>
 {% endblock %}
 
 

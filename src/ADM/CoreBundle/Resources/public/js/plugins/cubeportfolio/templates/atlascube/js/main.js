@@ -2,8 +2,8 @@
     'use strict';
 
     // init cubeportfolio
-    $('#js-grid-lightbox-gallery').cubeportfolio({
-        filters: '#js-filters-lightbox-gallery1, #js-filters-lightbox-gallery2',
+    $('#js-grid-gallery').cubeportfolio({
+        filters: '#js-filter-1, #js-filter-2',
         loadMore: '#js-loadMore-lightbox-gallery',
         loadMoreAction: 'click',
         layoutMode: 'grid',
@@ -24,12 +24,12 @@
             cols: 1
         }],
         defaultFilter: '*',
-        animationType: 'rotateSides',
+        animationType: 'scaleSides',
         gapHorizontal: 10,
         gapVertical: 10,
         gridAdjustment: 'responsive',
         caption: 'zoom',
-        displayType: 'sequentially',
+        displayType: 'lazyLoading',
         displayTypeSpeed: 100,
 
         // lightbox

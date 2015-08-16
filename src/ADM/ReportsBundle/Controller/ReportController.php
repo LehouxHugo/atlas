@@ -130,15 +130,20 @@ class ReportController extends Controller
 
     public function listReportsAction()
     {
-        $listReports = $this->getDoctrine()
-            ->getManager()
+        $em = $this->getDoctrine()
+            ->getManager();
+        $listKeywords = $em
+            ->getRepository('ADMReportsBundle:Keyword')
+            ->findAll();
+        $listReports = $em
             ->getRepository('ADMReportsBundle:Report')
             ->findAll();
 
         return $this->render(
             'ADMReportsBundle:Report:listReports.html.twig',
             array(
-                'listReports' => $listReports
+                'listReports' => $listReports,
+                'listKeywords' => $listKeywords
             )
         );
     }
