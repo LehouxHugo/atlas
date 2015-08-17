@@ -7,6 +7,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use ADM\CoreBundle\Entity\Country;
 use ADM\ReportsBundle\Entity\Report;
 use ADM\ReportsBundle\Form\ReportUpdateType;
 use ADM\ReportsBundle\Form\ReportType;
@@ -133,17 +134,25 @@ class ReportController extends Controller
         $em = $this->getDoctrine()
             ->getManager();
         $listKeywords = $em
-            ->getRepository('ADMReportsBundle:Keyword')
-            ->findAll();
+        ->getRepository('ADMReportsBundle:Keyword')
+        ->findAll();
         $listReports = $em
             ->getRepository('ADMReportsBundle:Report')
+            ->findAll();
+        $listOrganizations = $em
+            ->getRepository('ADMReportsBundle:Organization')
+            ->findAll();
+        $listCountries = $em
+            ->getRepository('ADMCoreBundle:Country')
             ->findAll();
 
         return $this->render(
             'ADMReportsBundle:Report:listReports.html.twig',
             array(
                 'listReports' => $listReports,
-                'listKeywords' => $listKeywords
+                'listKeywords' => $listKeywords,
+                'listOrganizations' => $listOrganizations,
+                'listCountries'=> $listCountries
             )
         );
     }

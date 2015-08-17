@@ -14,42 +14,48 @@
     'bundles/admcore/css/style.css'
     'bundles/admcore/css/animate.css'
     'bundles/admcore/css/plugins/toastr/toastr.min.css'
-    'bundles/admcore/css/plugins/cubeportfolio/cubeportfolio.min.css'%}
+    'bundles/admcore/css/plugins/cubeportfolio/cubeportfolio.min.css' %}
     <link rel="stylesheet" href="{{ asset_url }}"/>
     {% endstylesheets %}
 {% endblock %}
 
 {% block extraheadcontent %}
     <style>
-        div #page-heading{
+        div #page-heading {
             padding-bottom: 11px;
-            padding-top:11px;
+            padding-top: 11px;
         }
 
-        .cbp-l-filters-dropdownWrap{
+        .cbp-l-filters-dropdownWrap {
             background-color: white;
             color: #888;
-            border:1px solid #ECECEC;
+            border: 1px solid #ECECEC;
             padding: 0px 0px;
-            margin : Opx;
+            margin: Opx;
             transition: color 0.3s ease-in-out 0s, background-color 0.3s ease-in-out 0s, border-color 0.3s ease-in-out 0s
         }
 
-        .cbp-l-filters-dropdownList .cbp-filter-item{
-             border-color: #ECECEC   -moz-use-text-color -moz-use-text-color
-         }
+        .cbp-l-filters-dropdownList .cbp-filter-item {
+            border-color: #ECECEC -moz-use-text-color -moz-use-text-color
+        }
 
-        .cbp-l-filters-dropdownList .cbp-filter-item:hover{
+        .cbp-l-filters-dropdownList .cbp-filter-item:hover {
             color: #595959;
         }
 
-        .cbp-l-filters-dropdownList .cbp-filter-item-active{
+        .cbp-l-filters-dropdownList .cbp-filter-item-active {
             color: #595959;
         }
 
-        .cbp-l-filters-dropdownHeader{
+        .cbp-l-filters-dropdownHeader {
             color: #595959;
         }
+
+        div .cbp-l-filters-dropdownList{
+            overflow: auto;
+            height:50vh;
+        }
+
     </style>
 {% endblock %}
 
@@ -77,36 +83,82 @@
 {# "navbar navbar-static-top" ou "navbar-fixed-top" si body class = fixed-nav #}
 
 {% block topnav %}
-{{ parent() }}
+    {{ parent() }}
 {% endblock %}
 
 {# On met soit le block dashboardheader ou pageheading mais pas les deux, on peut aussi les enlever tous les deux. Je mets du contenu pour l'exemple #}
 {% block dashboardheader %}
 {% endblock %}
 
-
-{% block breadcrumb %}
-    <div class="clearfix">
-        <div id="js-filter-1" class="cbp-l-filters-dropdown" style="margin-bottom:0px;">
-            <div class="cbp-l-filters-dropdownWrap">
-                <div class="cbp-l-filters-dropdownHeader">Tous</div>
-                <div class="cbp-l-filters-dropdownList">
-                    <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">All</div>
-                    {% for keyword in listKeywords %}
-                        <div data-filter=".{{ keyword.label }}" class="cbp-filter-item">{{ keyword.name }}</div>
-                    {% endfor %}
+{% block pageheading %}
+    <div id="page-heading" class="row wrapper border-bottom white-bg page-heading">
+        <div class="row" style="margin:0px;padding-left:11px;">
+            <div class="col-lg-1">
+                </div>
+            <div class="col-lg-1">
+                <div id="js-filter-1" class="cbp-l-filters-dropdown" style="margin-bottom:0px;">
+                    <div class="cbp-l-filters-dropdownWrap">
+                        <div id="dropdown-header-1" class="cbp-l-filters-dropdownHeader">Mots-clés</div>
+                        <div class="cbp-l-filters-dropdownList">
+                            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Tous</div>
+                            {% for keyword in listKeywords %}
+                                <div data-filter=".{{ keyword.label }}" class="cbp-filter-item">{{ keyword.name }}</div>
+                            {% endfor %}
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="col-lg-1">
+                <div id="js-filter-2" class="cbp-l-filters-dropdown" style="margin-bottom:0px;">
+                    <div class="cbp-l-filters-dropdownWrap">
+                        <div class="cbp-l-filters-dropdownHeader">Organisations</div>
+                        <div class="cbp-l-filters-dropdownList">
+                            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Toutes</div>
+                            {% for organization in listOrganizations %}
+                                <div data-filter=".{{ organization.label }}"
+                                     class="cbp-filter-item">{{ organization.name }}</div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
 
-        {#  <div id="js-filter-2" class="cbp-l-filters-button cbp-l-filters-left">
-              <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Tous</div>
-              {% for keyword in listKeywords %}
-                  <div data-filter=".{{ keyword.label }} " class="cbp-filter-item">{{ keyword.name }}</div>
-              {% endfor %}
-          </div>
-          #}
+            </div>
+            <div class="col-lg-1">
+                <div id="js-filter-2" class="cbp-l-filters-dropdown" style="margin-bottom:0px;">
+                    <div class="cbp-l-filters-dropdownWrap">
+                        <div class="cbp-l-filters-dropdownHeader">Pays</div>
+                        <div class="cbp-l-filters-dropdownList">
+                            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Tous</div>
+                            {% for country in listCountries %}
+                                <div data-filter=".{{ country.countryCode2 }}"
+                                     class="cbp-filter-item">{{ country.name }}</div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-1">
+                <div id="js-filter-2" class="cbp-l-filters-dropdown" style="margin-bottom:0px;">
+                    <div class="cbp-l-filters-dropdownWrap">
+                        <div class="cbp-l-filters-dropdownHeader">Année</div>
+                        <div class="cbp-l-filters-dropdownList">
+                            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Toutes</div>
+                            {% for i in 1990..2015 %}
+                                    <div data-filter=".{{ i }}"
+                                     class="cbp-filter-item">{{ i }}</div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
+{% endblock %}
+
+{% block breadcrumb %}
+
 {% endblock %}
 
 {% block wrappercontentclass %}
@@ -115,17 +167,25 @@
 {# Options du pagewrapperclass : "wrapper wrapper-content" "wrapper wrapper-content animated fadeInRight" voire "wrapper wrapper-content animated fadeInRight article" pour faire apparaître le contenu de façon un peu dynamique (voir animate.css pour toutes les options) #}
 
 {% block pagecontent %}
-<div id="js-grid-gallery" class="cbp cbp-l-grid-work">
+    <div id="js-grid-gallery" class="cbp cbp-l-grid-work">
         {% for report in listReports %}
-            <div class="cbp-item {% for keyword in report.keywords %}{{ keyword.label }} {% endfor %}">
-                <a href="{{ url('adm_ajax_summary_report', { 'slug': report.slug }) }}" class="cbp-caption cbp-singlePageInline" data-title="{{ report.name }}" rel="nofollow">
+            <div class="cbp-item
+            {% for keyword in report.keywords %}{{ keyword.label }} {% endfor %}
+            {% for organization in report.organizations %}{{ organization.label }} {% endfor %}
+            {{  report.dateCreated | date('Y') }}
+            {{  report.country }}
+            ">
+                <a href="{{ url('adm_ajax_summary_report', { 'slug': report.slug }) }}"
+                   class="cbp-caption cbp-singlePageInline" data-title="{{ report.name }}" rel="nofollow">
                     <div class="cbp-caption-defaultWrap">
                         <img src="http://scriptpie.com/cubeportfolio/img/?i=380x285/b385a1" alt="">
                     </div>
                     <div class="cbp-caption-activeWrap">
                     </div>
                 </a>
-                <a href="{{ url('adm_ajax_summary_report', { 'slug': report.slug }) }}" class="cbp-l-grid-work-title cbp-singlePageInline" rel="nofollow">{{ report.name }}</a>
+                <a href="{{ url('adm_ajax_summary_report', { 'slug': report.slug }) }}"
+                   class="cbp-l-grid-work-title cbp-singlePageInline" rel="nofollow">{{ report.name }}</a>
+
                 <div class="cbp-l-grid-work-desc">{{ report.dateCreated | date('Y') }}</div>
             </div>
         {% endfor %}
@@ -174,6 +234,15 @@
 
 {% block extrascripts %}
     {{ parent() }}
+    <script>$(document).ready(function(){
+
+            header1=document.getElementById("dropdown-header-1");
+            header1.innerHTML="Yo";
+
+        });</script>
+
+
+
 {% endblock %}
 
 
