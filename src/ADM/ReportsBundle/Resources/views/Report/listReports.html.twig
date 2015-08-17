@@ -53,8 +53,24 @@
 
         div .cbp-l-filters-dropdownList{
             overflow: auto;
-            height:50vh;
+            max-height:60vh;
         }
+
+        div .cbp-l-grid-work.cbp-caption-zoom .cbp-caption-activeWrap {
+            background-color: rgba(101, 199, 150, 0.9);
+        }
+
+        .cbp-l-caption-title {
+            color: #FFF;
+            font: 400 14px/21px "Lato",sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: inline-block;
+        }
+
+        .cbp-l-inline{background-color: white;
+        border-color: #E8E9ED;
+        border-top:2px;}
 
     </style>
 {% endblock %}
@@ -93,14 +109,15 @@
 {% block pageheading %}
     <div id="page-heading" class="row wrapper border-bottom white-bg page-heading">
         <div class="row" style="margin:0px;padding-left:11px;">
-            <div class="col-lg-1">
+            <div class="col-lg-1" style="padding-top: 8px;">
+                <h4>Filtres</h4>
                 </div>
-            <div class="col-lg-1">
+            <div class="col-lg-2">
                 <div id="js-filter-1" class="cbp-l-filters-dropdown" style="margin-bottom:0px;">
                     <div class="cbp-l-filters-dropdownWrap">
                         <div id="dropdown-header-1" class="cbp-l-filters-dropdownHeader">Mots-clés</div>
                         <div class="cbp-l-filters-dropdownList">
-                            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Tous</div>
+                            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Mots-clés</div>
                             {% for keyword in listKeywords %}
                                 <div data-filter=".{{ keyword.label }}" class="cbp-filter-item">{{ keyword.name }}</div>
                             {% endfor %}
@@ -108,12 +125,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-1">
+            <div class="col-lg-2">
                 <div id="js-filter-2" class="cbp-l-filters-dropdown" style="margin-bottom:0px;">
                     <div class="cbp-l-filters-dropdownWrap">
-                        <div class="cbp-l-filters-dropdownHeader">Organisations</div>
+                        <div id="dropdown-header-2" class="cbp-l-filters-dropdownHeader">Organisations</div>
                         <div class="cbp-l-filters-dropdownList">
-                            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Toutes</div>
+                            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Organisations</div>
                             {% for organization in listOrganizations %}
                                 <div data-filter=".{{ organization.label }}"
                                      class="cbp-filter-item">{{ organization.name }}</div>
@@ -123,12 +140,12 @@
                 </div>
 
             </div>
-            <div class="col-lg-1">
-                <div id="js-filter-2" class="cbp-l-filters-dropdown" style="margin-bottom:0px;">
+            <div class="col-lg-2">
+                <div id="js-filter-3" class="cbp-l-filters-dropdown" style="margin-bottom:0px;">
                     <div class="cbp-l-filters-dropdownWrap">
-                        <div class="cbp-l-filters-dropdownHeader">Pays</div>
+                        <div id="dropdown-header-3" class="cbp-l-filters-dropdownHeader">Pays/Territoire</div>
                         <div class="cbp-l-filters-dropdownList">
-                            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Tous</div>
+                            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Pays/Territoire</div>
                             {% for country in listCountries %}
                                 <div data-filter=".{{ country.countryCode2 }}"
                                      class="cbp-filter-item">{{ country.name }}</div>
@@ -138,12 +155,12 @@
                 </div>
 
             </div>
-            <div class="col-lg-1">
-                <div id="js-filter-2" class="cbp-l-filters-dropdown" style="margin-bottom:0px;">
+            <div class="col-lg-2">
+                <div id="js-filter-4" class="cbp-l-filters-dropdown" style="margin-bottom:0px;">
                     <div class="cbp-l-filters-dropdownWrap">
-                        <div class="cbp-l-filters-dropdownHeader">Année</div>
+                        <div id="dropdown-header-4" class="cbp-l-filters-dropdownHeader">Année</div>
                         <div class="cbp-l-filters-dropdownList">
-                            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Toutes</div>
+                            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Année</div>
                             {% for i in 1990..2015 %}
                                     <div data-filter=".{{ i }}"
                                      class="cbp-filter-item">{{ i }}</div>
@@ -178,13 +195,21 @@
                 <a href="{{ url('adm_ajax_summary_report', { 'slug': report.slug }) }}"
                    class="cbp-caption cbp-singlePageInline" data-title="{{ report.name }}" rel="nofollow">
                     <div class="cbp-caption-defaultWrap">
-                        <img src="http://scriptpie.com/cubeportfolio/img/?i=380x285/b385a1" alt="">
+
+                        {% image '@ADMCoreBundle/Resources/public/img/cubeportfolio/reportFront1.png' %}
+                        <img src="{{ asset_url }}" alt="" />
+                        {% endimage %}
                     </div>
                     <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                        <div class="cbp-l-caption-body">
+                            <div class="cbp-l-caption-title">{{ report.name | upper }}</div>
+                        </div>
+                        </div>
                     </div>
                 </a>
                 <a href="{{ url('adm_ajax_summary_report', { 'slug': report.slug }) }}"
-                   class="cbp-l-grid-work-title cbp-singlePageInline" rel="nofollow">{{ report.name }}</a>
+                   class="cbp-l-grid-work-title cbp-singlePageInline" rel="nofollow">{% if report.name | length > 24 %}{{ report.name |slice(0, 21)}}...{% else %}{{ report.name}}{% endif %} </a>
 
                 <div class="cbp-l-grid-work-desc">{{ report.dateCreated | date('Y') }}</div>
             </div>
@@ -234,12 +259,7 @@
 
 {% block extrascripts %}
     {{ parent() }}
-    <script>$(document).ready(function(){
 
-            header1=document.getElementById("dropdown-header-1");
-            header1.innerHTML="Yo";
-
-        });</script>
 
 
 

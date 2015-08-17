@@ -3,7 +3,7 @@
 
     // init cubeportfolio
     $('#js-grid-gallery').cubeportfolio({
-        filters: '#js-filter-1, #js-filter-2',
+        filters: '#js-filter-1, #js-filter-2,#js-filter-3,#js-filter-4',
         loadMore: '#js-loadMore-lightbox-gallery',
         loadMoreAction: 'click',
         layoutMode: 'grid',
