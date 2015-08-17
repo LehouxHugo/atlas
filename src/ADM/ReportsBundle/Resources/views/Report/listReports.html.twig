@@ -20,6 +20,37 @@
 {% endblock %}
 
 {% block extraheadcontent %}
+    <style>
+        div #page-heading{
+            padding-bottom: 11px;
+            padding-top:11px;
+        }
+
+        .cbp-l-filters-dropdownWrap{
+            background-color: white;
+            color: #888;
+            border:1px solid #ECECEC;
+            padding: 0px 0px;
+            margin : Opx;
+            transition: color 0.3s ease-in-out 0s, background-color 0.3s ease-in-out 0s, border-color 0.3s ease-in-out 0s
+        }
+
+        .cbp-l-filters-dropdownList .cbp-filter-item{
+             border-color: #ECECEC   -moz-use-text-color -moz-use-text-color
+         }
+
+        .cbp-l-filters-dropdownList .cbp-filter-item:hover{
+            color: #595959;
+        }
+
+        .cbp-l-filters-dropdownList .cbp-filter-item-active{
+            color: #595959;
+        }
+
+        .cbp-l-filters-dropdownHeader{
+            color: #595959;
+        }
+    </style>
 {% endblock %}
 
 {% block bodyclass %}
@@ -56,8 +87,8 @@
 
 {% block breadcrumb %}
     <div class="clearfix">
-        <div id="js-filter-1" class="cbp-l-filters-dropdown" >
-            <div class="cbp-l-filters-dropdownWrap" style="text-transform: uppercase; margin:none;padding:none;">
+        <div id="js-filter-1" class="cbp-l-filters-dropdown" style="margin-bottom:0px;">
+            <div class="cbp-l-filters-dropdownWrap">
                 <div class="cbp-l-filters-dropdownHeader">Tous</div>
                 <div class="cbp-l-filters-dropdownList">
                     <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">All</div>
