@@ -55,7 +55,7 @@
             <h2>Bienvenue</h2>
 
             <p>L'Atlas Numérique des Agricultures du Monde vous permet d'explorer la
-                diversité des systèmes agricoles du Monde.<br/>
+                diversité des systèmes agricoles du Monde.
                 <a href="#">En savoir plus</a>
             </p>
         </div> {# end first column in row dashboard-header #}
@@ -72,7 +72,7 @@
 
 {% block pagecontent %}
     <div class="row">
-        <div class="col-lg-3">
+        {#<div class="col-lg-3">
             <div class="ibox float-e-margins">
                 <div class="ibox-content">
                     <div class="file-manager">
@@ -95,10 +95,27 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-9 animated fadeInRight">
-            <div class="row">
+        #}
+        <div class="col-lg-12 animated fadeInRight">
+            <div class="row" style="margin-left:45px;margin-top:-30px;">
                 <div class="col-lg-12">
-                    <div class="row" style="padding-left: 0px;">
+                    <div class="row">
+                        <span style="font-weight: bold;">EXPLORER</span>
+                        <hr style="margin-top: 5px; margin-bottom: 15px;">
+                        <div class="file-box">
+                            <div class="file">
+                                <a href="{{ path('adm_list_reports') }}">
+                                    <span class="corner"></span>
+
+                                    <img id='static-map-2' class="static-map img-responsive">
+                                    <div class="file-name">
+                                        Trouver une étude
+                                        <br/>
+                                        <small>Voir la liste</small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     <div class="file-box">
                         <div class="file">
                             <a href="{{ path('adm_leaflet_worldmap') }}">
@@ -115,23 +132,10 @@
                             </a>
                         </div>
                     </div>
-                    <div class="file-box">
-                        <div class="file">
-                            <a href="{{ path('adm_leaflet_worldmap') }}">
-                                <span class="corner"></span>
 
-                                <img id='static-map-2' class="static-map img-responsive">
-                                <div class="file-name">
-                                    Portail des pays
-                                    <br/>
-                                    <small>Voir la liste</small>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
                 </div>
-                    <span style="font-weight: bold;">ETUDES RECENTES</span>
-                    <hr style="margin-top: 5px; margin-bottom: 15px;">
+                    <span style="font-weight: bold;margin-left:-15px">ETUDES RECENTES</span>
+                    <hr style="margin-top: 5px;margin-left:-15px; margin-bottom: 15px;">
                     <div class="row">
                     {% for report in listReports %}
                     <div class="file-box">
