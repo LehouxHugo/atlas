@@ -61,7 +61,7 @@
         }
 
         .cbp-l-caption-title {
-            color: #FFF;
+            color: black;
             font: 400 14px/21px "Lato",sans-serif;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -194,6 +194,7 @@
 {% block pagecontent %}
     <div id="js-grid-gallery" class="cbp cbp-l-grid-work">
         {% for report in listReports %}
+
             <div class="cbp-item
             {% for keyword in report.keywords %}{{ keyword.label }} {% endfor %}
             {% for organization in report.organizations %}{{ organization.label }} {% endfor %}
@@ -203,10 +204,7 @@
                 <a href="{{ url('adm_ajax_summary_report', { 'slug': report.slug }) }}"
                    class="cbp-caption cbp-singlePageInline" data-title="{{ report.name }}" rel="nofollow">
                     <div class="cbp-caption-defaultWrap">
-
-                        {% image '@ADMCoreBundle/Resources/public/img/cubeportfolio/reportFront1.png' %}
-                        <img src="{{ asset_url }}" alt="" />
-                        {% endimage %}
+                        <img src="http://ipsumimage.appspot.com/380x285,69cdd8?l=" alt="" />
                     </div>
                     <div class="cbp-caption-activeWrap">
                         <div class="cbp-l-caption-alignCenter">

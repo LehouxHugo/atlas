@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e7264e4-dd4c-45b0-9105-8ca1e2cb0da6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/cubeportfolio/jquery.cubeportfolio.js" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/cubeportfolio/jquery.cubeportfolio.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/cubeportfolio/jquery.cubeportfolio.min.js" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/cubeportfolio/jquery.cubeportfolio.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/listReports.html.twig" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/listReports.html.twig" />
     </list>
     <ignored path="atlas.iws" />
@@ -35,10 +33,10 @@
       <file leaf-file-name="listReports.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/listReports.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6152381" vertical-offset="1938" max-vertical-offset="5377">
-              <caret line="119" column="100" selection-start-line="119" selection-start-column="100" selection-end-line="119" selection-end-column="100" />
+            <state vertical-scroll-proportion="0.34857142" vertical-offset="3731" max-vertical-offset="5339">
+              <caret line="206" column="81" selection-start-line="206" selection-start-column="81" selection-end-line="206" selection-end-column="81" />
               <folding>
-                <element signature="e#7949#7969#0#Twig" expanded="true" />
+                <element signature="e#7950#7970#0#Twig" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1263,10 +1261,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/listReports.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6152381" vertical-offset="1938" max-vertical-offset="5377">
-          <caret line="119" column="100" selection-start-line="119" selection-start-column="100" selection-end-line="119" selection-end-column="100" />
+        <state vertical-scroll-proportion="0.34857142" vertical-offset="3731" max-vertical-offset="5339">
+          <caret line="206" column="81" selection-start-line="206" selection-start-column="81" selection-end-line="206" selection-end-column="81" />
           <folding>
-            <element signature="e#7949#7969#0#Twig" expanded="true" />
+            <element signature="e#7950#7970#0#Twig" expanded="true" />
           </folding>
         </state>
       </provider>
