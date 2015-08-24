@@ -1,7 +1,7 @@
 /*!
  * Cube Portfolio - Responsive jQuery Grid Plugin
  *
- * version: 3.0.2 (14 August, 2015)
+ * version: 3.0.3 (19 August, 2015)
  * require: jQuery v1.7+
  *
  * Copyright 2013-2015, Mihai Buricea (http://scriptpie.com/cubeportfolio/live-preview/)
@@ -865,7 +865,14 @@
         t.filters.each(function(index, el) {
             var filter = $(el),
                 filterName = '*',
-                items = filter.find('.cbp-filter-item');
+                items = filter.find('.cbp-filter-item'),
+                dropdown = {};
+
+            if (filter.hasClass('cbp-l-filters-dropdown')) {
+                dropdown.wrap = filter.find('.cbp-l-filters-dropdownWrap');
+                dropdown.header = filter.find('.cbp-l-filters-dropdownHeader');
+                dropdown.headerText = dropdown.header.text();
+            }
 
             // activate counter for filters
             parent.$obj.cubeportfolio('showCounter', items);
@@ -881,7 +888,7 @@
             $.data(el, 'filterName', filterName);
             t.filterData.push(el);
 
-            t.filtersCallback(filter, items.filter('[data-filter="' + filterName + '"]'));
+            t.filtersCallback(dropdown, items.filter('[data-filter="' + filterName + '"]'));
 
             items.on('click.cbp', function() {
                 var item = $(this);
@@ -892,7 +899,7 @@
 
                 // get cubeportfolio data and check if is still animating (reposition) the items.
                 if (!parent.isAnimating) {
-                    t.filtersCallback(filter, item);
+                    t.filtersCallback(dropdown, item);
                 }
 
                 $.data(el, 'filterName', item.data('filter'));
@@ -912,14 +919,15 @@
         });
     };
 
-    Filters.prototype.filtersCallback = function(filter, item) {
-        var t = this, wrap;
+    Filters.prototype.filtersCallback = function(dropdown, item) {
+        if (!$.isEmptyObject(dropdown)) {
+            dropdown.wrap.trigger('mouseleave.cbp');
 
-        if (filter.hasClass('cbp-l-filters-dropdown')) {
-            wrap = filter.find('.cbp-l-filters-dropdownWrap');
-            wrap.trigger('mouseleave.cbp');
-
-            wrap.find('.cbp-l-filters-dropdownHeader').text(item.text());
+            if (dropdown.headerText) {
+                dropdown.headerText = '';
+            } else {
+                dropdown.header.text(item.text());
+            }
         }
 
         item.addClass('cbp-filter-item-active').siblings().removeClass('cbp-filter-item-active');
@@ -992,7 +1000,7 @@
                     return $(this).is('div' + '.cbp-loadMore-block' + numberOfClicks);
                 });
 
-                t.parent.$obj.cubeportfolio('appendItems', items.html(), function() {
+                t.parent.$obj.cubeportfolio('appendItems', items.children(), function() {
 
                     // put the original message back
                     item.removeClass('cbp-l-loadMore-loading');
@@ -3489,8 +3497,7 @@ if (typeof Object.create !== 'function') {
         t.resizeMainContainer();
 
         function animationend() {
-            t.blocks
-                .removeClass('cbp-item-on2off cbp-item-off2on cbp-item-on2on')
+            t.blocks.removeClass('cbp-item-on2off cbp-item-off2on cbp-item-on2on')
                 .each(function(index, el) {
                     var data = $(el).data('cbp');
 
@@ -3631,7 +3638,7 @@ if (typeof Object.create !== 'function') {
         // hack for safari osx because it doesn't want to work if I set animationDelay
         // on cbp-item-wrapper before I clone the t.$ul
         var items = ulClone.find('.cbp-item').not('.cbp-item-off');
-        t.sortBlocks(items, 'topNew');
+        t.sortBlocks(items, 'top');
         items.children('.cbp-item-wrapper').each(function(index, el) {
             el.style[CubePortfolio.Private.animationDelay] = (index * 50) + 'ms';
         });
@@ -3654,12 +3661,15 @@ if (typeof Object.create !== 'function') {
                     data.wrapper[0].style[CubePortfolio.Private.animationDelay] = (index * 50) + 'ms';
                 });
 
-            if (t.blocksOn.length) {
-                t.blocksOn.last().data('cbp').wrapper.one(CubePortfolio.Private.animationend, animationend);
-            } else if (t.blocksOnInitial.length) {
-                t.blocksOnInitial.last().data('cbp').wrapper.one(CubePortfolio.Private.animationend, animationend);
-            } else {
+            var onLength = t.blocksOn.length,
+                offLength = items.length;
+
+            if (onLength === 0 && offLength === 0) {
                 animationend();
+            } else if (onLength < offLength) {
+                items.last().children('.cbp-item-wrapper').one(CubePortfolio.Private.animationend, animationend);
+            } else {
+                t.blocksOn.last().data('cbp').wrapper.one(CubePortfolio.Private.animationend, animationend);
             }
 
             // resize main container height

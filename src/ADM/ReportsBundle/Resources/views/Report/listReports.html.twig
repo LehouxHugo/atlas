@@ -117,7 +117,7 @@
                     <div class="cbp-l-filters-dropdownWrap">
                         <div id="dropdown-header-1" class="cbp-l-filters-dropdownHeader">Mots-clés</div>
                         <div class="cbp-l-filters-dropdownList">
-                            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Mots-clés</div>
+                            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Tous</div>
                             {% for keyword in listKeywords %}
                                 <div data-filter=".{{ keyword.label }}" class="cbp-filter-item">{{ keyword.name }}</div>
                             {% endfor %}
@@ -130,7 +130,7 @@
                     <div class="cbp-l-filters-dropdownWrap">
                         <div id="dropdown-header-2" class="cbp-l-filters-dropdownHeader">Organisations</div>
                         <div class="cbp-l-filters-dropdownList">
-                            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Organisations</div>
+                            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Toutes</div>
                             {% for organization in listOrganizations %}
                                 <div data-filter=".{{ organization.label }}"
                                      class="cbp-filter-item">{{ organization.name }}</div>
@@ -145,7 +145,7 @@
                     <div class="cbp-l-filters-dropdownWrap">
                         <div id="dropdown-header-3" class="cbp-l-filters-dropdownHeader">Pays/Territoire</div>
                         <div class="cbp-l-filters-dropdownList">
-                            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Pays/Territoire</div>
+                            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Tous</div>
                             {% for country in listCountries %}
                                 <div data-filter=".{{ country.countryCode2 }}"
                                      class="cbp-filter-item">{{ country.name }}</div>
@@ -160,7 +160,7 @@
                     <div class="cbp-l-filters-dropdownWrap">
                         <div id="dropdown-header-4" class="cbp-l-filters-dropdownHeader">Année</div>
                         <div class="cbp-l-filters-dropdownList">
-                            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Année</div>
+                            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Toutes</div>
                             {% for i in 1990..2015 %}
                                     <div data-filter=".{{ i }}"
                                      class="cbp-filter-item">{{ i }}</div>
