@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e7264e4-dd4c-45b0-9105-8ca1e2cb0da6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/listReports.html.twig" afterPath="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/listReports.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/patterns/Thumbs.db" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/patterns/Thumbs.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/gallery/Thumbs.db" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/img/gallery/Thumbs.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/patterns/header-profile-skin-3.png" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/patterns/header-profile-skin-3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/IndexLayout.html.twig" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/IndexLayout.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Common/navbar-menus.html.twig" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Common/navbar-menus.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Common/navbar-profile.html.twig" afterPath="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Common/navbar-profile.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="atlas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,44 +37,72 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="listReports.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/listReports.html.twig">
+      <file leaf-file-name="navbar-menus.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Common/navbar-menus.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34857142" vertical-offset="3731" max-vertical-offset="5339">
-              <caret line="206" column="81" selection-start-line="206" selection-start-column="81" selection-end-line="206" selection-end-column="81" />
+            <state vertical-scroll-proportion="-12.64" vertical-offset="273" max-vertical-offset="798">
+              <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
               <folding>
-                <element signature="e#7950#7970#0#Twig" expanded="true" />
+                <element signature="e#42#55#0#Twig" expanded="false" />
+                <element signature="n#style#0;n#hr#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#a#0;n#li#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#li#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#li#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#a#0;n#span#0;n#li#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#2;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Core/index.html.twig">
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1764" max-vertical-offset="4712">
-              <caret line="106" column="66" selection-start-line="106" selection-start-column="66" selection-end-line="106" selection-end-column="66" />
+            <state vertical-scroll-proportion="-60.8" vertical-offset="0" max-vertical-offset="4674">
+              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/cubeportfolio/templates/atlascube/js/main.js">
+      <file leaf-file-name="BasicLayout.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/BasicLayout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="786" max-vertical-offset="1349">
-              <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
+            <state vertical-scroll-proportion="-0.76" vertical-offset="0" max-vertical-offset="1957">
+              <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="read.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/read.html.twig">
+      <file leaf-file-name="IndexLayout.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/IndexLayout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2895" max-vertical-offset="7429">
-              <caret line="161" column="34" selection-start-line="161" selection-start-column="34" selection-end-line="161" selection-end-column="67" />
-              <folding />
+            <state vertical-scroll-proportion="-5.3773584" vertical-offset="133" max-vertical-offset="4465">
+              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="82" selection-end-column="12" />
+              <folding>
+                <element signature="e#3948#3991#0#Twig" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbar-profile.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Common/navbar-profile.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.035315987" vertical-offset="0" max-vertical-offset="551">
+              <caret line="1" column="59" selection-start-line="1" selection-start-column="59" selection-end-line="1" selection-end-column="59" />
+              <folding>
+                <element signature="n#style#0;n#h4#0;n#span#0;n#span#0;n#a#0;n#div#0;n#li#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#button#0;n#span#0;n#div#1;n#li#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#1;n#li#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,9 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Country/read.html.twig" />
-        <option value="$PROJECT_DIR$/web/bundles/admcore/filemanager/config/config.php" />
-        <option value="$PROJECT_DIR$/app/config/test.js" />
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/formReportType.html.twig" />
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/hello.html.twig" />
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/hello.pdf.twig" />
@@ -117,8 +149,6 @@
         <option value="$PROJECT_DIR$/src/ADM/LeafletBundle/Resources/views/Maps/viewWorldMap.html.twig" />
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/read.html.twig" />
         <option value="$PROJECT_DIR$/src/ADM/CoreBundle/Controller/CoreController.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-        <option value="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/IndexLayout.html.twig" />
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/readAll.html.twig" />
         <option value="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php" />
         <option value="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/cubeportfolio/cubeportfolio/css/cubeportfolio.min.css" />
@@ -129,8 +159,13 @@
         <option value="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/OffCanvasLayout.html.twig" />
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Controller/ReportController.php" />
         <option value="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/js/plugins/cubeportfolio/templates/atlascube/js/main.js" />
-        <option value="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Core/index.html.twig" />
         <option value="$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/listReports.html.twig" />
+        <option value="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Common/navbar-connection.html.twig" />
+        <option value="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Core/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/IndexLayout.html.twig" />
+        <option value="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Common/navbar-menus.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Common/navbar-profile.html.twig" />
       </list>
     </option>
   </component>
@@ -167,6 +202,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -598,38 +634,12 @@
               <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ADM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoreBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="Common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -656,90 +666,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ADM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoreBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cubeportfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atlas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ADM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoreBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -769,9 +695,62 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -810,15 +789,15 @@
       <BehatRunner />
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -848,20 +827,43 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21104388" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3227003" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20474778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21104388" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20474778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -898,41 +900,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Entity/Keyword.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.92266184" vertical-offset="513" max-vertical-offset="3420">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Form/ReportType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40467626" vertical-offset="744" max-vertical-offset="1729">
-          <caret line="53" column="28" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Admin/ReportAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.64" vertical-offset="0" max-vertical-offset="893">
-          <caret line="14" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Admin/KeywordAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.4" vertical-offset="242" max-vertical-offset="798">
-          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Form/KeywordType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.16" vertical-offset="0" max-vertical-offset="855">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Form/OrganizationType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.2" vertical-offset="0" max-vertical-offset="1292">
@@ -1039,31 +1006,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.68" vertical-offset="969" max-vertical-offset="3420">
-          <caret line="69" column="22" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/IndexLayout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8685714" vertical-offset="0" max-vertical-offset="3230">
-          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ADM/LeafletBundle/Resources/views/Maps/viewWorldMap.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3847619" vertical-offset="8044" max-vertical-offset="9025">
           <caret line="434" column="124" selection-start-line="434" selection-start-column="70" selection-end-line="434" selection-end-column="124" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/BasicLayout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.18095239" vertical-offset="114" max-vertical-offset="1957">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1078,6 +1024,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.32" vertical-offset="3478" max-vertical-offset="4408">
           <caret line="194" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
+          <folding>
+            <element signature="e#102#142#0#Twig" expanded="false" />
+            <element signature="e#2713#2726#0#Twig" expanded="false" />
+            <element signature="e#5097#5112#0#Twig" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1106,6 +1057,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-51.68" vertical-offset="1995" max-vertical-offset="3458">
           <caret line="173" column="13" selection-start-line="173" selection-start-column="13" selection-end-line="173" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1113,6 +1065,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.369524" vertical-offset="3161" max-vertical-offset="3686">
           <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1134,6 +1087,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="627" max-vertical-offset="78432">
           <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1213,9 +1167,9 @@
         <state vertical-scroll-proportion="-14.92" vertical-offset="2553" max-vertical-offset="3382">
           <caret line="154" column="48" selection-start-line="154" selection-start-column="48" selection-end-line="154" selection-end-column="48" />
           <folding>
-            <element signature="e#49#106#0#PHP" expanded="true" />
-            <element signature="e#4737#4784#0#PHP" expanded="true" />
-            <element signature="e#5270#5323#0#PHP" expanded="true" />
+            <element signature="e#49#106#0#PHP" expanded="false" />
+            <element signature="e#4737#4784#0#PHP" expanded="false" />
+            <element signature="e#5270#5323#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1243,14 +1197,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Core/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1764" max-vertical-offset="4712">
-          <caret line="106" column="66" selection-start-line="106" selection-start-column="66" selection-end-line="106" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/read.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2895" max-vertical-offset="7429">
@@ -1259,12 +1205,103 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Common/navbar-connection.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="114">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Resources/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="112819" max-vertical-offset="122189">
+          <caret line="5947" column="53" selection-start-line="5947" selection-start-column="19" selection-end-line="5947" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ADM/ReportsBundle/Resources/views/Report/listReports.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34857142" vertical-offset="3731" max-vertical-offset="5339">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3914" max-vertical-offset="5339">
           <caret line="206" column="81" selection-start-line="206" selection-start-column="81" selection-end-line="206" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Common/topnav.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="2299">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Core/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.0266666" vertical-offset="171" max-vertical-offset="4712">
+          <caret line="65" column="14" selection-start-line="65" selection-start-column="14" selection-end-line="65" selection-end-column="14" />
           <folding>
-            <element signature="e#7950#7970#0#Twig" expanded="true" />
+            <element signature="e#51#87#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Common/navbar-menus.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.64" vertical-offset="273" max-vertical-offset="798">
+          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+          <folding>
+            <element signature="e#42#55#0#Twig" expanded="false" />
+            <element signature="n#style#0;n#hr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#0;n#li#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#li#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#span#0;n#li#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#2;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/IndexLayout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.3773584" vertical-offset="133" max-vertical-offset="4465">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="82" selection-end-column="12" />
+          <folding>
+            <element signature="e#3948#3991#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/BasicLayout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.76" vertical-offset="0" max-vertical-offset="1957">
+          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-60.8" vertical-offset="0" max-vertical-offset="4674">
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADM/CoreBundle/Resources/views/Common/navbar-profile.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.035315987" vertical-offset="0" max-vertical-offset="551">
+          <caret line="1" column="59" selection-start-line="1" selection-start-column="59" selection-end-line="1" selection-end-column="59" />
+          <folding>
+            <element signature="n#style#0;n#h4#0;n#span#0;n#span#0;n#a#0;n#div#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#button#0;n#span#0;n#div#1;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#li#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

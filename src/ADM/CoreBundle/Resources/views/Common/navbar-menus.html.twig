@@ -1,6 +1,36 @@
 <li class="active">
-    <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">Explorer</span> <span class="fa arrow"></span></a>
+    <a href="{{ path('adm_core_home') }}"><i class="fa fa-home"></i> <span class="nav-label">ACCUEIL</span></a>
+</li>
+<li>
+    <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">EXPLORER</span> <span
+                class="fa arrow"></span></a>
     <ul class="nav nav-second-level">
-        <li><a href={{ path('adm_leaflet_worldmap') }}>Atlas mondial</a></li>
+        <li><a href={{ path('adm_leaflet_worldmap') }}>Etudes</a></li>
+        <li><a href={{ path('adm_leaflet_worldmap') }}>Carte mondiale</a></li>
     </ul>
 </li>
+<hr style="width: 80%;margin-left: auto;margin-right: auto; margin-top:5px;margin-bottom:15px;color:white;opacity: 0.3">
+{% if not is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+    <li id="connexion" style="height: 70%; border-radius: 3px;">
+        <a href="{{ path('fos_user_security_login') }}" style="padding-top: 7px;padding-bottom: 7px; padding-left: 10px;padding-right:10px; "><span class="nav-label" style="color:white;">Connexion</span></a>
+    </li>
+{% else %}
+    <li style="padding: 10px;line-height:1em;">
+
+        <img alt="image"
+             style="-webkit-border-radius: 50em;-moz-border-radius: 50em;border-radius: 50em; height: 2.5em;width:2.5em; margin-left:5px;margin-top: -5px;"
+             src="http://webapplayers.com/inspinia_admin-v2.0/img/profile_small.jpg"/>
+        <span class="nav-label" style="color:white;margin-left: 10px;font-weight: 600;"> {{ app.user.username | capitalize }}
+            <a href="{{ path('sonata_user_profile_show') }}">
+                <i class="fa fa-cog fa-lg menu-icon" style="position:absolute;right:10px;color:#948B96;top:15px;"></i>
+            </a>
+        </span>
+
+    </li>
+{% endif %}
+
+<div class="nav-label" style="padding-top:20px;padding-left:15px;padding-right:15px;font-size:0.8em;text-align: center;color:lightgrey;">
+    <a style="color:white;opacity: 0.4;margin:5px;" href="#">À propos</a>
+    <a style="color:white;opacity: 0.4;margin:5px;" href="#">Partenaires</a><br/>
+    <a style="color:white;opacity: 0.4;margin:5px;" href="#">Politique de confidentialité</a>
+</div>

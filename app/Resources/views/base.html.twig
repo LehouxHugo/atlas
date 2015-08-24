@@ -20,6 +20,69 @@
 
     {% block extraheadcontent %}
     {% endblock %}
+    <style>
+
+        #connexion{
+            background: #1AB394;
+            width: 65%;
+            height:80%;
+            margin: auto;
+            text-align: center;
+        }
+
+        #custom-search-input {
+            margin-left:-20px;
+            margin-top: 5px;
+            margin-bottom: 0px;
+            padding: 0;
+
+        }
+
+        .form-control{padding-left: 30px;margin-bottom:30px}
+
+        .form-control:focus{opacity:1;}
+
+        #custom-search-input .search-query {
+            padding-right: 3px;
+            padding-right: 4px \9;
+            padding-left: 10px;
+            padding-left: 10px \9;
+            z-index: 3;
+            /* IE7-8 doesn't have border-radius, so don't indent the padding */
+
+            margin-bottom: 0;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+
+        #custom-search-input button {
+            border: 0;
+            background: none;
+            /** belows styles are working good */
+            padding: 2px 5px;
+            margin-top: 2px;
+            position: relative;
+            left: 28px;
+            /* IE7-8 doesn't have border-radius, so don't indent the padding */
+            margin-bottom: 0;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            color:white;
+            opacity: .4;
+            z-index: 4;
+        }
+
+        .search-query:focus + button {
+            z-index: 3;
+        }
+
+
+
+        .logo-element{padding: none;}
+
+    </style>
 </head>
 
 <body class={% block bodyclass %}"skin-3"{% endblock %}>
@@ -41,9 +104,12 @@
                     {% block closeNavbar %}
                     {% endblock %}
                     {# Ajouter <a class="close-canvas-menu"><i class="fa fa-times"></i></a> si bodyclass=canvas-menu #}
+                   <ul class="nav" id="side-top-menu">
+                       {# Cet include correspond au carré avec le profil de l'utilisateur #}
+                       {% include 'ADMCoreBundle:Common:navbar-profile.html.twig' %}
+                   </ul>
                     <ul class="nav" id="side-menu">
-                        {# Cet include correspond au carré avec le profil de l'utilisateur #}
-                        {% include 'ADMCoreBundle:Common:navbar-profile.html.twig' %}
+
                         {% block menus %}
                             {# Cet include correspond aux menus de gauche #}
                             {% include 'ADMCoreBundle:Common:navbar-menus.html.twig' %}
