@@ -5,16 +5,18 @@
     <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">EXPLORER</span> <span
                 class="fa arrow"></span></a>
     <ul class="nav nav-second-level">
-        <li><a href={{ path('adm_leaflet_worldmap') }}>Etudes</a></li>
+        <li><a href={{ path('adm_list_reports') }}>Etudes</a></li>
         <li><a href={{ path('adm_leaflet_worldmap') }}>Carte mondiale</a></li>
     </ul>
 </li>
-<hr style="width: 80%;margin-left: auto;margin-right: auto; margin-top:5px;margin-bottom:15px;color:white;opacity: 0.3">
+
 {% if not is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-    <li id="connexion" style="height: 70%; border-radius: 3px;">
+    <hr class="nav-label" style="width: 80%;margin-left: auto;margin-right: auto; margin-top:5px;margin-bottom:15px;color:white;opacity: 0.3">
+    <li id="connexion" class="nav-label" style="height: 70%; border-radius: 3px;">
         <a href="{{ path('fos_user_security_login') }}" style="padding-top: 7px;padding-bottom: 7px; padding-left: 10px;padding-right:10px; "><span class="nav-label" style="color:white;">Connexion</span></a>
     </li>
 {% else %}
+    <hr style="width: 80%;margin-left: auto;margin-right: auto; margin-top:5px;margin-bottom:15px;color:white;opacity: 0.3">
     <li style="padding: 10px;line-height:1em;">
 
         <img alt="image"
