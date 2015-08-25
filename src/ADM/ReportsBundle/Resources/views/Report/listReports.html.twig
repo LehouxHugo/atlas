@@ -14,7 +14,7 @@
     'bundles/admcore/css/style.css'
     'bundles/admcore/css/animate.css'
     'bundles/admcore/css/plugins/toastr/toastr.min.css'
-    'bundles/admcore/css/plugins/cubeportfolio/cubeportfolio.min.css' %}
+    'bundles/admcore/css/plugins/cubeportfolio/cubeportfolio.css' %}
     <link rel="stylesheet" href="{{ asset_url }}"/>
     {% endstylesheets %}
 {% endblock %}
@@ -204,7 +204,7 @@
                 <a href="{{ url('adm_ajax_summary_report', { 'slug': report.slug }) }}"
                    class="cbp-caption cbp-singlePageInline" data-title="{{ report.name }}" rel="nofollow">
                     <div class="cbp-caption-defaultWrap">
-                        <img src="http://ipsumimage.appspot.com/380x285,69cdd8?l=" alt="" />
+                        <img src='http://ipsumimage.appspot.com/10x10,69cdd8?l="S"' alt="" />
                     </div>
                     <div class="cbp-caption-activeWrap">
                         <div class="cbp-l-caption-alignCenter">
@@ -265,7 +265,9 @@
 
 {% block extrascripts %}
     {{ parent() }}
-
+<script>
+    jQuery("#grid-container").cubeportfolio('showCounter', filterSelector);
+</script>
 
 
 
