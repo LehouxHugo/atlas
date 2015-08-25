@@ -19,115 +19,87 @@
     {% endblock %}
 
     {% block extraheadcontent %}
+        <style>
+            a:active{outline: none;}
+            a:focus
+            {  outline:none;
+                -moz-outoutline:none ine-style: none;
+            }
+            #connexion{
+                background: #1AB394;
+                width: 65%;
+                height:80%;
+                margin: auto;
+                text-align: center;
+            }
+
+            #custom-search-input {
+                margin-left:-20px;
+                margin-top: 5px;
+                margin-bottom: 0px;
+                padding: 0;
+
+            }
+
+            .form-control{padding-left: 30px;}
+
+            .form-control:focus{opacity:1;}
+
+            #custom-search-input .search-query {
+                padding-right: 3px;
+                padding-right: 4px \9;
+                padding-left: 10px;
+                padding-left: 10px \9;
+                z-index: 3;
+                margin-bottom: 0;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+            }
+
+            #custom-search-input button {
+                border: 0;
+                background: none;
+                padding: 2px 5px;
+                margin-top: 2px;
+                position: relative;
+                left: 28px;
+                margin-bottom: 0;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+                color:white;
+                opacity: .4;
+                z-index: 4;
+            }
+
+            .search-query:focus + button {
+                z-index: 3;
+            }
+
+            #nav-header{padding-bottom:30px;padding: 15px;}
+
+        </style>
     {% endblock %}
-    <style>
-        a:active{outline: none;}
-        a:focus
-        {  outline:none;
-            -moz-outoutline:none ine-style: none;
-        }
-        #connexion{
-            background: #1AB394;
-            width: 65%;
-            height:80%;
-            margin: auto;
-            text-align: center;
-        }
-
-        #custom-search-input {
-            margin-left:-20px;
-            margin-top: 5px;
-            margin-bottom: 0px;
-            padding: 0;
-
-        }
-
-        .form-control{padding-left: 30px;}
-
-        .form-control:focus{opacity:1;}
-
-        #custom-search-input .search-query {
-            padding-right: 3px;
-            padding-right: 4px \9;
-            padding-left: 10px;
-            padding-left: 10px \9;
-            z-index: 3;
-            /* IE7-8 doesn't have border-radius, so don't indent the padding */
-
-            margin-bottom: 0;
-            -webkit-border-radius: 3px;
-            -moz-border-radius: 3px;
-            border-radius: 3px;
-        }
-
-        #custom-search-input button {
-            border: 0;
-            background: none;
-            /** belows styles are working good */
-            padding: 2px 5px;
-            margin-top: 2px;
-            position: relative;
-            left: 28px;
-            /* IE7-8 doesn't have border-radius, so don't indent the padding */
-            margin-bottom: 0;
-            -webkit-border-radius: 3px;
-            -moz-border-radius: 3px;
-            border-radius: 3px;
-            color:white;
-            opacity: .4;
-            z-index: 4;
-        }
-
-        .search-query:focus + button {
-            z-index: 3;
-        }
-
-        #nav-header{padding-bottom:30px;padding: 15px;}
-
-    </style>
-
 </head>
 
 <body class={% block bodyclass %}"skin-3"{% endblock %}>
-{# Options du bodyclass :
-        "no-skin-config"
-        "skin-1"
-        "skin-2"
-        "skin-3"
-        "mini-navbar"
-        "fixed-sidebar" : dans ce cas ne pas oublier d'ajouter le script slimScroll qui se trouve dans js/inspinia.js file et décommenter le Fixed Sidebar comment and uncomment function et ajouter <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-        "fixed-nav" : dans ce cas mettre navbar-fixed-top si body class = fixed-nav dans <nav>
-        En mettant mini-navbar ET fixed-sidebar ET fixed-nav, on ne voit plus du tout la barre de navigation de gauche et la barre du haut devient fixe (pour Rapports de stage peut-être)
-        "canvas-menu"pour le OffCanvasLayout
-        "full-height-layout" pour le Outlook
-        #}
         <div id="wrapper">
             <nav class="navbar-default  navbar-static-side" role="navigation">
                 <div class="sidebar-collapse">
                     {% block closeNavbar %}
                     {% endblock %}
-                    {# Ajouter <a class="close-canvas-menu"><i class="fa fa-times"></i></a> si bodyclass=canvas-menu #}
                     <ul class="nav">
-                        {# Cet include correspond au carré avec le profil de l'utilisateur #}
                         {% include 'ADMCoreBundle:Common:navbar-profile.html.twig' %}
                     </ul>
-
                         <ul class="nav" id="side-menu">
                         {% block menus %}
-                            {# Cet include correspond aux menus de gauche #}
                             {% include 'ADMCoreBundle:Common:navbar-menus.html.twig' %}
                         {% endblock %}
                     </ul>
                 </div>
             </nav>
             <div id="page-wrapper" class={% block pagewrapperclass %}"gray-bg"{% endblock %}>
-                {# Options du pagewrapperclass :
-                "gray-bg"
-                "gray-bg dashboard-1" mais ça a pas l'air de servir grand chose
-                "gray-bg sidebar-content" ajoute une jolie barre sur la droite  (peut-être pour mettre le sommaire des rapports). Par contre pas toujours terrible pour les téléphones car elle est prioritaireIl faut créer un <div class="sidebard-panel">. Voir exemple
-                #}
-
-                {# On met soit le block dashboardheader ou pageheading mais pas les deux, on peut aussi les enlever tous les deux. Je mets du contenu pour l'exemple #}
                 {% block dashboardheader %}
                     <div id="dashboard-header" class="row  border-bottom white-bg dashboard-header">
                         <div class="col-sm-12">
@@ -135,7 +107,7 @@
                         </div>
                     </div>
                 {% endblock %}
-                {% block pageheading %}
+
                     <div id="page-heading" class="row wrapper border-bottom white-bg page-heading" {% block pageheadingstyle %}{% endblock %}>
                         <div class="col-lg-10">
                             {% block breadcrumb %}
@@ -156,7 +128,7 @@
                         <div class="col-lg-2">
                         </div>
                     </div>
-                {% endblock %}
+
                 {# Début Page Content #}
                 <div class="row">
                     <div class={% block wrappercontentclass %}"wrapper wrapper-content"{% endblock %}>
