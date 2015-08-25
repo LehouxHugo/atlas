@@ -107,7 +107,7 @@
                         </div>
                     </div>
                 {% endblock %}
-
+                {% block pageheading %}
                     <div id="page-heading" class="row wrapper border-bottom white-bg page-heading" {% block pageheadingstyle %}{% endblock %}>
                         <div class="col-lg-10">
                             {% block breadcrumb %}
@@ -128,7 +128,7 @@
                         <div class="col-lg-2">
                         </div>
                     </div>
-
+                {% endblock %}
                 {# Début Page Content #}
                 <div class="row">
                     <div class={% block wrappercontentclass %}"wrapper wrapper-content"{% endblock %}>
